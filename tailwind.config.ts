@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Luxury Color Palette
+				charcoal: '#1e1e1e',
+				gold: '#e7caa7',
+				ivory: '#f9f7f3',
+				bronze: '#b38058',
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+				'vibes': ['Great Vibes', 'cursive'],
+			},
+			backgroundImage: {
+				'luxury-gradient': 'linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%)',
+				'gold-gradient': 'linear-gradient(135deg, #e7caa7 0%, #d4af7a 100%)',
+				'hero-overlay': 'linear-gradient(rgba(30, 30, 30, 0.4), rgba(30, 30, 30, 0.6))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +90,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slide-up': {
+					'0%': { opacity: '0', transform: 'translateY(50px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'slide-up': 'slide-up 0.8s ease-out'
 			}
 		}
 	},
