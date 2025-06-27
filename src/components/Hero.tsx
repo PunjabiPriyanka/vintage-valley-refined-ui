@@ -13,43 +13,43 @@ const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 hover:scale-105"
           style={{
-            backgroundImage: `linear-gradient(rgba(20, 20, 20, 0.3), rgba(30, 30, 30, 0.7)), url('https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1708787101150-844cebbad46d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D')`
           }}
         />
         
         {/* Floating Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-gold/10 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-32 right-16 w-32 h-32 bg-ivory/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-bronze/20 rounded-full blur-lg animate-pulse delay-500"></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/10 rounded-full blur-xl animate-pulse"></div>
+        <div className="absolute bottom-32 right-16 w-32 h-32 bg-teal-300/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 bg-cyan-400/20 rounded-full blur-lg animate-pulse delay-500"></div>
       </div>
       
       {/* Content Container */}
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Animated Badge */}
         <div className="inline-flex items-center px-6 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8 animate-fade-in">
-          <span className="text-gold text-sm font-medium tracking-wide">PREMIUM WELLNESS RETREAT</span>
+          <span className="text-cyan-300 text-sm font-medium tracking-wide">PREMIUM WELLNESS RETREAT</span>
         </div>
 
         {/* Main Headlines with Stagger Animation */}
         <div className="space-y-4 mb-8">
-          <h1 className="font-playfair text-6xl md:text-8xl font-bold hero-text animate-slide-up">
+          <h1 className="font-playfair text-6xl md:text-8xl font-bold text-white animate-slide-up">
             Vintage Valley
           </h1>
-          <h2 className="font-playfair text-3xl md:text-5xl font-light text-gold animate-slide-up delay-200">
+          <h2 className="font-playfair text-3xl md:text-5xl font-light text-cyan-300 animate-slide-up delay-200">
             Spa Resort
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto animate-fade-in delay-500"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-cyan-300 to-transparent mx-auto animate-fade-in delay-500"></div>
         </div>
 
         {/* Enhanced Description */}
         <p className="text-xl md:text-2xl font-light mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed animate-fade-in delay-700">
           Where luxury meets serenity in the heart of Igatpuri's pristine landscapes. 
-          <span className="block mt-2 text-gold/80 font-vibes text-2xl">Experience the extraordinary</span>
+          <span className="block mt-2 text-cyan-300/80 font-vibes text-2xl">Experience the extraordinary</span>
         </p>
         
         {/* Interactive CTA Section */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in delay-1000">
-          <button className="group relative bg-gradient-to-r from-gold to-bronze text-charcoal px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
+          <button className="group relative bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
             <span className="relative z-10">Reserve Your Escape</span>
             <div className="absolute inset-0 bg-white/20 translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
           </button>
@@ -66,19 +66,6 @@ const Hero = () => {
             View Our Suites
           </button>
         </div>
-
-        {/* Key Features Pills */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in delay-1200">
-          {['Infinity Pool', 'Luxury Spa', 'Premium Dining', 'Nature Trails'].map((feature, index) => (
-            <div 
-              key={feature}
-              className="px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-sm font-medium border border-white/20 hover:bg-white/20 transition-all duration-300"
-              style={{ animationDelay: `${1200 + index * 100}ms` }}
-            >
-              {feature}
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Enhanced Scroll Indicator */}
@@ -90,8 +77,8 @@ const Hero = () => {
       </div>
 
       {/* Decorative Corner Elements */}
-      <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-gold/30 opacity-60"></div>
-      <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-gold/30 opacity-60"></div>
+      <div className="absolute top-8 left-8 w-16 h-16 border-l-2 border-t-2 border-cyan-300/30 opacity-60"></div>
+      <div className="absolute bottom-8 right-8 w-16 h-16 border-r-2 border-b-2 border-cyan-300/30 opacity-60"></div>
     </section>
   );
 };
