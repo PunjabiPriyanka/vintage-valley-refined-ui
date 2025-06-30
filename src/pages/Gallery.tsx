@@ -17,22 +17,22 @@ const Gallery = () => {
   ];
 
   const galleryImages = [
-    { id: 1, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1WGmvfu9_IGSDglVT1R3r0D3I0tJltcHl', alt: 'Deluxe Studio Suite 1' },
-    { id: 2, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1HXLnyjm_0Hov6klnufM_P95JsysjUOCp', alt: 'Deluxe Studio Suite 2' },
-    { id: 3, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=14zNs8eoPB-GR2LhtieGhkaeKEBbFfcUp', alt: 'Deluxe Studio Suite 3' },
-    { id: 4, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1cSkStg0LVVB9zLM1diw9OpserECNjrZD', alt: 'Skyline Deluxe 1' },
-    { id: 5, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=11WVHG-eUvOj_gXbE5aimVFJfMdZbNWu7', alt: 'Skyline Deluxe 2' },
-    { id: 6, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1sMDKh29hvpiGt1jjxGfxGSfYwFGFXrY5', alt: 'Skyline Deluxe 3' },
-    { id: 7, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1xBxPQBNqujFMO_2JSwmNUCDehaKjg5N3', alt: 'Deluxe Edge View 1' },
-    { id: 8, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1Ls0YTFU1a0dqPre2IdTEoFYlA3HYUgwh', alt: 'Deluxe Edge View 2' },
-    { id: 9, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1tMP4HBeu1kYxPn4VGO9ZgwEZIq4TtIlN', alt: 'Deluxe Edge View 3' },
-    { id: 10, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1ugUKNQlDcE2LF3qgFUJfdXWblYsLY576', alt: 'Lotus Family Suite 1' },
-    { id: 11, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1IyRwOsKs-6naUQno7Q-cA9t-AyPqwbu-', alt: 'Lotus Family Suite 2' },
-    { id: 12, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1_acOg3ScBkjH1WIrarljnQeIxe-_tgoQ', alt: 'Lotus Family Suite 3' },
-    { id: 13, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1nm1eX3WTee6rYCH0XahxLdi12MEQ1O25', alt: 'Presidential Sky Villa 1' },
-    { id: 14, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1ugUKNQlDcE2LF3qgFUJfdXWblYsLY576', alt: 'Presidential Sky Villa 2' },
-    { id: 15, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1jJQov3XhxYQ7CnMG4R7FtQc8QBUVQipr', alt: 'Presidential Sky Villa 3' },
-    { id: 16, category: 'facilities', src: 'https://drive.google.com/uc?export=view&id=1yZq0n6UE9ee0tTUoEurBrEXTN7m-oaWl', alt: 'Infinity Pool 1' }
+    { id: 1, category: 'rooms', src: '/images/deluxe-studio-suite-1.jpg', alt: 'Deluxe Studio Suite 1' },
+    { id: 2, category: 'rooms', src: '/images/deluxe-studio-suite-2.jpg', alt: 'Deluxe Studio Suite 2' },
+    { id: 3, category: 'rooms', src: '/images/deluxe-studio-suite-3.jpg', alt: 'Deluxe Studio Suite 3' },
+    { id: 4, category: 'rooms', src: '/images/skyline-deluxe-1.jpg', alt: 'Skyline Deluxe 1' },
+    { id: 5, category: 'rooms', src: '/images/skyline-deluxe-2.jpg', alt: 'Skyline Deluxe 2' },
+    { id: 6, category: 'rooms', src: '/images/skyline-deluxe-3.jpg', alt: 'Skyline Deluxe 3' },
+    { id: 7, category: 'rooms', src: '/images/deluxe-edge-view-1.jpg', alt: 'Deluxe Edge View 1' },
+    { id: 8, category: 'rooms', src: '/images/deluxe-edge-view-2.jpg', alt: 'Deluxe Edge View 2' },
+    { id: 9, category: 'rooms', src: '/images/deluxe-edge-view-3.jpg', alt: 'Deluxe Edge View 3' },
+    { id: 10, category: 'rooms', src: '/images/lotus-family-suite-1.jpg', alt: 'Lotus Family Suite 1' },
+    { id: 11, category: 'rooms', src: '/images/lotus-family-suite-2.jpg', alt: 'Lotus Family Suite 2' },
+    { id: 12, category: 'rooms', src: '/images/lotus-family-suite-3.jpg', alt: 'Lotus Family Suite 3' },
+    { id: 13, category: 'rooms', src: '/images/presidential-sky-villa-1.jpg', alt: 'Presidential Sky Villa 1' },
+    { id: 14, category: 'rooms', src: '/images/presidential-sky-villa-2.jpg', alt: 'Presidential Sky Villa 2' },
+    { id: 15, category: 'rooms', src: '/images/presidential-sky-villa-3.jpg', alt: 'Presidential Sky Villa 3' },
+    { id: 16, category: 'facilities', src: '/images/infinity-pool-1.jpg', alt: 'Infinity Pool 1' }
   ];
 
   const filteredImages = selectedCategory === 'all' 

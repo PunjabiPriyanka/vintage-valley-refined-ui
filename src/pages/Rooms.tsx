@@ -13,9 +13,9 @@ const Rooms = () => {
       title: 'Deluxe Studio Suite',
       subtitle: 'Elegant Comfort in Nature',
       images: [
-        'https://drive.google.com/uc?export=view&id=1WGmvfu9_IGSDglVT1R3r0D3I0tJltcHl',
-        'https://drive.google.com/uc?export=view&id=1HXLnyjm_0Hov6klnufM_P95JsysjUOCp',
-        'https://drive.google.com/uc?export=view&id=14zNs8eoPB-GR2LhtieGhkaeKEBbFfcUp'
+        '/images/deluxe-studio-suite-1.jpg',
+        '/images/deluxe-studio-suite-2.jpg',
+        '/images/deluxe-studio-suite-3.jpg'
       ],
       description: 'Our Deluxe Studio Suite offers the perfect blend of modern luxury and natural serenity. Featuring contemporary amenities, panoramic views, and thoughtful design elements that create an atmosphere of sophisticated relaxation.',
       capacity: '2 Adults',
@@ -39,9 +39,9 @@ const Rooms = () => {
       title: 'Skyline Deluxe',
       subtitle: 'Elevated Comfort with Panoramic Views',
       images: [
-        'https://drive.google.com/uc?export=view&id=1cSkStg0LVVB9zLM1diw9OpserECNjrZD',
-        'https://drive.google.com/uc?export=view&id=11WVHG-eUvOj_gXbE5aimVFJfMdZbNWu7',
-        'https://drive.google.com/uc?export=view&id=1sMDKh29hvpiGt1jjxGfxGSfYwFGFXrY5'
+        '/images/skyline-deluxe-1.jpg',
+        '/images/skyline-deluxe-2.jpg',
+        '/images/skyline-deluxe-3.jpg'
       ],
       description: 'Located along the edge line of each floor, these rooms offer sweeping skyline views and elevated comfort. Designed for guests who appreciate a serene atmosphere with panoramic visibility. Ideal for couples and leisure travelers seeking a premium stay with a view.',
       capacity: '2 Adults',
@@ -65,9 +65,9 @@ const Rooms = () => {
       title: 'Deluxe Edge View',
       subtitle: 'Corner Privacy with Scenic Visibility',
       images: [
-        'https://drive.google.com/uc?export=view&id=1xBxPQBNqujFMO_2JSwmNUCDehaKjg5N3',
-        'https://drive.google.com/uc?export=view&id=1Ls0YTFU1a0dqPre2IdTEoFYlA3HYUgwh',
-        'https://drive.google.com/uc?export=view&id=1tMP4HBeu1kYxPn4VGO9ZgwEZIq4TtIlN'
+        '/images/deluxe-edge-view-1.jpg',
+        '/images/deluxe-edge-view-2.jpg',
+        '/images/deluxe-edge-view-3.jpg'
       ],
       description: 'Rooms with stunning front-facing views, offering elevated comfort and a refined aesthetic. Positioned at the corner edge of each floor for enhanced privacy and scenic visibility.',
       capacity: '2 Adults',
@@ -91,9 +91,9 @@ const Rooms = () => {
       title: 'Lotus Family Suite',
       subtitle: 'Spacious Luxury for Families',
       images: [
-        'https://drive.google.com/uc?export=view&id=1ugUKNQlDcE2LF3qgFUJfdXWblYsLY576',
-        'https://drive.google.com/uc?export=view&id=1IyRwOsKs-6naUQno7Q-cA9t-AyPqwbu-',
-        'https://drive.google.com/uc?export=view&id=1_acOg3ScBkjH1WIrarljnQeIxe-_tgoQ'
+        '/images/lotus-family-suite-1.jpg',
+        '/images/lotus-family-suite-2.jpg',
+        '/images/lotus-family-suite-3.jpg'
       ],
       description: 'The Lotus Family Suite provides generous space and premium comfort for larger groups. With separate living areas, premium furnishings, and spectacular views, it offers the perfect setting for memorable family gatherings.',
       capacity: '4 Adults',
@@ -117,9 +117,9 @@ const Rooms = () => {
       title: 'Presidential Sky Villa',
       subtitle: 'Ultimate Luxury Experience',
       images: [
-        'https://drive.google.com/uc?export=view&id=1nm1eX3WTee6rYCH0XahxLdi12MEQ1O25',
-        'https://drive.google.com/uc?export=view&id=1ugUKNQlDcE2LF3qgFUJfdXWblYsLY576',
-        'https://drive.google.com/uc?export=view&id=1jJQov3XhxYQ7CnMG4R7FtQc8QBUVQipr'
+        '/images/presidential-sky-villa-1.jpg',
+        '/images/presidential-sky-villa-2.jpg',
+        '/images/presidential-sky-villa-3.jpg'
       ],
       description: 'The Presidential Sky Villa represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',

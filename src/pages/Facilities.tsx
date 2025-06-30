@@ -23,7 +23,7 @@ const Facilities = () => {
       title: 'Infinity Pool',
       icon: Waves,
       description: 'Stunning infinity pool overlooking the valley with crystal-clear waters and panoramic mountain views. Perfect for relaxation and memorable moments.',
-      image: 'https://drive.google.com/uc?export=view&id=1yZq0n6UE9ee0tTUoEurBrEXTN7m-oaWl',
+      image: '/images/infinity-pool-1.jpg',
       features: ['Heated water', 'Pool bar service', 'Valley views', 'Sunrise sessions']
     },
     {
@@ -31,7 +31,7 @@ const Facilities = () => {
       title: 'Banquet Lawn',
       icon: Users,
       description: 'Elegant outdoor venue perfect for weddings, corporate events, and celebrations. Set against the backdrop of lush greenery and mountain vistas.',
-      image: 'https://drive.google.com/uc?export=view&id=14Mpjqee5uRPe66w-gCBR6Nz0dLFMeTGb',
+      image: '/images/banquet-lawn-1.jpg',
       features: ['Capacity 200+ guests', 'Professional lighting', 'Catering services', 'Event planning']
     },
     {
@@ -39,7 +39,7 @@ const Facilities = () => {
       title: 'Café Lounge',
       icon: Utensils,
       description: 'Premium dining experience featuring local and international cuisine. Our chefs create culinary masterpieces using fresh, locally sourced ingredients.',
-      image: 'https://drive.google.com/uc?export=view&id=1Zp7rFx2l8Av-e3B8fMrS1LsR3mw0mV9h',
+      image: '/images/cafe-lounge-1.jpg',
       features: ['Multi-cuisine menu', 'Fine dining', 'Outdoor seating', 'Special dietary options']
     },
     {
@@ -47,7 +47,7 @@ const Facilities = () => {
       title: 'Spa & Wellness',
       icon: Sparkles,
       description: 'World-class spa offering rejuvenating treatments and wellness therapies. Experience ultimate relaxation with our signature treatments and skilled therapists.',
-      image: 'https://drive.google.com/uc?export=view&id=1JiUIQ_F9yaaQVyPt-GlzEOXXb5lj3yMR',
+      image: '/images/infinity-pool-2.jpg',
       features: ['Ayurvedic treatments', 'Couple therapy rooms', 'Aromatherapy', 'Wellness consultations']
     },
     {
@@ -55,7 +55,7 @@ const Facilities = () => {
       title: 'Fitness Studio',
       icon: Dumbbell,
       description: 'State-of-the-art fitness center equipped with modern equipment and personal training services. Maintain your fitness routine while enjoying nature views.',
-      image: 'https://drive.google.com/uc?export=view&id=1m9f9p1uOdWoR1FlWm1FvmQwzwo02vlM9',
+      image: '/images/infinity-pool-3.jpg',
       features: ['Modern equipment', 'Personal training', 'Yoga classes', 'Outdoor workouts']
     },
     {
@@ -63,7 +63,7 @@ const Facilities = () => {
       title: 'Game Zone',
       icon: Gamepad2,
       description: 'Indoor and outdoor recreational activities for all ages. From traditional games to modern entertainment options, ensuring fun for the entire family.',
-      image: 'https://drive.google.com/uc?export=view&id=1glBk_M8G_jgyxgJN94CzZLa_OtcKxZtl',
+      image: '/images/banquet-lawn-2.jpg',
       features: ['Table tennis', 'Pool table', 'Board games', 'Outdoor sports']
     },
     {
@@ -71,7 +71,7 @@ const Facilities = () => {
       title: 'Nature Trails',
       icon: TreePine,
       description: 'Guided nature walks through pristine landscapes and scenic trails. Discover local flora and fauna while connecting with the natural beauty of Igatpuri.',
-      image: 'https://drive.google.com/uc?export=view&id=1zp_LGeXePT5hAuknpIrITwMR14WSLBxp',
+      image: '/images/nature-trails-1.jpg',
       features: ['Guided tours', 'Bird watching', 'Photography spots', 'Sunrise/sunset walks']
     },
     {
@@ -79,7 +79,7 @@ const Facilities = () => {
       title: 'Conference Hall',
       icon: Camera,
       description: 'Professional meeting spaces equipped with modern technology for corporate events and business gatherings in a serene environment.',
-      image: 'https://drive.google.com/uc?export=view&id=1mVeWhdDiZjOq4Lxsx7CGdpZnEidG5KHw',
+      image: '/images/conference-hall-1.jpg',
       features: ['AV equipment', 'High-speed internet', 'Catering services', 'Professional setup']
     }
   ];
