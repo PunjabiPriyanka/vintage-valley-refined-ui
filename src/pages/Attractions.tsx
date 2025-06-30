@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FloatingContact from '@/components/FloatingContact';
@@ -12,7 +11,7 @@ const Attractions = () => {
       distance: '10 km',
       time: '18 mins',
       description: 'World\'s largest Vipassana meditation center offering 10-day silent meditation courses in serene natural surroundings.',
-      image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://giri.vridhamma.org/sites/giri.vridhamma.org/files/styles/flexslider_full/public/2020-08-10%20%281%29.jpg?itok=55awi1OG',
       highlights: ['Silent meditation', 'Spiritual healing', '10-day courses', 'Peaceful environment']
     },
     {
@@ -20,7 +19,7 @@ const Attractions = () => {
       distance: '8 km',
       time: '15 mins',
       description: 'Picturesque dam surrounded by lush greenery, perfect for picnics and enjoying nature\'s tranquility.',
-      image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       highlights: ['Scenic beauty', 'Picnic spots', 'Photography', 'Nature walks']
     },
     {
@@ -28,7 +27,7 @@ const Attractions = () => {
       distance: '45 km',
       time: '1 hour',
       description: 'Hill station known for its pristine lake, waterfalls, and the famous Arthur Lake with camping opportunities.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
       highlights: ['Arthur Lake', 'Camping', 'Waterfalls', 'Hill station']
     },
     {
@@ -36,7 +35,7 @@ const Attractions = () => {
       distance: '20 km',
       time: '30 mins',
       description: 'Historic fort with ancient caves offering panoramic views and a glimpse into Maharashtra\'s rich heritage.',
-      image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Tringalwadi_Fort.jpg',
       highlights: ['Historical fort', 'Ancient caves', 'Trekking', 'Heritage site']
     },
     {
@@ -44,7 +43,7 @@ const Attractions = () => {
       distance: '12 km',
       time: '20 mins',
       description: 'Spectacular waterfall cascading from great heights, perfect for nature photography and monsoon visits.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
       highlights: ['Waterfall', 'Photography', 'Monsoon beauty', 'Natural pools']
     },
     {
@@ -52,7 +51,7 @@ const Attractions = () => {
       distance: '15 km',
       time: '25 mins',
       description: 'Unique waterfall visible from railway tracks, offering a spectacular view during monsoon season.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
       highlights: ['Railway view', 'Monsoon special', 'Unique location', 'Train spotting']
     },
     {
@@ -60,7 +59,7 @@ const Attractions = () => {
       distance: '18 km',
       time: '30 mins',
       description: 'Scenic viewpoint offering breathtaking views of the Western Ghats and surrounding valleys.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80',
       highlights: ['Scenic viewpoint', 'Western Ghats', 'Valley views', 'Sunset point']
     },
     {
@@ -68,7 +67,7 @@ const Attractions = () => {
       distance: '22 km',
       time: '35 mins',
       description: 'Boutique vineyard offering wine tasting experiences and tours amidst beautiful grape plantations.',
-      image: 'https://images.unsplash.com/photo-1506377872008-6645d6258816?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80',
       highlights: ['Wine tasting', 'Vineyard tours', 'Boutique wines', 'Grape plantations']
     },
     {
@@ -76,7 +75,7 @@ const Attractions = () => {
       distance: '16 km',
       time: '28 mins',
       description: 'Scenic valley point with unique rock formations resembling camels, popular for photography and nature walks.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
       highlights: ['Rock formations', 'Photography', 'Nature walks', 'Unique landscape']
     },
     {
@@ -84,7 +83,7 @@ const Attractions = () => {
       distance: '15 km',
       time: '25 mins',
       description: 'Large dam with beautiful surroundings, offering boating facilities and scenic sunset views.',
-      image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
+      image: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
       highlights: ['Boating', 'Sunset views', 'Large reservoir', 'Water activities']
     },
     {
@@ -92,7 +91,7 @@ const Attractions = () => {
       distance: '25 km',
       time: '40 mins',
       description: 'Mountain pass with stunning ghat views, popular for its scenic railway route and natural beauty.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
       highlights: ['Mountain pass', 'Railway route', 'Ghat views', 'Natural beauty']
     }
   ];
@@ -103,7 +102,7 @@ const Attractions = () => {
       distance: '45 km',
       time: '1 hour',
       description: 'Ancient Buddhist caves dating back to 1st century BC, showcasing remarkable rock-cut architecture.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Pandavleni_Caves_Nashik.jpg',
       highlights: ['Buddhist caves', 'Ancient architecture', 'Historical site', 'Rock-cut caves']
     },
     {
@@ -111,7 +110,7 @@ const Attractions = () => {
       distance: '50 km',
       time: '1.2 hours',
       description: 'Sacred cave associated with Ramayana, believed to be where Sita stayed during her exile period.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Pandavleni_Caves_Nashik.jpg',
       highlights: ['Religious site', 'Ramayana connection', 'Sacred cave', 'Spiritual significance']
     },
     {
@@ -119,7 +118,7 @@ const Attractions = () => {
       distance: '35 km',
       time: '50 mins',
       description: 'One of the 12 Jyotirlingas of Lord Shiva, ancient temple with significant religious importance.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       highlights: ['Jyotirling', 'Ancient temple', 'Religious pilgrimage', 'Shiva temple']
     },
     {
@@ -127,7 +126,7 @@ const Attractions = () => {
       distance: '48 km',
       time: '1.1 hours',
       description: 'Sacred bathing ghat on Godavari river where devotees perform religious ceremonies and rituals.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       highlights: ['Sacred bathing ghat', 'Godavari river', 'Religious ceremonies', 'Pilgrimage site']
     },
     {
@@ -135,7 +134,7 @@ const Attractions = () => {
       distance: '60 km',
       time: '1.5 hours',
       description: 'Triangular fort famous for its steep rock-cut steps and panoramic views from the summit.',
-      image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Harihar_Fort_Nashik.jpg',
       highlights: ['Triangular fort', 'Rock-cut steps', 'Adventure trekking', 'Panoramic views']
     },
     {
@@ -143,7 +142,7 @@ const Attractions = () => {
       distance: '55 km',
       time: '1.3 hours',
       description: 'India\'s leading winery offering premium wine tasting experiences and vineyard tours.',
-      image: 'https://images.unsplash.com/photo-1506377872008-6645d6258816?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80',
       highlights: ['Premium wines', 'Wine tasting', 'Vineyard tours', 'Fine dining']
     },
     {
@@ -151,7 +150,7 @@ const Attractions = () => {
       distance: '47 km',
       time: '1 hour',
       description: 'Beautiful temple dedicated to Lord Vishnu, known for its architectural beauty and peaceful atmosphere.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       highlights: ['Vishnu temple', 'Beautiful architecture', 'Peaceful atmosphere', 'Religious site']
     },
     {
@@ -159,7 +158,7 @@ const Attractions = () => {
       distance: '50 km',
       time: '1.2 hours',
       description: 'Sacred place mentioned in Ramayana, believed to be where Lord Rama spent his exile period.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
       highlights: ['Ramayana site', 'Sacred place', 'Historical significance', 'Religious importance']
     },
     {
@@ -167,7 +166,7 @@ const Attractions = () => {
       distance: '52 km',
       time: '1.2 hours',
       description: 'Historic military cantonment town known for its pleasant climate and colonial architecture.',
-      image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
       highlights: ['Military cantonment', 'Colonial architecture', 'Pleasant climate', 'Historical town']
     },
     {
@@ -175,7 +174,7 @@ const Attractions = () => {
       distance: '58 km',
       time: '1.4 hours',
       description: 'Birthplace of Lord Hanuman, offering trekking opportunities and religious significance.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
       highlights: ['Hanuman birthplace', 'Trekking', 'Religious site', 'Mountain views']
     },
     {
@@ -183,7 +182,7 @@ const Attractions = () => {
       distance: '40 km',
       time: '55 mins',
       description: 'Source of river Godavari, sacred hill with temples and natural beauty.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
       highlights: ['Godavari source', 'Sacred hill', 'Temples', 'Natural beauty']
     },
     {
@@ -191,7 +190,7 @@ const Attractions = () => {
       distance: '49 km',
       time: '1.1 hours',
       description: 'Beautiful modern temple with intricate carvings and peaceful spiritual atmosphere.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80',
       highlights: ['Modern temple', 'Intricate carvings', 'Spiritual atmosphere', 'Beautiful architecture']
     },
     {
@@ -199,7 +198,7 @@ const Attractions = () => {
       distance: '42 km',
       time: '1 hour',
       description: 'Scenic waterfall surrounded by dense forest, perfect for nature lovers and photography.',
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
       highlights: ['Scenic waterfall', 'Dense forest', 'Nature photography', 'Trekking']
     },
     {
@@ -207,7 +206,7 @@ const Attractions = () => {
       distance: '46 km',
       time: '1 hour',
       description: 'Ancient Shiva temple with beautiful architecture located on the banks of Godavari river.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       highlights: ['Ancient Shiva temple', 'Godavari banks', 'Beautiful architecture', 'Religious site']
     },
     {
@@ -215,7 +214,7 @@ const Attractions = () => {
       distance: '65 km',
       time: '1.5 hours',
       description: 'Large reservoir with beautiful surroundings, popular for picnics and water sports.',
-      image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
+      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
       highlights: ['Large reservoir', 'Water sports', 'Picnic spot', 'Scenic surroundings']
     },
     {
@@ -223,7 +222,7 @@ const Attractions = () => {
       distance: '51 km',
       time: '1.2 hours',
       description: 'White marble temple complex with replicas of all major pilgrimage sites of India.',
-      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
       highlights: ['Marble temple', 'Pilgrimage replicas', 'Beautiful complex', 'Religious significance']
     }
   ];
