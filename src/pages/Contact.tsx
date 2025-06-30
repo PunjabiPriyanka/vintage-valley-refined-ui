@@ -1,6 +1,7 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingContact from '@/components/FloatingContact';
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 
@@ -32,6 +33,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-ivory">
       <Navbar />
+      <FloatingContact />
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-charcoal to-charcoal/90">
@@ -90,10 +92,17 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal mb-2">Location</h3>
-                  <p className="text-charcoal/80">Vintage Valley Spa Resort</p>
+                  <h3 className="font-semibold text-charcoal mb-2">Location & Directions</h3>
+                  <p className="text-charcoal/80 font-medium">Vintage Valley Spa Resort</p>
+                  <p className="text-charcoal/80">Village Amrutgaon, Post Vashind</p>
+                  <p className="text-charcoal/80">Taluka Shahapur, District Thane</p>
                   <p className="text-charcoal/80">Igatpuri, Maharashtra 422403</p>
-                  <p className="text-charcoal/60 text-sm mt-1">2 hours from Mumbai</p>
+                  <div className="mt-3 text-sm text-charcoal/70">
+                    <p><strong>From Mumbai:</strong> Take NH-3 towards Nashik, exit at Igatpuri (120 km, 2.5 hours)</p>
+                    <p><strong>From Pune:</strong> Via NH-50 to Nashik, then to Igatpuri (180 km, 3 hours)</p>
+                    <p><strong>From Nashik:</strong> Take Igatpuri Road via Trimbakeshwar (65 km, 1.5 hours)</p>
+                    <p><strong>Nearest Railway:</strong> Igatpuri Station (8 km, pickup available)</p>
+                  </div>
                 </div>
               </div>
 
@@ -304,10 +313,13 @@ const Contact = () => {
                 <p className="font-playfair text-2xl font-semibold text-charcoal mb-2">
                   Interactive Map
                 </p>
-                <p className="text-charcoal/70">
+                <p className="text-charcoal/70 mb-4">
                   Click to open in Google Maps for detailed directions
                 </p>
-                <button className="mt-4 bg-gold text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200">
+                <button 
+                  onClick={() => window.open('https://maps.google.com/?q=Vintage+Valley+Spa+Resort+Igatpuri', '_blank')}
+                  className="bg-gold text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200"
+                >
                   Open in Maps
                 </button>
               </div>

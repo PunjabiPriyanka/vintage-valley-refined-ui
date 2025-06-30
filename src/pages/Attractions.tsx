@@ -1,107 +1,237 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { MapPin, Clock, ExternalLink, Mountain, Droplets, Church, Grape } from 'lucide-react';
+import FloatingContact from '@/components/FloatingContact';
+import { MapPin, Clock, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const Attractions = () => {
-  const attractions = [
+  const igatpuriPlaces = [
     {
-      category: 'Wineries',
-      icon: Grape,
-      color: 'from-purple-500/20 to-pink-500/20',
-      places: [
-        {
-          name: 'Sula Vineyards',
-          distance: '25 km',
-          time: '35 mins',
-          description: 'Premium winery offering wine tasting experiences, vineyard tours, and gourmet dining with panoramic valley views.',
-          image: 'https://images.unsplash.com/photo-1506377872008-6645d6258816?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          highlights: ['Wine tasting', 'Vineyard tours', 'Fine dining', 'Valley views']
-        },
-        {
-          name: 'York Winery',
-          distance: '28 km',
-          time: '40 mins',
-          description: 'Boutique winery known for premium wines and intimate tasting sessions in a serene hillside setting.',
-          image: 'https://images.unsplash.com/photo-1574870111867-089730e5a72e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
-          highlights: ['Boutique wines', 'Private tastings', 'Hillside views', 'Romantic setting']
-        }
-      ]
+      name: 'Dhamma Giri / Vipassana Meditation Center',
+      distance: '10 km',
+      time: '18 mins',
+      description: 'World\'s largest Vipassana meditation center offering 10-day silent meditation courses in serene natural surroundings.',
+      image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Silent meditation', 'Spiritual healing', '10-day courses', 'Peaceful environment']
     },
     {
-      category: 'Waterfalls',
-      icon: Droplets,
-      color: 'from-blue-500/20 to-cyan-500/20',
-      places: [
-        {
-          name: 'Ashoka Waterfall',
-          distance: '12 km',
-          time: '20 mins',
-          description: 'Spectacular waterfall cascading from great heights, perfect for nature photography and peaceful moments.',
-          image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          highlights: ['Photography', 'Natural pools', 'Trekking', 'Monsoon beauty']
-        },
-        {
-          name: 'Vaitarna Dam',
-          distance: '15 km',
-          time: '25 mins',
-          description: 'Scenic dam surrounded by lush greenery, offering boating activities and stunning sunset views.',
-          image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
-          highlights: ['Boating', 'Sunset views', 'Picnic spots', 'Bird watching']
-        }
-      ]
+      name: 'Bhavali Dam',
+      distance: '8 km',
+      time: '15 mins',
+      description: 'Picturesque dam surrounded by lush greenery, perfect for picnics and enjoying nature\'s tranquility.',
+      image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
+      highlights: ['Scenic beauty', 'Picnic spots', 'Photography', 'Nature walks']
     },
     {
-      category: 'Temples & Heritage',
-      icon: Church,
-      color: 'from-orange-500/20 to-red-500/20',
-      places: [
-        {
-          name: 'Ghatandevi Temple',
-          distance: '8 km',
-          time: '15 mins',
-          description: 'Ancient temple dedicated to Goddess Ghatandevi, known for its spiritual significance and architectural beauty.',
-          image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          highlights: ['Spiritual significance', 'Architecture', 'Peaceful atmosphere', 'Cultural heritage']
-        },
-        {
-          name: 'Tringalwadi Fort',
-          distance: '20 km',
-          time: '30 mins',
-          description: 'Historic fort offering panoramic views of the Sahyadri ranges and a glimpse into Maharashtra\'s rich history.',
-          image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          highlights: ['Historical significance', 'Panoramic views', 'Trekking', 'Photography']
-        }
-      ]
+      name: 'Bhandardara',
+      distance: '45 km',
+      time: '1 hour',
+      description: 'Hill station known for its pristine lake, waterfalls, and the famous Arthur Lake with camping opportunities.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Arthur Lake', 'Camping', 'Waterfalls', 'Hill station']
     },
     {
-      category: 'Hills & Viewpoints',
-      icon: Mountain,
-      color: 'from-green-500/20 to-emerald-500/20',
-      places: [
-        {
-          name: 'Kalsubai Peak',
-          distance: '35 km',
-          time: '45 mins',
-          description: 'Highest peak in Maharashtra offering breathtaking sunrise views and challenging trekking experiences.',
-          image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          highlights: ['Highest peak', 'Sunrise views', 'Adventure trekking', 'Mountain camping']
-        },
-        {
-          name: 'Dhamma Giri',
-          distance: '10 km',
-          time: '18 mins',
-          description: 'Vipassana meditation center set in serene hills, perfect for spiritual retreat and mindfulness practices.',
-          image: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-          highlights: ['Meditation center', 'Spiritual retreat', 'Peaceful environment', 'Mindfulness']
-        }
-      ]
+      name: 'Tringalwadi Fort & Cave',
+      distance: '20 km',
+      time: '30 mins',
+      description: 'Historic fort with ancient caves offering panoramic views and a glimpse into Maharashtra\'s rich heritage.',
+      image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Historical fort', 'Ancient caves', 'Trekking', 'Heritage site']
+    },
+    {
+      name: 'Ashoka Waterfall',
+      distance: '12 km',
+      time: '20 mins',
+      description: 'Spectacular waterfall cascading from great heights, perfect for nature photography and monsoon visits.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Waterfall', 'Photography', 'Monsoon beauty', 'Natural pools']
+    },
+    {
+      name: 'Railway Waterfall',
+      distance: '15 km',
+      time: '25 mins',
+      description: 'Unique waterfall visible from railway tracks, offering a spectacular view during monsoon season.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Railway view', 'Monsoon special', 'Unique location', 'Train spotting']
+    },
+    {
+      name: 'Karoli Ghat Top',
+      distance: '18 km',
+      time: '30 mins',
+      description: 'Scenic viewpoint offering breathtaking views of the Western Ghats and surrounding valleys.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Scenic viewpoint', 'Western Ghats', 'Valley views', 'Sunset point']
+    },
+    {
+      name: 'Vallonne Vineyard',
+      distance: '22 km',
+      time: '35 mins',
+      description: 'Boutique vineyard offering wine tasting experiences and tours amidst beautiful grape plantations.',
+      image: 'https://images.unsplash.com/photo-1506377872008-6645d6258816?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Wine tasting', 'Vineyard tours', 'Boutique wines', 'Grape plantations']
+    },
+    {
+      name: 'Camel Valley Point',
+      distance: '16 km',
+      time: '28 mins',
+      description: 'Scenic valley point with unique rock formations resembling camels, popular for photography and nature walks.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Rock formations', 'Photography', 'Nature walks', 'Unique landscape']
+    },
+    {
+      name: 'Vaitarna Dam',
+      distance: '15 km',
+      time: '25 mins',
+      description: 'Large dam with beautiful surroundings, offering boating facilities and scenic sunset views.',
+      image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
+      highlights: ['Boating', 'Sunset views', 'Large reservoir', 'Water activities']
+    },
+    {
+      name: 'Kasara Ghat',
+      distance: '25 km',
+      time: '40 mins',
+      description: 'Mountain pass with stunning ghat views, popular for its scenic railway route and natural beauty.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Mountain pass', 'Railway route', 'Ghat views', 'Natural beauty']
+    }
+  ];
+
+  const nashikPlaces = [
+    {
+      name: 'Pandav Leni',
+      distance: '45 km',
+      time: '1 hour',
+      description: 'Ancient Buddhist caves dating back to 1st century BC, showcasing remarkable rock-cut architecture.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Buddhist caves', 'Ancient architecture', 'Historical site', 'Rock-cut caves']
+    },
+    {
+      name: 'Sita Gufa',
+      distance: '50 km',
+      time: '1.2 hours',
+      description: 'Sacred cave associated with Ramayana, believed to be where Sita stayed during her exile period.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Religious site', 'Ramayana connection', 'Sacred cave', 'Spiritual significance']
+    },
+    {
+      name: 'Trimbakeshwar Jyotirling Mandir',
+      distance: '35 km',
+      time: '50 mins',
+      description: 'One of the 12 Jyotirlingas of Lord Shiva, ancient temple with significant religious importance.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Jyotirling', 'Ancient temple', 'Religious pilgrimage', 'Shiva temple']
+    },
+    {
+      name: 'Ramkund',
+      distance: '48 km',
+      time: '1.1 hours',
+      description: 'Sacred bathing ghat on Godavari river where devotees perform religious ceremonies and rituals.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Sacred bathing ghat', 'Godavari river', 'Religious ceremonies', 'Pilgrimage site']
+    },
+    {
+      name: 'Harihar Fort',
+      distance: '60 km',
+      time: '1.5 hours',
+      description: 'Triangular fort famous for its steep rock-cut steps and panoramic views from the summit.',
+      image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Triangular fort', 'Rock-cut steps', 'Adventure trekking', 'Panoramic views']
+    },
+    {
+      name: 'Sula Vineyards',
+      distance: '55 km',
+      time: '1.3 hours',
+      description: 'India\'s leading winery offering premium wine tasting experiences and vineyard tours.',
+      image: 'https://images.unsplash.com/photo-1506377872008-6645d6258816?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Premium wines', 'Wine tasting', 'Vineyard tours', 'Fine dining']
+    },
+    {
+      name: 'Sundar Narayan Mandir',
+      distance: '47 km',
+      time: '1 hour',
+      description: 'Beautiful temple dedicated to Lord Vishnu, known for its architectural beauty and peaceful atmosphere.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Vishnu temple', 'Beautiful architecture', 'Peaceful atmosphere', 'Religious site']
+    },
+    {
+      name: 'Panchvati',
+      distance: '50 km',
+      time: '1.2 hours',
+      description: 'Sacred place mentioned in Ramayana, believed to be where Lord Rama spent his exile period.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Ramayana site', 'Sacred place', 'Historical significance', 'Religious importance']
+    },
+    {
+      name: 'Deolali Camp',
+      distance: '52 km',
+      time: '1.2 hours',
+      description: 'Historic military cantonment town known for its pleasant climate and colonial architecture.',
+      image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Military cantonment', 'Colonial architecture', 'Pleasant climate', 'Historical town']
+    },
+    {
+      name: 'Anjeneri',
+      distance: '58 km',
+      time: '1.4 hours',
+      description: 'Birthplace of Lord Hanuman, offering trekking opportunities and religious significance.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Hanuman birthplace', 'Trekking', 'Religious site', 'Mountain views']
+    },
+    {
+      name: 'Bramhagiri',
+      distance: '40 km',
+      time: '55 mins',
+      description: 'Source of river Godavari, sacred hill with temples and natural beauty.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Godavari source', 'Sacred hill', 'Temples', 'Natural beauty']
+    },
+    {
+      name: 'Swami Narayan Temple',
+      distance: '49 km',
+      time: '1.1 hours',
+      description: 'Beautiful modern temple with intricate carvings and peaceful spiritual atmosphere.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Modern temple', 'Intricate carvings', 'Spiritual atmosphere', 'Beautiful architecture']
+    },
+    {
+      name: 'Durgawadi Waterfall',
+      distance: '42 km',
+      time: '1 hour',
+      description: 'Scenic waterfall surrounded by dense forest, perfect for nature lovers and photography.',
+      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Scenic waterfall', 'Dense forest', 'Nature photography', 'Trekking']
+    },
+    {
+      name: 'Someshwar Temple',
+      distance: '46 km',
+      time: '1 hour',
+      description: 'Ancient Shiva temple with beautiful architecture located on the banks of Godavari river.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Ancient Shiva temple', 'Godavari banks', 'Beautiful architecture', 'Religious site']
+    },
+    {
+      name: 'Gangapur Dam',
+      distance: '65 km',
+      time: '1.5 hours',
+      description: 'Large reservoir with beautiful surroundings, popular for picnics and water sports.',
+      image: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80',
+      highlights: ['Large reservoir', 'Water sports', 'Picnic spot', 'Scenic surroundings']
+    },
+    {
+      name: 'Muktidham Mandir',
+      distance: '51 km',
+      time: '1.2 hours',
+      description: 'White marble temple complex with replicas of all major pilgrimage sites of India.',
+      image: 'https://images.unsplash.com/photo-1580418827493-f2b22c0a76cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      highlights: ['Marble temple', 'Pilgrimage replicas', 'Beautiful complex', 'Religious significance']
     }
   ];
 
   return (
     <div className="min-h-screen bg-ivory">
       <Navbar />
+      <FloatingContact />
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 relative overflow-hidden">
@@ -113,7 +243,7 @@ const Attractions = () => {
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
-            Explore Igatpuri
+            Explore Around Igatpuri
           </h1>
           <p className="text-xl text-ivory/90 max-w-3xl mx-auto mb-8">
             Discover the natural wonders, spiritual destinations, and cultural treasures surrounding Vintage Valley Resort
@@ -125,76 +255,135 @@ const Attractions = () => {
         </div>
       </section>
 
-      {/* Attractions Section */}
+      {/* Igatpuri Places Section */}
       <section className="section-padding">
-        <div className="max-w-7xl mx-auto space-y-16">
-          {attractions.map((category, categoryIndex) => (
-            <div key={categoryIndex}>
-              <div className="text-center mb-12">
-                <div className="inline-flex items-center space-x-3 mb-4">
-                  <div className={`bg-gradient-to-br ${category.color} rounded-full p-3`}>
-                    <category.icon className="h-8 w-8 text-charcoal" />
-                  </div>
-                  <h2 className="font-playfair text-4xl font-bold text-charcoal">
-                    {category.category}
-                  </h2>
-                </div>
-              </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-playfair text-4xl font-bold text-charcoal mb-4">
+              Tourist Places [Igatpuri]
+            </h2>
+            <p className="text-xl text-charcoal/80">Discover nearby attractions around Igatpuri</p>
+          </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                {category.places.map((place, placeIndex) => (
-                  <div key={placeIndex} className="bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {igatpuriPlaces.map((place, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group h-full">
                     <div className="relative overflow-hidden">
                       <img
                         src={place.image}
                         alt={place.name}
-                        className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                       <div className="absolute top-4 right-4 flex space-x-2">
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
                           <MapPin className="h-4 w-4 text-charcoal" />
-                          <span className="text-charcoal font-medium text-sm">{place.distance}</span>
+                          <span className="text-charcoal font-medium text-xs">{place.distance}</span>
                         </div>
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
                           <Clock className="h-4 w-4 text-charcoal" />
-                          <span className="text-charcoal font-medium text-sm">{place.time}</span>
+                          <span className="text-charcoal font-medium text-xs">{place.time}</span>
                         </div>
                       </div>
                     </div>
 
-                    <div className="p-8">
-                      <h3 className="font-playfair text-2xl font-bold text-charcoal mb-4">
+                    <div className="p-6">
+                      <h3 className="font-playfair text-xl font-bold text-charcoal mb-3">
                         {place.name}
                       </h3>
-                      <p className="text-charcoal/80 leading-relaxed mb-6">
+                      <p className="text-charcoal/80 text-sm leading-relaxed mb-4">
                         {place.description}
                       </p>
 
-                      <div className="grid grid-cols-2 gap-2 mb-6">
+                      <div className="grid grid-cols-2 gap-1 mb-4">
                         {place.highlights.map((highlight, highlightIndex) => (
                           <div key={highlightIndex} className="flex items-center space-x-2">
-                            <div className="w-2 h-2 bg-gold rounded-full" />
-                            <span className="text-charcoal/70 text-sm">{highlight}</span>
+                            <div className="w-1.5 h-1.5 bg-gold rounded-full" />
+                            <span className="text-charcoal/70 text-xs">{highlight}</span>
                           </div>
                         ))}
                       </div>
 
-                      <div className="flex space-x-4">
-                        <button className="bg-gold text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200 flex items-center space-x-2">
-                          <ExternalLink className="h-4 w-4" />
-                          <span>Open in Maps</span>
-                        </button>
-                        <button className="border-2 border-charcoal text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-ivory transition-colors duration-200">
-                          Get Directions
-                        </button>
-                      </div>
+                      <button className="w-full bg-gold text-charcoal px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2">
+                        <ExternalLink className="h-3 w-3" />
+                        <span>Get Directions</span>
+                      </button>
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          ))}
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+      </section>
+
+      {/* Nashik Places Section */}
+      <section className="section-padding bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-playfair text-4xl font-bold text-charcoal mb-4">
+              Tourist Places [Nashik]
+            </h2>
+            <p className="text-xl text-charcoal/80">Explore famous destinations in Nashik</p>
+          </div>
+
+          <Carousel className="w-full">
+            <CarouselContent>
+              {nashikPlaces.map((place, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <div className="bg-ivory rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group h-full">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={place.image}
+                        alt={place.name}
+                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
+                      <div className="absolute top-4 right-4 flex space-x-2">
+                        <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
+                          <MapPin className="h-4 w-4 text-charcoal" />
+                          <span className="text-charcoal font-medium text-xs">{place.distance}</span>
+                        </div>
+                        <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
+                          <Clock className="h-4 w-4 text-charcoal" />
+                          <span className="text-charcoal font-medium text-xs">{place.time}</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6">
+                      <h3 className="font-playfair text-xl font-bold text-charcoal mb-3">
+                        {place.name}
+                      </h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed mb-4">
+                        {place.description}
+                      </p>
+
+                      <div className="grid grid-cols-2 gap-1 mb-4">
+                        {place.highlights.map((highlight, highlightIndex) => (
+                          <div key={highlightIndex} className="flex items-center space-x-2">
+                            <div className="w-1.5 h-1.5 bg-gold rounded-full" />
+                            <span className="text-charcoal/70 text-xs">{highlight}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      <button className="w-full bg-charcoal text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-charcoal/80 transition-colors duration-200 flex items-center justify-center space-x-2">
+                        <ExternalLink className="h-3 w-3" />
+                        <span>Get Directions</span>
+                      </button>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 

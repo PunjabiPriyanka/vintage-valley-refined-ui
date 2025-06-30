@@ -1,6 +1,7 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingContact from '@/components/FloatingContact';
 import { Wifi, Car, Tv, Bath, Users, Bed, Mountain, Coffee } from 'lucide-react';
 import { useState } from 'react';
 
@@ -36,6 +37,58 @@ const Rooms = () => {
     },
     {
       id: 2,
+      title: 'Skyline Deluxe',
+      subtitle: 'Elevated Comfort with Panoramic Views',
+      images: [
+        'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80',
+        'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80'
+      ],
+      description: 'Located along the edge line of each floor, these rooms offer sweeping skyline views and elevated comfort. Designed for guests who appreciate a serene atmosphere with panoramic visibility. Ideal for couples and leisure travelers seeking a premium stay with a view.',
+      capacity: '2 Adults',
+      bedType: 'King Size Bed',
+      size: '500 sq ft',
+      pricing: {
+        weekday: '₹4,000',
+        weekend: '₹5,000'
+      },
+      amenities: [
+        { icon: Wifi, name: 'High-Speed WiFi' },
+        { icon: Car, name: 'Complimentary Parking' },
+        { icon: Tv, name: 'Smart TV' },
+        { icon: Bath, name: 'Luxury Bathroom' },
+        { icon: Mountain, name: 'Skyline Views' },
+        { icon: Coffee, name: 'Tea/Coffee Maker' }
+      ]
+    },
+    {
+      id: 3,
+      title: 'Deluxe Edge View',
+      subtitle: 'Corner Privacy with Scenic Visibility',
+      images: [
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+        'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+        'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80'
+      ],
+      description: 'Rooms with stunning front-facing views, offering elevated comfort and a refined aesthetic. Positioned at the corner edge of each floor for enhanced privacy and scenic visibility.',
+      capacity: '2 Adults',
+      bedType: 'King Size Bed',
+      size: '480 sq ft',
+      pricing: {
+        weekday: '₹4,200',
+        weekend: '₹5,200'
+      },
+      amenities: [
+        { icon: Wifi, name: 'High-Speed WiFi' },
+        { icon: Car, name: 'Complimentary Parking' },
+        { icon: Tv, name: 'Smart TV' },
+        { icon: Bath, name: 'Premium Bathroom' },
+        { icon: Mountain, name: 'Edge Views' },
+        { icon: Coffee, name: 'Mini Bar' }
+      ]
+    },
+    {
+      id: 4,
       title: 'Lotus Family Suite',
       subtitle: 'Spacious Luxury for Families',
       images: [
@@ -61,7 +114,7 @@ const Rooms = () => {
       ]
     },
     {
-      id: 3,
+      id: 5,
       title: 'Presidential Sky Villa',
       subtitle: 'Ultimate Luxury Experience',
       images: [
@@ -91,6 +144,7 @@ const Rooms = () => {
   return (
     <div className="min-h-screen bg-ivory">
       <Navbar />
+      <FloatingContact />
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-charcoal to-charcoal/90">

@@ -1,9 +1,14 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FloatingContact from '@/components/FloatingContact';
+import FacilityModal from '@/components/FacilityModal';
 import { Waves, Utensils, Dumbbell, TreePine, Gamepad2, Sparkles, Users, Camera } from 'lucide-react';
+import { useState } from 'react';
 
 const Facilities = () => {
+  const [selectedFacility, setSelectedFacility] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const facilities = [
     {
       id: 1,
@@ -71,9 +76,20 @@ const Facilities = () => {
     }
   ];
 
+  const handleFacilityClick = (facility: any) => {
+    setSelectedFacility(facility);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedFacility(null);
+  };
+
   return (
     <div className="min-h-screen bg-ivory">
       <Navbar />
+      <FloatingContact />
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-charcoal to-charcoal/90">
@@ -95,7 +111,8 @@ const Facilities = () => {
               <div
                 key={facility.id}
                 className={`group ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} 
-                  bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500`}
+                  bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 cursor-pointer`}
+                onClick={() => handleFacilityClick(facility)}
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -216,6 +233,15 @@ const Facilities = () => {
           </div>
         </div>
       </section>
+
+      {/* Facility Modal */}
+      {selectedFacility && (
+        <FacilityModal
+          facility={selectedFacility}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
+      )}
 
       <Footer />
     </div>
