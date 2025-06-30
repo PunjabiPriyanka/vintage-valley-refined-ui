@@ -15,7 +15,7 @@ const Facilities = () => {
       title: 'Infinity Pool',
       icon: Waves,
       description: 'Stunning infinity pool overlooking the valley with crystal-clear waters and panoramic mountain views. Perfect for relaxation and memorable moments.',
-      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://drive.google.com/uc?export=view&id=1yZq0n6UE9ee0tTUoEurBrEXTN7m-oaWl',
       features: ['Heated water', 'Pool bar service', 'Valley views', 'Sunrise sessions']
     },
     {
@@ -23,7 +23,7 @@ const Facilities = () => {
       title: 'Banquet Lawn',
       icon: Users,
       description: 'Elegant outdoor venue perfect for weddings, corporate events, and celebrations. Set against the backdrop of lush greenery and mountain vistas.',
-      image: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2098&q=80',
+      image: 'https://drive.google.com/uc?export=view&id=14Mpjqee5uRPe66w-gCBR6Nz0dLFMeTGb',
       features: ['Capacity 200+ guests', 'Professional lighting', 'Catering services', 'Event planning']
     },
     {
@@ -31,7 +31,7 @@ const Facilities = () => {
       title: 'Café Lounge',
       icon: Utensils,
       description: 'Premium dining experience featuring local and international cuisine. Our chefs create culinary masterpieces using fresh, locally sourced ingredients.',
-      image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://drive.google.com/uc?export=view&id=1Zp7rFx2l8Av-e3B8fMrS1LsR3mw0mV9h',
       features: ['Multi-cuisine menu', 'Fine dining', 'Outdoor seating', 'Special dietary options']
     },
     {
@@ -63,7 +63,7 @@ const Facilities = () => {
       title: 'Nature Trails',
       icon: TreePine,
       description: 'Guided nature walks through pristine landscapes and scenic trails. Discover local flora and fauna while connecting with the natural beauty of Igatpuri.',
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80',
+      image: 'https://drive.google.com/uc?export=view&id=1zp_LGeXePT5hAuknpIrITwMR14WSLBxp',
       features: ['Guided tours', 'Bird watching', 'Photography spots', 'Sunrise/sunset walks']
     },
     {
@@ -71,7 +71,7 @@ const Facilities = () => {
       title: 'Conference Hall',
       icon: Camera,
       description: 'Professional meeting spaces equipped with modern technology for corporate events and business gatherings in a serene environment.',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
+      image: 'https://drive.google.com/uc?export=view&id=1mVeWhdDiZjOq4Lxsx7CGdpZnEidG5KHw',
       features: ['AV equipment', 'High-speed internet', 'Catering services', 'Professional setup']
     }
   ];

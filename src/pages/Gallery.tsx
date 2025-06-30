@@ -18,22 +18,22 @@ const Gallery = () => {
   ];
 
   const galleryImages = [
-    { id: 1, category: 'rooms', src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Deluxe Studio Suite' },
-    { id: 2, category: 'facilities', src: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Infinity Pool' },
-    { id: 3, category: 'nature', src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Mountain Views' },
-    { id: 4, category: 'dining', src: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Fine Dining Restaurant' },
-    { id: 5, category: 'rooms', src: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80', alt: 'Lotus Family Suite' },
-    { id: 6, category: 'facilities', src: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Spa Treatment Room' },
-    { id: 7, category: 'events', src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2098&q=80', alt: 'Wedding Setup' },
-    { id: 8, category: 'nature', src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2071&q=80', alt: 'Nature Trail' },
-    { id: 9, category: 'rooms', src: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Presidential Suite' },
-    { id: 10, category: 'facilities', src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Fitness Center' },
-    { id: 11, category: 'dining', src: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80', alt: 'Gourmet Cuisine' },
-    { id: 12, category: 'nature', src: 'https://images.unsplash.com/photo-1464822759844-d150ad6d1c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Sunset Views' },
-    { id: 13, category: 'events', src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80', alt: 'Corporate Event' },
-    { id: 14, category: 'facilities', src: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Game Room' },
-    { id: 15, category: 'nature', src: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80', alt: 'Valley Landscape' },
-    { id: 16, category: 'dining', src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80', alt: 'Outdoor Dining' }
+    { id: 1, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1WGmvfu9_IGSDglVT1R3r0D3I0tJltcHl', alt: 'Deluxe Studio Suite' },
+    { id: 2, category: 'facilities', src: 'https://drive.google.com/uc?export=view&id=1yZq0n6UE9ee0tTUoEurBrEXTN7m-oaWl', alt: 'Infinity Pool' },
+    { id: 3, category: 'nature', src: 'https://drive.google.com/uc?export=view&id=1zp_LGeXePT5hAuknpIrITwMR14WSLBxp', alt: 'Nature Trail' },
+    { id: 4, category: 'dining', src: 'https://drive.google.com/uc?export=view&id=1Zp7rFx2l8Av-e3B8fMrS1LsR3mw0mV9h', alt: 'Fine Dining Restaurant' },
+    { id: 5, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1ugUKNQlDcE2LF3qgFUJfdXWblYsLY576', alt: 'Lotus Family Suite' },
+    { id: 6, category: 'facilities', src: 'https://drive.google.com/uc?export=view&id=1JiUIQ_F9yaaQVyPt-GlzEOXXb5lj3yMR', alt: 'Pool Area' },
+    { id: 7, category: 'events', src: 'https://drive.google.com/uc?export=view&id=14Mpjqee5uRPe66w-gCBR6Nz0dLFMeTGb', alt: 'Banquet Lawn' },
+    { id: 8, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1cSkStg0LVVB9zLM1diw9OpserECNjrZD', alt: 'Skyline Deluxe' },
+    { id: 9, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1xBxPQBNqujFMO_2JSwmNUCDehaKjg5N3', alt: 'Deluxe Edge View' },
+    { id: 10, category: 'facilities', src: 'https://drive.google.com/uc?export=view&id=1mVeWhdDiZjOq4Lxsx7CGdpZnEidG5KHw', alt: 'Conference Hall' },
+    { id: 11, category: 'dining', src: 'https://drive.google.com/uc?export=view&id=1Sq3quhmY0Ucmo8Z9YItAko_93XIuZDnX', alt: 'Gourmet Cuisine' },
+    { id: 12, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1nm1eX3WTee6rYCH0XahxLdi12MEQ1O25', alt: 'Presidential Sky Villa' },
+    { id: 13, category: 'events', src: 'https://drive.google.com/uc?export=view&id=1glBk_M8G_jgyxgJN94CzZLa_OtcKxZtl', alt: 'Event Setup' },
+    { id: 14, category: 'facilities', src: 'https://drive.google.com/uc?export=view&id=1m9f9p1uOdWoR1FlWm1FvmQwzwo02vlM9', alt: 'Pool Facilities' },
+    { id: 15, category: 'rooms', src: 'https://drive.google.com/uc?export=view&id=1HXLnyjm_0Hov6klnufM_P95JsysjUOCp', alt: 'Suite Interior' },
+    { id: 16, category: 'dining', src: 'https://drive.google.com/uc?export=view&id=141fgYORXen372hMxQA6RwvvTTg4g6HLX', alt: 'Dining Experience' }
   ];
 
   const filteredImages = selectedCategory === 'all' 
