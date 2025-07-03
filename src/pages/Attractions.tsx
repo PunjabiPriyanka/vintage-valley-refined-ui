@@ -96,13 +96,32 @@ const Attractions = () => {
     }
   ];
 
+  const nashikImages = [
+    'https://images.app.goo.gl/TySos6pNxd2pYCGd7',
+    'https://images.app.goo.gl/pysWQ4J39q2DoG1U6',
+    'https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F12%2FTrimbakeshwar_Temple-Nashik-Maharashtra-1.jpg&tbnid=ebPWg01uYIqD1M&vet=1&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTrimbakeshwar_Shiva_Temple&docid=Khj0iVQELqqlPM&w=6000&h=4000&hl=en-IN&source=sh%2Fx%2Fim%2Fm1%2F4&kgs=6dcc01fceec38801',
+    'https://images.app.goo.gl/LPyVAKu79TKPm6Ej6',
+    'https://images.app.goo.gl/pbq6xQevQVdhvGBN8',
+    'https://images.app.goo.gl/ss41uqGjkC31a7RY6',
+    'https://images.app.goo.gl/c8Bc4dA4JU8kuuLw8',
+    'https://images.app.goo.gl/jFxTt7TmekQJBHhW7',
+    'https://images.app.goo.gl/L4MbU1QrZsywJnU36',
+    'https://images.app.goo.gl/d1SqcFmDCKWqfH3Q7',
+    'https://images.app.goo.gl/LZRYphtraPszRb5P8',
+    'https://images.app.goo.gl/FqevUA7N4CwQHC2R6',
+    'https://images.app.goo.gl/UWDgDug69ZyKefjy9',
+    'https://images.app.goo.gl/HtpMSTntSQEYxPZWA',
+    'https://images.app.goo.gl/wCe3HwT2jiYhvsgEA',
+    'https://images.app.goo.gl/drVCzTFXFtptjsP27',
+  ];
+
   const nashikPlaces = [
     {
       name: 'Pandav Leni',
       distance: '45 km',
       time: '1 hour',
       description: 'Ancient Buddhist caves dating back to 1st century BC, showcasing remarkable rock-cut architecture.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Pandavleni_Caves_Nashik.jpg',
+      images: [nashikImages[0], nashikImages[1]],
       highlights: ['Buddhist caves', 'Ancient architecture', 'Historical site', 'Rock-cut caves']
     },
     {
@@ -110,7 +129,7 @@ const Attractions = () => {
       distance: '50 km',
       time: '1.2 hours',
       description: 'Sacred cave associated with Ramayana, believed to be where Sita stayed during her exile period.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Pandavleni_Caves_Nashik.jpg',
+      images: [nashikImages[2], nashikImages[3]],
       highlights: ['Religious site', 'Ramayana connection', 'Sacred cave', 'Spiritual significance']
     },
     {
@@ -118,7 +137,7 @@ const Attractions = () => {
       distance: '35 km',
       time: '50 mins',
       description: 'One of the 12 Jyotirlingas of Lord Shiva, ancient temple with significant religious importance.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[4], nashikImages[5]],
       highlights: ['Jyotirling', 'Ancient temple', 'Religious pilgrimage', 'Shiva temple']
     },
     {
@@ -126,7 +145,7 @@ const Attractions = () => {
       distance: '48 km',
       time: '1.1 hours',
       description: 'Sacred bathing ghat on Godavari river where devotees perform religious ceremonies and rituals.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[6], nashikImages[7]],
       highlights: ['Sacred bathing ghat', 'Godavari river', 'Religious ceremonies', 'Pilgrimage site']
     },
     {
@@ -134,7 +153,7 @@ const Attractions = () => {
       distance: '60 km',
       time: '1.5 hours',
       description: 'Triangular fort famous for its steep rock-cut steps and panoramic views from the summit.',
-      image: 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Harihar_Fort_Nashik.jpg',
+      images: [nashikImages[8], nashikImages[9]],
       highlights: ['Triangular fort', 'Rock-cut steps', 'Adventure trekking', 'Panoramic views']
     },
     {
@@ -142,7 +161,7 @@ const Attractions = () => {
       distance: '55 km',
       time: '1.3 hours',
       description: 'India\'s leading winery offering premium wine tasting experiences and vineyard tours.',
-      image: 'https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[10], nashikImages[11]],
       highlights: ['Premium wines', 'Wine tasting', 'Vineyard tours', 'Fine dining']
     },
     {
@@ -150,7 +169,7 @@ const Attractions = () => {
       distance: '47 km',
       time: '1 hour',
       description: 'Beautiful temple dedicated to Lord Vishnu, known for its architectural beauty and peaceful atmosphere.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[12]],
       highlights: ['Vishnu temple', 'Beautiful architecture', 'Peaceful atmosphere', 'Religious site']
     },
     {
@@ -158,7 +177,7 @@ const Attractions = () => {
       distance: '50 km',
       time: '1.2 hours',
       description: 'Sacred place mentioned in Ramayana, believed to be where Lord Rama spent his exile period.',
-      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[13]],
       highlights: ['Ramayana site', 'Sacred place', 'Historical significance', 'Religious importance']
     },
     {
@@ -166,7 +185,7 @@ const Attractions = () => {
       distance: '52 km',
       time: '1.2 hours',
       description: 'Historic military cantonment town known for its pleasant climate and colonial architecture.',
-      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[14]],
       highlights: ['Military cantonment', 'Colonial architecture', 'Pleasant climate', 'Historical town']
     },
     {
@@ -174,7 +193,7 @@ const Attractions = () => {
       distance: '58 km',
       time: '1.4 hours',
       description: 'Birthplace of Lord Hanuman, offering trekking opportunities and religious significance.',
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+      images: [nashikImages[15]],
       highlights: ['Hanuman birthplace', 'Trekking', 'Religious site', 'Mountain views']
     },
     {
@@ -327,11 +346,21 @@ const Attractions = () => {
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="bg-ivory rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group h-full">
                     <div className="relative overflow-hidden">
-                      <img
-                        src={place.image}
-                        alt={place.name}
-                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
+                      <Carousel className="w-full">
+                        <CarouselContent>
+                          {place.images.map((img, imgIdx) => (
+                            <CarouselItem key={imgIdx}>
+                              <img
+                                src={img}
+                                alt={place.name + ' image ' + (imgIdx + 1)}
+                                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                              />
+                            </CarouselItem>
+                          ))}
+                        </CarouselContent>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                      </Carousel>
                       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                       <div className="absolute top-4 right-4 flex space-x-2">
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
