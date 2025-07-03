@@ -246,6 +246,15 @@ const Attractions = () => {
     }
   ];
 
+  // Update the rest of the nashikPlaces to ensure all have an images array
+  const updatedNashikPlaces = [
+    ...nashikPlaces.slice(0, 10),
+    ...nashikPlaces.slice(10).map(place => ({
+      ...place,
+      images: place.images || (place.image ? [place.image] : []),
+    })),
+  ];
+
   return (
     <div className="min-h-screen bg-ivory">
       <Navbar />
@@ -342,25 +351,31 @@ const Attractions = () => {
 
           <Carousel className="w-full">
             <CarouselContent>
-              {nashikPlaces.map((place, index) => (
+              {updatedNashikPlaces.map((place, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="bg-ivory rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group h-full">
                     <div className="relative overflow-hidden">
-                      <Carousel className="w-full">
-                        <CarouselContent>
-                          {place.images.map((img, imgIdx) => (
-                            <CarouselItem key={imgIdx}>
-                              <img
-                                src={img}
-                                alt={place.name + ' image ' + (imgIdx + 1)}
-                                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                              />
-                            </CarouselItem>
-                          ))}
-                        </CarouselContent>
-                        <CarouselPrevious />
-                        <CarouselNext />
-                      </Carousel>
+                      {Array.isArray(place.images) && place.images.length > 0 ? (
+                        <Carousel className="w-full">
+                          <CarouselContent>
+                            {place.images.map((img, imgIdx) => (
+                              <CarouselItem key={imgIdx}>
+                                <img
+                                  src={img}
+                                  alt={place.name + ' image ' + (imgIdx + 1)}
+                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                              </CarouselItem>
+                            ))}
+                          </CarouselContent>
+                          <CarouselPrevious />
+                          <CarouselNext />
+                        </Carousel>
+                      ) : (
+                        <div className="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                          No image available
+                        </div>
+                      )}
                       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                       <div className="absolute top-4 right-4 flex space-x-2">
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
