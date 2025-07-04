@@ -1,4 +1,3 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
@@ -274,39 +273,6 @@ const Index = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contact CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-gold to-bronze">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-charcoal mb-6">
-            Ready for Your Luxury Escape?
-          </h2>
-          <p className="text-xl text-charcoal/80 mb-10 leading-relaxed">
-            Contact our hospitality team to craft your perfect getaway experience
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a 
-              href="tel:9371179888"
-              className="flex items-center gap-3 bg-charcoal text-ivory px-8 py-4 rounded-full font-semibold text-lg hover:bg-charcoal/90 transition-all duration-300 transform hover:scale-105"
-            >
-              <Phone className="h-5 w-5" />
-              Call Now
-            </a>
-            <a 
-              href="mailto:vintagevalleyresort@gmail.com"
-              className="flex items-center gap-3 border-2 border-charcoal text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-charcoal hover:text-ivory transition-all duration-300"
-            >
-              <Mail className="h-5 w-5" />
-              Email Us
-            </a>
-            <button className="flex items-center gap-3 bg-white/20 backdrop-blur-sm text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 transition-all duration-300">
-              <Calendar className="h-5 w-5" />
-              Check Availability
-            </button>
           </div>
         </div>
       </section>
