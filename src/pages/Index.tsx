@@ -93,31 +93,6 @@ const Index = () => {
       <Navbar />
       <Hero />
 
-      {/* Stats Section */}
-      <section className="py-20 bg-charcoal relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/95 to-charcoal"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { number: '50+', label: 'Luxury Suites', icon: Crown },
-              { number: '5★', label: 'Premium Rating', icon: Star },
-              { number: '1000+', label: 'Happy Guests', icon: Users },
-              { number: '15+', label: 'Years Excellence', icon: Award }
-            ].map((stat, index) => (
-              <div key={index} className="group">
-                <div className="flex justify-center mb-4">
-                  <div className="p-4 bg-gold/10 rounded-full group-hover:bg-gold/20 transition-colors duration-300">
-                    <stat.icon className="h-8 w-8 text-gold" />
-                  </div>
-                </div>
-                <div className="text-4xl font-playfair font-bold text-ivory mb-2">{stat.number}</div>
-                <div className="text-ivory/70 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Enhanced Amenities Section */}
       <section className="section-padding bg-white relative">
         <div className="absolute inset-0 bg-gradient-to-b from-white via-ivory/30 to-white"></div>
