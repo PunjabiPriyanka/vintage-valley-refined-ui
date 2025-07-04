@@ -97,22 +97,22 @@ const Attractions = () => {
   ];
 
   const nashikImages = [
-    'https://images.app.goo.gl/TySos6pNxd2pYCGd7',
-    'https://images.app.goo.gl/pysWQ4J39q2DoG1U6',
-    'https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F12%2FTrimbakeshwar_Temple-Nashik-Maharashtra-1.jpg&tbnid=ebPWg01uYIqD1M&vet=1&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTrimbakeshwar_Shiva_Temple&docid=Khj0iVQELqqlPM&w=6000&h=4000&hl=en-IN&source=sh%2Fx%2Fim%2Fm1%2F4&kgs=6dcc01fceec38801',
-    'https://images.app.goo.gl/LPyVAKu79TKPm6Ej6',
-    'https://images.app.goo.gl/pbq6xQevQVdhvGBN8',
-    'https://images.app.goo.gl/ss41uqGjkC31a7RY6',
-    'https://images.app.goo.gl/c8Bc4dA4JU8kuuLw8',
-    'https://images.app.goo.gl/jFxTt7TmekQJBHhW7',
-    'https://images.app.goo.gl/L4MbU1QrZsywJnU36',
-    'https://images.app.goo.gl/d1SqcFmDCKWqfH3Q7',
-    'https://images.app.goo.gl/LZRYphtraPszRb5P8',
-    'https://images.app.goo.gl/FqevUA7N4CwQHC2R6',
-    'https://images.app.goo.gl/UWDgDug69ZyKefjy9',
-    'https://images.app.goo.gl/HtpMSTntSQEYxPZWA',
-    'https://images.app.goo.gl/wCe3HwT2jiYhvsgEA',
-    'https://images.app.goo.gl/drVCzTFXFtptjsP27',
+    'https://s7ap1.scene7.com/is/image/incredibleindia/pandavleni-caves-nashik-maharashtra-3-attr-hero?qlt=82&ts=1726669905429',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQURifk4M9KcBDh6hrjHeYGWSzTimYXt9Hm006L5ofatFhwxLnvvug1kIehEJho8OpeTY&usqp=CAU',
+    'https://upload.wikimedia.org/wikipedia/commons/1/12/Trimbakeshwar_Temple-Nashik-Maharashtra-1.jpg',
+    'https://www.trawell.in/admin/images/upload/131652759Nashik_Ram_Kund_Main.jpg',
+    'https://static2.tripoto.com/media/filter/tst/img/269307/TripDocument/1535626254_38412026_10211522756335247_6376961557548498944_o.jpg',
+    'https://www.mistay.in/travel-blog/content/images/2022/12/sula6.jpg',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/89/c0/d5/full-view-of-the-temple.jpg?w=1200&h=-1&s=1',
+    'https://s7ap1.scene7.com/is/image/incredibleindia/1-panchvati-nashik-maharashtra-attr-hero?qlt=82&ts=1726669901222',
+    'https://www.connectingtraveller.com/images/localtip/1635238546images%20(48).jpeg',
+    'https://s7ap1.scene7.com/is/image/incredibleindia/1-mangi-tungi-hills-nashik-maharashtra-attr-nearby?qlt=82&ts=1726675287757',
+    'https://res.cloudinary.com/kmadmin/image/upload/v1723636434/kiomoi/Brahmagiri_Hill_3581.jpg',
+    'https://images.news18.com/ibnlive/uploads/2022/09/untitled-design-2022-09-26t230858.841.jpg',
+    'https://storage.googleapis.com/goa-app-12a91.appspot.com/2024-08-01T17%3A02%3A15.090ZDugarwadi-Waterfalls3.webp?GoogleAccessId=firebase-adminsdk-zeqcj%40goa-app-12a91.iam.gserviceaccount.com&Expires=16447017600&Signature=brGFdl4p4T6WWMXSBn7iFKzGn1pMYNE%2FTeHywIzQHC%2BgxQ0FoqNt1DG8nfNg2JuXHA3exoRssFxJ2Sntdpteh2hVJRyUN9yHKMn4DC7bI%2FQuKcQ5DMizZJO%2FKVCPxXBOtY4%2F5%2FiwJRNYBS19xJ70OteBDblCm8MLBP9PFIN5eZDBHvjS%2B3OMoJWbF%2B%2Fq4wWCN%2FwVOI6yRkQcZ6u1S1JOmg91b94gV9CX1txZjholswY188rXZf7vK3w%2FHSgA9N%2FrVHYSU9t1aAV7phNAldEndYB57i7YiVKeV%2BESXlXhSFPtRRJ0ff9gq27RBWtF%2F94QMs54zMRs8oFj6LMtXQRFcw%3D%3D',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/d3/9f/b1/someshwar-falls.jpg?w=1200&h=-1&s=1',
+    'https://s7ap1.scene7.com/is/image/incredibleindia/gangapur-dam-nashik-maharashtra-1-attr-hero?qlt=82&ts=1726669944174',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/98/58/03/muktidham-temple.jpg?w=1200&h=1200&s=1',
   ];
 
   const nashikPlaces = [
@@ -246,14 +246,11 @@ const Attractions = () => {
     }
   ];
 
-  // Update the rest of the nashikPlaces to ensure all have an images array
-  const updatedNashikPlaces = [
-    ...nashikPlaces.slice(0, 10),
-    ...nashikPlaces.slice(10).map(place => ({
-      ...place,
-      images: place.images || (place.image ? [place.image] : []),
-    })),
-  ];
+  // Assign one image per Nashik place for the first 16 places
+  const nashikPlacesWithImages = nashikPlaces.map((place, idx) => ({
+    ...place,
+    images: [nashikImages[idx] || (place.images ? place.images[0] : place.image)].filter(Boolean),
+  }));
 
   return (
     <div className="min-h-screen bg-ivory">
@@ -351,7 +348,7 @@ const Attractions = () => {
 
           <Carousel className="w-full">
             <CarouselContent>
-              {updatedNashikPlaces.map((place, index) => (
+              {nashikPlacesWithImages.map((place, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="bg-ivory rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group h-full">
                     <div className="relative overflow-hidden">
