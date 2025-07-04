@@ -96,6 +96,31 @@ const Attractions = () => {
     }
   ];
 
+  const igatpuriImages = [
+    'https://www.vridhamma.org/sites/default/files/Dhammagiri5.jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVfWvmg22XwX6cXTfOnvL5xds0WQJ_ZOuVK-jnsDkAN3nfFmBK3Eybz_mntoWyruXWwk&usqp=CAU',
+    'https://bragpacker.com/wp-content/uploads/2018/09/bhandardara-244141_640.jpg',
+    'https://nomadsofindia.com/wp-content/uploads/2023/08/Tringalwadi-Fort-Entrance.jpg',
+    'https://bragpacker.com/wp-content/uploads/2018/09/bhandardara-244141_640.jpg',
+    'https://s7ap1.scene7.com/is/image/incredibleindia/igatpuri-waterfall-igatpuri-maharashtra-attr-hero-1?qlt=82&ts=1727351945189',
+    'https://photos.wikimapia.org/p/00/01/93/68/57_big.jpg',
+    'https://rainforestigatpuri.com/wp-content/uploads/2025/01/pexels-sonika-agarwal-1264788-5622042-scaled.jpg',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/21/1f/94/photo7jpg.jpg?w=1200&h=-1&s=1',
+    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e3/95/94/camel-valley.jpg?w=1200&h=-1&s=1',
+    'https://www.mumbaiorbit.in/assets/img/322e71bd88f4e164deb5f28d0df1d841%20(1).jpg',
+    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6fo4Z65kc09lbQXW18QtVObWuHeCklJAPKrbQGKrEz9o42DX-Mk3zi92F39mvtd9x2U&usqp=CAU',
+  ];
+
+  const igatpuriPlacesWithImages = igatpuriPlaces.map((place, idx) => ({
+    ...place,
+    images: Array.isArray((place as any).images)
+      ? (place as any).images
+      : [
+          (typeof igatpuriImages !== 'undefined' && igatpuriImages[idx]) ||
+          (place.image ? place.image : null)
+        ].filter(Boolean),
+  }));
+
   const nashikImages = [
     'https://s7ap1.scene7.com/is/image/incredibleindia/pandavleni-caves-nashik-maharashtra-3-attr-hero?qlt=82&ts=1726669905429',
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQURifk4M9KcBDh6hrjHeYGWSzTimYXt9Hm006L5ofatFhwxLnvvug1kIehEJho8OpeTY&usqp=CAU',
@@ -246,10 +271,15 @@ const Attractions = () => {
     }
   ];
 
-  // Assign one image per Nashik place for the first 16 places
+  // Ensure all nashikPlaces have an images array
   const nashikPlacesWithImages = nashikPlaces.map((place, idx) => ({
     ...place,
-    images: [nashikImages[idx] || (place.images ? place.images[0] : place.image)].filter(Boolean),
+    images: Array.isArray((place as any).images)
+      ? (place as any).images
+      : [
+          (typeof nashikImages !== 'undefined' && nashikImages[idx]) ||
+          (place.image ? place.image : null)
+        ].filter(Boolean),
   }));
 
   return (
@@ -282,15 +312,31 @@ const Attractions = () => {
 
           <Carousel className="w-full">
             <CarouselContent>
-              {igatpuriPlaces.map((place, index) => (
+              {igatpuriPlacesWithImages.map((place, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                   <div className="bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 group h-full">
                     <div className="relative overflow-hidden">
-                      <img
-                        src={place.image}
-                        alt={place.name}
-                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
+                      {Array.isArray(place.images) && place.images.length > 0 ? (
+                        <Carousel className="w-full">
+                          <CarouselContent>
+                            {place.images.map((img, imgIdx) => (
+                              <CarouselItem key={imgIdx}>
+                                <img
+                                  src={img}
+                                  alt={place.name + ' image ' + (imgIdx + 1)}
+                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                              </CarouselItem>
+                            ))}
+                          </CarouselContent>
+                          <CarouselPrevious />
+                          <CarouselNext />
+                        </Carousel>
+                      ) : (
+                        <div className="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-500">
+                          No image available
+                        </div>
+                      )}
                       <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
                       <div className="absolute top-4 right-4 flex space-x-2">
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
