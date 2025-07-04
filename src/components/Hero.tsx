@@ -1,4 +1,3 @@
-
 import { ChevronDown, Play } from 'lucide-react';
 import { useState } from 'react';
 
@@ -44,9 +43,8 @@ const Hero = () => {
         
         {/* Interactive CTA Section */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16 animate-fade-in delay-1000">
-          <button className="group relative bg-gradient-to-r from-green-600 to-green-700 text-white px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-500 transform hover:scale-105 hover:shadow-2xl">
+          <button className="group relative bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-lg overflow-hidden transition-all duration-500 transform hover:scale-105 hover:bg-white/10 hover:text-white">
             <span className="relative z-10">Reserve Your Escape</span>
-            <div className="absolute inset-0 bg-white/20 translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
           </button>
           
           <button className="text-white px-8 py-4 rounded-full font-medium text-lg border border-white/30 hover:bg-white/5 hover:text-white transition-all duration-300 backdrop-blur-sm">
