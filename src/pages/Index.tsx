@@ -34,7 +34,7 @@ const Index = () => {
   const rooms = [
     {
       title: 'Deluxe Studio Suite',
-      image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/deluxe-studio-suite-1.jpg',
       description: 'Elegant studio with modern amenities, private balcony, and stunning nature views',
       price: 'From ₹3,500',
       period: 'per night',
@@ -43,7 +43,7 @@ const Index = () => {
     },
     {
       title: 'Lotus Family Suite',
-      image: 'https://images.unsplash.com/photo-1566665797739-1674de7a421a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80',
+      image: '/images/lotus-family-suite-1.jpg',
       description: 'Spacious family accommodation with separate living area and premium comfort',
       price: 'From ₹6,000',
       period: 'per night',
@@ -52,7 +52,7 @@ const Index = () => {
     },
     {
       title: 'Presidential Sky Villa',
-      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/presidential-sky-villa-1.jpg',
       description: 'Ultimate luxury experience with panoramic valley views and premium services',
       price: 'From ₹7,000',
       period: 'per night',
