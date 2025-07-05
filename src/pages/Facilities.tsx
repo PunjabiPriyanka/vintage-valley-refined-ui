@@ -47,7 +47,7 @@ const Facilities = () => {
       title: 'Spa & Wellness',
       icon: Sparkles,
       description: 'World-class spa offering rejuvenating treatments and wellness therapies. Experience ultimate relaxation with our signature treatments and skilled therapists.',
-      image: '/images/infinity-pool-2.jpg',
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       features: ['Ayurvedic treatments', 'Couple therapy rooms', 'Aromatherapy', 'Wellness consultations']
     },
     {
@@ -55,7 +55,7 @@ const Facilities = () => {
       title: 'Fitness Studio',
       icon: Dumbbell,
       description: 'State-of-the-art fitness center equipped with modern equipment and personal training services. Maintain your fitness routine while enjoying nature views.',
-      image: '/images/infinity-pool-3.jpg',
+      image: 'https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D',
       features: ['Modern equipment', 'Personal training', 'Yoga classes', 'Outdoor workouts']
     },
     {
@@ -63,7 +63,7 @@ const Facilities = () => {
       title: 'Game Zone',
       icon: Gamepad2,
       description: 'Indoor and outdoor recreational activities for all ages. From traditional games to modern entertainment options, ensuring fun for the entire family.',
-      image: '/images/banquet-lawn-2.jpg',
+      image: 'https://plus.unsplash.com/premium_photo-1742944886085-a096b536af0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8OCUyMGJhbGwlMjBwb29sfGVufDB8fDB8fHww',
       features: ['Table tennis', 'Pool table', 'Board games', 'Outdoor sports']
     },
     {
