@@ -32,7 +32,26 @@ const Gallery = () => {
     { id: 13, category: 'rooms', src: '/images/presidential-sky-villa-1.jpg', alt: 'Presidential Sky Villa 1' },
     { id: 14, category: 'rooms', src: '/images/presidential-sky-villa-2.jpg', alt: 'Presidential Sky Villa 2' },
     { id: 15, category: 'rooms', src: '/images/presidential-sky-villa-3.jpg', alt: 'Presidential Sky Villa 3' },
-    { id: 16, category: 'facilities', src: '/images/infinity-pool-1.jpg', alt: 'Infinity Pool 1' }
+    { id: 16, category: 'facilities', src: '/images/infinity-pool-1.jpg', alt: 'Infinity Pool 1' },
+    { id: 17, category: 'facilities', src: '/images/banquet-lawn-1.jpg', alt: 'Banquet Lawn' },
+    { id: 18, category: 'facilities', src: '/images/cafe-lounge-1.jpg', alt: 'Café Lounge' },
+    { id: 19, category: 'facilities', src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', alt: 'Spa & Wellness' },
+    { id: 20, category: 'facilities', src: 'https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D', alt: 'Fitness Studio' },
+    { id: 21, category: 'facilities', src: 'https://plus.unsplash.com/premium_photo-1742944886085-a096b536af0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8OCUyMGJhbGwlMjBwb29sfGVufDB8fDB8fHww', alt: 'Game Zone' },
+    { id: 22, category: 'facilities', src: '/images/nature-trails-1.jpg', alt: 'Nature Trails' },
+    { id: 23, category: 'facilities', src: '/images/conference-hall-1.jpg', alt: 'Conference Hall' },
+    { id: 24, category: 'dining', src: '/images/dining-drinks-1.jpg', alt: 'Colorful Cocktails on Table' },
+    { id: 25, category: 'dining', src: '/images/dining-restaurant-1.jpg', alt: 'Restaurant Dining Area' },
+    { id: 26, category: 'dining', src: '/images/dining-drinks-2.jpg', alt: 'Assorted Drinks at Bar' },
+    { id: 27, category: 'dining', src: '/images/dining-rose-table.jpg', alt: 'Rose on Dining Table' },
+    { id: 28, category: 'nature', src: '/images/nature-balcony-view-1.jpg', alt: 'Balcony View of Greenery and Mist' },
+    { id: 29, category: 'nature', src: '/images/nature-pool-building-1.jpg', alt: 'Resort Building and Pool with Greenery' },
+    { id: 30, category: 'nature', src: '/images/nature-balcony-table-flowers.jpg', alt: 'Balcony Table with Flowers and Scenic View' },
+    { id: 31, category: 'nature', src: '/images/nature-playground-1.jpg', alt: 'Children Playground and Green Lawn' },
+    { id: 32, category: 'events', src: 'https://drive.google.com/file/d/18zm79yCf6VgXnrSXUywzimGmvLgwXeqA/view?usp=drive_link', alt: 'Event Photo 1' },
+    { id: 33, category: 'events', src: 'https://drive.google.com/file/d/1o_yo0EyNi2tWGvxgKnVMWoKxODCzO1HA/view?usp=drive_link', alt: 'Event Photo 2' },
+    { id: 34, category: 'events', src: 'https://drive.google.com/file/d/1dczQuWuhMT8tNqm4U8HNK_EaYbMHbXMM/view?usp=drive_link', alt: 'Event Photo 3' },
+    { id: 35, category: 'events', src: 'https://drive.google.com/file/d/1WFZB4oKXJOQCEcmjXyJzZqTfBSMyVhZ-/view?usp=drive_link', alt: 'Event Photo 4' },
   ];
 
   const filteredImages = selectedCategory === 'all' 
