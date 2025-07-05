@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -39,10 +38,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="font-playfair text-2xl font-bold text-charcoal">
+            <div className={`font-playfair text-2xl font-bold ${location.pathname === '/' ? 'text-white' : 'text-charcoal'}`}>
               Vintage Valley
             </div>
-            <div className="font-vibes text-gold text-lg">Resort</div>
+            <div className={`font-vibes text-lg ${location.pathname === '/' ? 'text-white' : 'text-gold'}`}>Resort</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,13 +53,13 @@ const Navbar = () => {
                 className={`font-medium transition-colors duration-200 ${
                   location.pathname === link.path
                     ? 'text-gold border-b-2 border-gold'
-                    : 'text-charcoal hover:text-gold'
+                    : location.pathname === '/' ? 'text-white hover:text-gold' : 'text-charcoal hover:text-gold'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <button className="bg-gold text-charcoal px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200">
+            <button className={`px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${location.pathname === '/' ? 'bg-gold text-charcoal' : 'bg-gold text-charcoal'}`}>
               Book Now
             </button>
           </div>
@@ -89,14 +88,14 @@ const Navbar = () => {
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     location.pathname === link.path
                       ? 'text-gold bg-gold/10'
-                      : 'text-charcoal hover:text-gold hover:bg-gold/5'
+                      : location.pathname === '/' ? 'text-white hover:text-gold hover:bg-gold/5' : 'text-charcoal hover:text-gold hover:bg-gold/5'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <button className="w-full mt-4 bg-gold text-charcoal px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200">
+              <button className={`w-full mt-4 px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${location.pathname === '/' ? 'bg-gold text-charcoal' : 'bg-gold text-charcoal'}`}>
                 Book Now
               </button>
             </div>
