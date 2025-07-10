@@ -76,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gold mt-1" />
-                <p className="text-ivory/80">Igatpuri, Maharashtra, India</p>
+                <p className="text-ivory/80">Village Amrutgaon, Post Vashind, Taluka Shahapur, District Thane, Igatpuri, Maharashtra 422403.</p>
               </div>
             </div>
           </div>

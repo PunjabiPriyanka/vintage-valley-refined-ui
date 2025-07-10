@@ -97,7 +97,7 @@ const Rooms = () => {
       ],
       description: 'The Lotus Family Suite provides generous space and premium comfort for larger groups. With separate living areas, premium furnishings, and spectacular views, it offers the perfect setting for memorable family gatherings.',
       capacity: '4 Adults',
-      bedType: '2 Queen Beds',
+      bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed',
       size: '750 sq ft',
       pricing: {
         weekday: '₹6,000',
@@ -114,14 +114,14 @@ const Rooms = () => {
     },
     {
       id: 5,
-      title: 'Presidential Sky Villa',
+      title: 'Presidential Sky Suite',
       subtitle: 'Ultimate Luxury Experience',
       images: [
-        '/images/presidential-sky-villa-1.jpg',
-        '/images/presidential-sky-villa-2.jpg',
-        '/images/presidential-sky-villa-3.jpg'
+        '/images/presidential-sky-suite-1.jpg',
+        '/images/presidential-sky-suite-2.jpg',
+        '/images/presidential-sky-suite-3.jpg'
       ],
-      description: 'The Presidential Sky Villa represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
+      description: 'The Presidential Sky Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',
       bedType: 'Master Suite + Guest Room',
       size: '1200 sq ft',
@@ -131,11 +131,11 @@ const Rooms = () => {
       },
       amenities: [
         { icon: Wifi, name: 'Premium WiFi' },
-        { icon: Car, name: 'Valet Parking' },
+        { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Entertainment System' },
-        { icon: Bath, name: 'Spa Bathroom' },
+        { icon: Bath, name: 'Premium Bathroom' },
         { icon: Mountain, name: 'Private Balcony' },
-        { icon: Coffee, name: 'Butler Service' }
+        { icon: Coffee, name: 'Tea/Coffee Maker' }
       ]
     }
   ];

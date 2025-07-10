@@ -30,7 +30,7 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
         'https://drive.google.com/uc?export=view&id=1m9f9p1uOdWoR1FlWm1FvmQwzwo02vlM9'
       ]
     },
-    2: { // Banquet Lawn
+    2: { // Palatio Banquet
       operatingHours: '24/7 availability',
       capacity: '250 guests',
       area: '5000 sq ft',
@@ -41,7 +41,7 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
         'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
       ]
     },
-    3: { // Café Lounge
+    3: { // Tarkari Restaurant
       operatingHours: '7:00 AM - 11:00 PM',
       capacity: '60 guests',
       cuisine: 'Multi-cuisine',

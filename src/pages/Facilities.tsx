@@ -28,7 +28,7 @@ const Facilities = () => {
     },
     {
       id: 2,
-      title: 'Banquet Lawn',
+      title: 'Palatio Banquet',
       icon: Users,
       description: 'Elegant outdoor venue perfect for weddings, corporate events, and celebrations. Set against the backdrop of lush greenery and mountain vistas.',
       image: '/images/banquet-lawn-1.jpg',
@@ -36,7 +36,7 @@ const Facilities = () => {
     },
     {
       id: 3,
-      title: 'Café Lounge',
+      title: 'Tarkari Restaurant',
       icon: Utensils,
       description: 'Premium dining experience featuring local and international cuisine. Our chefs create culinary masterpieces using fresh, locally sourced ingredients.',
       image: '/images/cafe-lounge-1.jpg',
@@ -56,7 +56,7 @@ const Facilities = () => {
       icon: Dumbbell,
       description: 'State-of-the-art fitness center equipped with modern equipment and personal training services. Maintain your fitness routine while enjoying nature views.',
       image: 'https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D',
-      features: ['Modern equipment', 'Personal training', 'Yoga classes', 'Outdoor workouts']
+      features: ['Modern equipment', 'Personal training', 'Outdoor workouts']
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ const Facilities = () => {
       icon: Gamepad2,
       description: 'Indoor and outdoor recreational activities for all ages. From traditional games to modern entertainment options, ensuring fun for the entire family.',
       image: 'https://plus.unsplash.com/premium_photo-1742944886085-a096b536af0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8OCUyMGJhbGwlMjBwb29sfGVufDB8fDB8fHww',
-      features: ['Table tennis', 'Pool table', 'Board games', 'Outdoor sports']
+      features: ['Pool table', 'Board games', 'Outdoor sports']
     },
     {
       id: 7,

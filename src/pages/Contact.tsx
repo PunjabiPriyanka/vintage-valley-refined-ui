@@ -94,9 +94,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-charcoal mb-2">Location & Directions</h3>
                   <p className="text-charcoal/80 font-medium">Vintage Valley Spa Resort</p>
-                  <p className="text-charcoal/80">Village Amrutgaon, Post Vashind</p>
-                  <p className="text-charcoal/80">Taluka Shahapur, District Thane</p>
-                  <p className="text-charcoal/80">Igatpuri, Maharashtra 422403</p>
+                  <p className="text-charcoal/80">Village Amrutgaon, Post Vashind, Taluka Shahapur, District Thane, Igatpuri, Maharashtra 422403</p>
                   <div className="mt-3 text-sm text-charcoal/70">
                     <p><strong>From Mumbai:</strong> Take NH-3 towards Nashik, exit at Igatpuri (120 km, 2.5 hours)</p>
                     <p><strong>From Pune:</strong> Via NH-50 to Nashik, then to Igatpuri (180 km, 3 hours)</p>

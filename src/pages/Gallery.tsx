@@ -33,8 +33,8 @@ const Gallery = () => {
     { id: 14, category: 'rooms', src: '/images/presidential-sky-villa-2.jpg', alt: 'Presidential Sky Villa 2' },
     { id: 15, category: 'rooms', src: '/images/presidential-sky-villa-3.jpg', alt: 'Presidential Sky Villa 3' },
     { id: 16, category: 'facilities', src: '/images/infinity-pool-1.jpg', alt: 'Infinity Pool 1' },
-    { id: 17, category: 'facilities', src: '/images/banquet-lawn-1.jpg', alt: 'Banquet Lawn' },
-    { id: 18, category: 'facilities', src: '/images/cafe-lounge-1.jpg', alt: 'Café Lounge' },
+    { id: 17, category: 'facilities', src: '/images/palatio-banquet-1.jpg', alt: 'Palatio Banquet' },
+    { id: 18, category: 'facilities', src: '/images/tarkari-restaurant-1.jpg', alt: 'Tarkari Restaurant' },
     { id: 19, category: 'facilities', src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', alt: 'Spa & Wellness' },
     { id: 20, category: 'facilities', src: 'https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D', alt: 'Fitness Studio' },
     { id: 21, category: 'facilities', src: 'https://plus.unsplash.com/premium_photo-1742944886085-a096b536af0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8OCUyMGJhbGwlMjBwb29sfGVufDB8fDB8fHww', alt: 'Game Zone' },
@@ -48,10 +48,10 @@ const Gallery = () => {
     { id: 29, category: 'nature', src: '/images/nature-pool-building-1.jpg', alt: 'Resort Building and Pool with Greenery' },
     { id: 30, category: 'nature', src: '/images/nature-balcony-table-flowers.jpg', alt: 'Balcony Table with Flowers and Scenic View' },
     { id: 31, category: 'nature', src: '/images/nature-playground-1.jpg', alt: 'Children Playground and Green Lawn' },
-    { id: 32, category: 'events', src: 'https://drive.google.com/file/d/18zm79yCf6VgXnrSXUywzimGmvLgwXeqA/view?usp=drive_link', alt: 'Event Photo 1' },
-    { id: 33, category: 'events', src: 'https://drive.google.com/file/d/1o_yo0EyNi2tWGvxgKnVMWoKxODCzO1HA/view?usp=drive_link', alt: 'Event Photo 2' },
-    { id: 34, category: 'events', src: 'https://drive.google.com/file/d/1dczQuWuhMT8tNqm4U8HNK_EaYbMHbXMM/view?usp=drive_link', alt: 'Event Photo 3' },
-    { id: 35, category: 'events', src: 'https://drive.google.com/file/d/1WFZB4oKXJOQCEcmjXyJzZqTfBSMyVhZ-/view?usp=drive_link', alt: 'Event Photo 4' },
+    { id: 32, category: 'events', src: '/images/event-1.jpg', alt: 'Event Photo 1' },
+    { id: 33, category: 'events', src: '/images/event-2.jpg', alt: 'Event Photo 2' },
+    { id: 34, category: 'events', src: '/images/event-3.jpg', alt: 'Event Photo 3' },
+    { id: 35, category: 'events', src: '/images/event-4.jpg', alt: 'Event Photo 4' },
   ];
 
   const filteredImages = selectedCategory === 'all' 

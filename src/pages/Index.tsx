@@ -47,44 +47,44 @@ const Index = () => {
       description: 'Spacious family accommodation with separate living area and premium comfort',
       price: 'From ₹6,000',
       period: 'per night',
-      features: ['2 Bedrooms', 'Living Area', 'Kitchenette', 'Garden View'],
+      features: ['Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed', 'Garden View'],
       badge: 'Family Choice'
     },
     {
-      title: 'Presidential Sky Villa',
+      title: 'Skyline Deluxe Suite',
       image: '/images/presidential-sky-villa-1.jpg',
       description: 'Ultimate luxury experience with panoramic valley views and premium services',
       price: 'From ₹7,000',
       period: 'per night',
-      features: ['Private Terrace', 'Jacuzzi', 'Butler Service', 'Valley View'],
+      features: ['Private Terrace', 'No bathtub available', 'Valley View'],
       badge: 'Luxury'
     }
   ];
 
   const testimonials = [
     {
-      name: 'Priya Sharma',
+      name: 'Rohit Patil',
       location: 'Mumbai',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b5bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80',
+      image: '/images/placeholder.svg',
       rating: 5,
-      text: 'An absolutely magical experience that exceeded all expectations. The perfect blend of luxury and nature creates an unforgettable retreat.',
-      date: 'December 2023'
+      text: 'Amazing property with beautiful views and excellent hospitality. The rooms were clean and spacious. Highly recommended for a family getaway!',
+      date: 'March 2024'
     },
     {
-      name: 'Rajesh Patel',
+      name: 'Sneha Deshmukh',
       location: 'Pune',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80',
+      image: '/images/placeholder.svg',
       rating: 5,
-      text: 'Outstanding hospitality and breathtaking views. Every detail has been thoughtfully curated to provide the ultimate sanctuary experience.',
-      date: 'November 2023'
+      text: 'We had a wonderful stay at Vintage Valley Resort. The staff was courteous and the food at Tarkari Restaurant was delicious. Will visit again!',
+      date: 'February 2024'
     },
     {
-      name: 'Anita Desai',
-      location: 'Delhi',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80',
-      rating: 5,
-      text: 'The spa treatments were divine and the staff anticipated every need. This is luxury redefined in the heart of nature.',
-      date: 'October 2023'
+      name: 'Amit Sharma',
+      location: 'Nashik',
+      image: '/images/placeholder.svg',
+      rating: 4,
+      text: 'Great place for a weekend escape. The infinity pool and spa were highlights. The location is peaceful and scenic.',
+      date: 'January 2024'
     }
   ];
 
