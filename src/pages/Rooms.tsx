@@ -91,9 +91,9 @@ const Rooms = () => {
       title: 'Lotus Family Suite',
       subtitle: 'Spacious Luxury for Families',
       images: [
-        '/images/lotus-family-suite-1.jpg',
-        '/images/lotus-family-suite-2.jpg',
-        '/images/lotus-family-suite-3.jpg'
+        '/images/1.jpeg',
+        '/images/2.jpeg',
+        '/images/3.jpeg'
       ],
       description: 'The Lotus Family Suite provides generous space and premium comfort for larger groups. With separate living areas, premium furnishings, and spectacular views, it offers the perfect setting for memorable family gatherings.',
       capacity: '4 Adults',

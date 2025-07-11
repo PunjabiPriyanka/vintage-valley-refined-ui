@@ -43,7 +43,7 @@ const Index = () => {
     },
     {
       title: 'Lotus Family Suite',
-      image: '/images/lotus-family-suite-1.jpg',
+      image: '/images/1.jpeg',
       description: 'Spacious family accommodation with separate living area and premium comfort',
       price: 'From ₹6,000',
       period: 'per night',
