@@ -75,7 +75,7 @@ const Attractions = () => {
       distance: '16 km',
       time: '28 mins',
       description: 'Scenic valley point with unique rock formations resembling camels, popular for photography and nature walks.',
-      image: '/images/at/34.jpeg',
+      image: '/images/at/34.jpg',
       highlights: ['Rock formations', 'Photography', 'Nature walks', 'Unique landscape']
     },
     {
@@ -302,7 +302,7 @@ const Attractions = () => {
                                 <img
                                   src={img}
                                   alt={place.name + ' image ' + (imgIdx + 1)}
-                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                                  className="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-700 bg-white"
                                 />
                               </CarouselItem>
                             ))}
@@ -384,7 +384,7 @@ const Attractions = () => {
                                 <img
                                   src={img}
                                   alt={place.name + ' image ' + (imgIdx + 1)}
-                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                                  className="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-700 bg-white"
                                 />
                               </CarouselItem>
                             ))}
