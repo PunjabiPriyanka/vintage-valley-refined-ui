@@ -96,29 +96,11 @@ const Attractions = () => {
     }
   ];
 
-  const igatpuriImages = [
-    'https://www.vridhamma.org/sites/default/files/Dhammagiri5.jpg',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtVfWvmg22XwX6cXTfOnvL5xds0WQJ_ZOuVK-jnsDkAN3nfFmBK3Eybz_mntoWyruXWwk&usqp=CAU',
-    'https://bragpacker.com/wp-content/uploads/2018/09/bhandardara-244141_640.jpg',
-    'https://nomadsofindia.com/wp-content/uploads/2023/08/Tringalwadi-Fort-Entrance.jpg',
-    'https://bragpacker.com/wp-content/uploads/2018/09/bhandardara-244141_640.jpg',
-    'https://s7ap1.scene7.com/is/image/incredibleindia/igatpuri-waterfall-igatpuri-maharashtra-attr-hero-1?qlt=82&ts=1727351945189',
-    'https://photos.wikimapia.org/p/00/01/93/68/57_big.jpg',
-    'https://rainforestigatpuri.com/wp-content/uploads/2025/01/pexels-sonika-agarwal-1264788-5622042-scaled.jpg',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/21/1f/94/photo7jpg.jpg?w=1200&h=-1&s=1',
-    'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/e3/95/94/camel-valley.jpg?w=1200&h=-1&s=1',
-    'https://www.mumbaiorbit.in/assets/img/322e71bd88f4e164deb5f28d0df1d841%20(1).jpg',
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk6fo4Z65kc09lbQXW18QtVObWuHeCklJAPKrbQGKrEz9o42DX-Mk3zi92F39mvtd9x2U&usqp=CAU',
-  ];
-
-  const igatpuriPlacesWithImages = igatpuriPlaces.map((place, idx) => ({
+  // Remove igatpuriImages array and its usage for the listed places
+  // Only use the local image path for each listed attraction
+  const igatpuriPlacesWithImages = igatpuriPlaces.map((place) => ({
     ...place,
-    images: Array.isArray((place as any).images)
-      ? (place as any).images
-      : [
-          (typeof igatpuriImages !== 'undefined' && igatpuriImages[idx]) ||
-          (place.image ? place.image : null)
-        ].filter(Boolean),
+    images: [place.image],
   }));
 
   const nashikImages = [
@@ -271,15 +253,11 @@ const Attractions = () => {
     }
   ];
 
-  // Ensure all nashikPlaces have an images array
-  const nashikPlacesWithImages = nashikPlaces.map((place, idx) => ({
+  // Remove nashikImages array and its usage for the listed places
+  // Only use the local image path for each listed attraction
+  const nashikPlacesWithImages = nashikPlaces.map((place) => ({
     ...place,
-    images: Array.isArray((place as any).images)
-      ? (place as any).images
-      : [
-          (typeof nashikImages !== 'undefined' && nashikImages[idx]) ||
-          (place.image ? place.image : null)
-        ].filter(Boolean),
+    images: place.images ? place.images : (place.image ? [place.image] : []),
   }));
 
   return (
