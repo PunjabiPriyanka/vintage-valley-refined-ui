@@ -11,7 +11,7 @@ const Attractions = () => {
       distance: '10 km',
       time: '18 mins',
       description: 'World\'s largest Vipassana meditation center offering 10-day silent meditation courses in serene natural surroundings.',
-      image: 'https://giri.vridhamma.org/sites/giri.vridhamma.org/files/styles/flexslider_full/public/2020-08-10%20%281%29.jpg?itok=55awi1OG',
+      image: '/images/at/36.jpg',
       highlights: ['Silent meditation', 'Spiritual healing', '10-day courses', 'Peaceful environment']
     },
     {
@@ -51,7 +51,7 @@ const Attractions = () => {
       distance: '15 km',
       time: '25 mins',
       description: 'Unique waterfall visible from railway tracks, offering a spectacular view during monsoon season.',
-      image: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=800&q=80',
+      image: '/images/at/35.jpg',
       highlights: ['Railway view', 'Monsoon special', 'Unique location', 'Train spotting']
     },
     {
@@ -75,7 +75,7 @@ const Attractions = () => {
       distance: '16 km',
       time: '28 mins',
       description: 'Scenic valley point with unique rock formations resembling camels, popular for photography and nature walks.',
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+      image: '/images/at/34.jpeg',
       highlights: ['Rock formations', 'Photography', 'Nature walks', 'Unique landscape']
     },
     {
@@ -91,7 +91,7 @@ const Attractions = () => {
       distance: '25 km',
       time: '40 mins',
       description: 'Mountain pass with stunning ghat views, popular for its scenic railway route and natural beauty.',
-      image: '/images/at/8.jpeg',
+      image: '/images/at/33.jpeg',
       highlights: ['Mountain pass', 'Railway route', 'Ghat views', 'Natural beauty']
     }
   ];
@@ -128,7 +128,7 @@ const Attractions = () => {
       distance: '45 km',
       time: '1 hour',
       description: 'Ancient Buddhist caves dating back to 1st century BC, showcasing remarkable rock-cut architecture.',
-      images: ['/images/at/8.jpg'],
+      images: ['/images/at/8.jpeg'],
       highlights: ['Buddhist caves', 'Ancient architecture', 'Historical site', 'Rock-cut caves']
     },
     {
