@@ -128,7 +128,7 @@ const Attractions = () => {
       distance: '45 km',
       time: '1 hour',
       description: 'Ancient Buddhist caves dating back to 1st century BC, showcasing remarkable rock-cut architecture.',
-      images: ['/images/at/9.jpg'],
+      images: ['/images/at/8.jpg'],
       highlights: ['Buddhist caves', 'Ancient architecture', 'Historical site', 'Rock-cut caves']
     },
     {
@@ -136,7 +136,7 @@ const Attractions = () => {
       distance: '50 km',
       time: '1.2 hours',
       description: 'Sacred cave associated with Ramayana, believed to be where Sita stayed during her exile period.',
-      images: ['/images/at/10.jpg'],
+      images: ['/images/at/9.jpg'],
       highlights: ['Religious site', 'Ramayana connection', 'Sacred cave', 'Spiritual significance']
     },
     {
@@ -144,7 +144,7 @@ const Attractions = () => {
       distance: '35 km',
       time: '50 mins',
       description: 'One of the 12 Jyotirlingas of Lord Shiva, ancient temple with significant religious importance.',
-      images: ['/images/at/11.jpg'],
+      images: ['/images/at/10.jpg'],
       highlights: ['Jyotirling', 'Ancient temple', 'Religious pilgrimage', 'Shiva temple']
     },
     {
@@ -152,7 +152,7 @@ const Attractions = () => {
       distance: '48 km',
       time: '1.1 hours',
       description: 'Sacred bathing ghat on Godavari river where devotees perform religious ceremonies and rituals.',
-      images: [nashikImages[6], nashikImages[7]],
+      images: ['/images/at/32.jpeg'],
       highlights: ['Sacred bathing ghat', 'Godavari river', 'Religious ceremonies', 'Pilgrimage site']
     },
     {
@@ -160,7 +160,7 @@ const Attractions = () => {
       distance: '60 km',
       time: '1.5 hours',
       description: 'Triangular fort famous for its steep rock-cut steps and panoramic views from the summit.',
-      images: ['/images/at/12.jpg'],
+      images: ['/images/at/11.jpg'],
       highlights: ['Triangular fort', 'Rock-cut steps', 'Adventure trekking', 'Panoramic views']
     },
     {
@@ -168,7 +168,7 @@ const Attractions = () => {
       distance: '55 km',
       time: '1.3 hours',
       description: 'India\'s leading winery offering premium wine tasting experiences and vineyard tours.',
-      images: ['/images/at/13.jpg'],
+      images: ['/images/at/12.jpg'],
       highlights: ['Premium wines', 'Wine tasting', 'Vineyard tours', 'Fine dining']
     },
     {
@@ -176,7 +176,7 @@ const Attractions = () => {
       distance: '47 km',
       time: '1 hour',
       description: 'Beautiful temple dedicated to Lord Vishnu, known for its architectural beauty and peaceful atmosphere.',
-      images: ['/images/at/14.jpeg'],
+      images: ['/images/at/31.jpeg'],
       highlights: ['Vishnu temple', 'Beautiful architecture', 'Peaceful atmosphere', 'Religious site']
     },
     {
@@ -208,7 +208,7 @@ const Attractions = () => {
       distance: '40 km',
       time: '55 mins',
       description: 'Source of river Godavari, sacred hill with temples and natural beauty.',
-      image: '/images/at/17.jpeg',
+      image: '/images/at/17.jpg',
       highlights: ['Godavari source', 'Sacred hill', 'Temples', 'Natural beauty']
     },
     {
@@ -248,7 +248,7 @@ const Attractions = () => {
       distance: '51 km',
       time: '1.2 hours',
       description: 'White marble temple complex with replicas of all major pilgrimage sites of India.',
-      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+      image: '/images/at/30.jpg',
       highlights: ['Marble temple', 'Pilgrimage replicas', 'Beautiful complex', 'Religious significance']
     }
   ];
