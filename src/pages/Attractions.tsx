@@ -302,7 +302,7 @@ const Attractions = () => {
                                 <img
                                   src={img}
                                   alt={place.name + ' image ' + (imgIdx + 1)}
-                                  className="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-700 bg-white"
+                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                               </CarouselItem>
                             ))}
@@ -384,7 +384,7 @@ const Attractions = () => {
                                 <img
                                   src={img}
                                   alt={place.name + ' image ' + (imgIdx + 1)}
-                                  className="w-full h-48 object-contain group-hover:scale-110 transition-transform duration-700 bg-white"
+                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                               </CarouselItem>
                             ))}
