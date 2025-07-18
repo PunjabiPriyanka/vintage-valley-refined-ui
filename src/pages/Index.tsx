@@ -63,28 +63,28 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: 'Rohit Patil',
+      name: 'Prashant Jadhav',
       location: 'Mumbai',
       image: '/images/placeholder.svg',
       rating: 5,
-      text: 'Amazing property with beautiful views and excellent hospitality. The rooms were clean and spacious. Highly recommended for a family getaway!',
-      date: 'March 2024'
+      text: 'A wonderful experience! The property is beautiful, staff is very courteous, and the food was delicious. Highly recommended for families and couples.',
+      date: 'April 2024'
     },
     {
-      name: 'Sneha Deshmukh',
+      name: 'Neha Kulkarni',
       location: 'Pune',
       image: '/images/placeholder.svg',
       rating: 5,
-      text: 'We had a wonderful stay at Vintage Valley Resort. The staff was courteous and the food at Tarkari Restaurant was delicious. Will visit again!',
-      date: 'February 2024'
+      text: 'Amazing stay at Vintage Valley. The rooms are spacious and clean, and the infinity pool is a highlight. Will definitely visit again!',
+      date: 'March 2024'
     },
     {
-      name: 'Amit Sharma',
+      name: 'Sandeep Patil',
       location: 'Nashik',
       image: '/images/placeholder.svg',
       rating: 4,
-      text: 'Great place for a weekend escape. The infinity pool and spa were highlights. The location is peaceful and scenic.',
-      date: 'January 2024'
+      text: 'Great hospitality and a peaceful environment. The location is perfect for a weekend getaway. The only improvement could be faster room service.',
+      date: 'February 2024'
     }
   ];
 
