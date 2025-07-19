@@ -20,6 +20,13 @@ const Tariff = () => {
       weekend: '4500/-'
     },
     {
+      category: 'DELUXE EDGE VIEW',
+      mealPlan: 'BREAKFAST INCLUDED',
+      persons: '2 ADULTS',
+      weekday: '4200/-',
+      weekend: '5200/-'
+    },
+    {
       category: 'LOTUS FAMILY SUITE',
       mealPlan: 'BREAKFAST INCLUDED',
       persons: '4 ADULTS',
@@ -38,7 +45,7 @@ const Tariff = () => {
   const policies = [
     {
       title: 'Child Policy',
-      content: 'Children Between 6 to 12 Years 1200/- & Extra Person Charges (Above 12 Years) 1500/-'
+      content: 'Children Between 5 to 12 Years 1200/- & Extra Person Charges (Above 12 Years) 1500/-'
     },
     {
       title: 'Booking Terms',
@@ -145,7 +152,7 @@ const Tariff = () => {
 
             <div className="p-6 bg-gold/5 border-t border-gold/20">
               <p className="text-center text-gray-800 font-semibold">
-                Children Between 6 to 12 Years 1200/- & Extra Person Charges (Above 12 Years) 1500/-
+                Children Between 5 to 12 Years 1200/- & Extra Person Charges (Above 12 Years) 1500/-
               </p>
             </div>
           </div>
