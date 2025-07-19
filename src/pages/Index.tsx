@@ -38,7 +38,7 @@ const Index = () => {
       description: 'Elegant studio with modern amenities, private balcony, and stunning nature views',
       price: 'From ₹3,500',
       period: 'per night',
-      features: ['King Size Bed', 'Private Balcony', 'Mountain View', 'Mini Bar'],
+      features: ['King Size Bed', 'Private Balcony', 'Mountain View'],
       badge: 'Popular'
     },
     {

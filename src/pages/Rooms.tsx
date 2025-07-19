@@ -132,7 +132,6 @@ const Rooms = () => {
       amenities: [
         { icon: Wifi, name: 'Premium WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
-        { icon: Tv, name: 'Entertainment System' },
         { icon: Bath, name: 'Premium Bathroom' },
         { icon: Mountain, name: 'Private Balcony' },
         { icon: Coffee, name: 'Tea/Coffee Maker' }
