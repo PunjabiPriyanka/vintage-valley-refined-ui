@@ -95,16 +95,16 @@ const Index = () => {
 
       {/* Enhanced Amenities Section */}
       <section className="section-padding bg-white relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-black/5 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-ivory/30 to-white"></div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-block px-6 py-2 bg-gold/10 rounded-full mb-6">
               <span className="text-gold font-medium tracking-wide">WORLD-CLASS AMENITIES</span>
             </div>
-            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-8">
+            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-8">
               Luxury Redefined
             </h2>
-            <p className="text-xl text-black/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
               Immerse yourself in exceptional facilities designed to elevate every moment of your stay
             </p>
           </div>

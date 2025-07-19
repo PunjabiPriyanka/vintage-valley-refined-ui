@@ -88,12 +88,12 @@ const Gallery = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-white">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-gray-800 to-gray-800/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
             Gallery
           </h1>
-          <p className="text-xl text-black/80 max-w-2xl mx-auto">
+          <p className="text-xl text-ivory/80 max-w-2xl mx-auto">
             Immerse yourself in the visual story of Vintage Valley Resort through our curated collection of moments
           </p>
         </div>
@@ -109,8 +109,8 @@ const Gallery = () => {
                 onClick={() => setSelectedCategory(category.id)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   selectedCategory === category.id
-                    ? 'bg-gold text-charcoal shadow-lg transform scale-105'
-                    : 'bg-ivory text-charcoal hover:bg-gold/20 hover:scale-105'
+                    ? 'bg-gold text-gray-800 shadow-lg transform scale-105'
+                    : 'bg-ivory text-gray-800 hover:bg-gold/20 hover:scale-105'
                 }`}
               >
                 {category.name}
@@ -140,7 +140,7 @@ const Gallery = () => {
                       index % 8 === 0 || index % 8 === 3 ? 'h-96' : 'h-48'
                     }`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-800/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <p className="text-ivory font-medium">{image.alt}</p>
                   </div>
@@ -153,7 +153,7 @@ const Gallery = () => {
 
       {/* Lightbox */}
       {lightboxImage && currentLightboxImage && (
-        <div className="fixed inset-0 bg-charcoal/95 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-gray-800/95 z-50 flex items-center justify-center p-4">
           <button
             onClick={closeLightbox}
             className="absolute top-6 right-6 text-ivory hover:text-gold transition-colors z-10"
@@ -193,7 +193,7 @@ const Gallery = () => {
       )}
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-charcoal to-charcoal/90">
+      <section className="section-padding bg-gradient-to-r from-gray-800 to-gray-800/90">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-playfair text-4xl font-bold text-ivory mb-6">
             Create Your Own Memories
@@ -202,10 +202,10 @@ const Gallery = () => {
             Book your stay and become part of the Vintage Valley Resort story
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gold text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
+            <button className="bg-gold text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
               Book Your Stay
             </button>
-            <button className="border-2 border-ivory text-ivory px-8 py-4 rounded-full font-semibold text-lg hover:bg-ivory hover:text-charcoal transition-all duration-300">
+            <button className="border-2 border-ivory text-ivory px-8 py-4 rounded-full font-semibold text-lg hover:bg-ivory hover:text-gray-800 transition-all duration-300">
               Virtual Tour
             </button>
           </div>

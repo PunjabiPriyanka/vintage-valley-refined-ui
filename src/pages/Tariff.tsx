@@ -63,12 +63,12 @@ const Tariff = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-white">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-gray-800 to-gray-800/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
             Room Tariffs
           </h1>
-          <p className="text-xl text-black/80 max-w-2xl mx-auto">
+          <p className="text-xl text-ivory/80 max-w-2xl mx-auto">
             Transparent pricing for luxury accommodations in the heart of nature
           </p>
         </div>
@@ -78,7 +78,7 @@ const Tariff = () => {
       <section className="section-padding">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-3xl luxury-shadow overflow-hidden">
-            <div className="bg-gradient-to-r from-charcoal to-charcoal/90 text-ivory p-6">
+            <div className="bg-gradient-to-r from-gray-800 to-gray-800/90 text-ivory p-6">
               <h2 className="font-playfair text-3xl font-bold text-center">
                 ROOM TARIFF 2024 - 2025
               </h2>
@@ -89,19 +89,19 @@ const Tariff = () => {
               <table className="w-full">
                 <thead className="bg-gold/10">
                   <tr>
-                    <th className="px-6 py-4 text-left font-semibold text-charcoal">ROOM CATEGORIES</th>
-                    <th className="px-6 py-4 text-center font-semibold text-charcoal">MEAL PLAN</th>
-                    <th className="px-6 py-4 text-center font-semibold text-charcoal">PERSONS</th>
-                    <th className="px-6 py-4 text-center font-semibold text-charcoal">MON-THURS</th>
-                    <th className="px-6 py-4 text-center font-semibold text-charcoal">FRI-SUN</th>
+                    <th className="px-6 py-4 text-left font-semibold text-gray-800">ROOM CATEGORIES</th>
+                    <th className="px-6 py-4 text-center font-semibold text-gray-800">MEAL PLAN</th>
+                    <th className="px-6 py-4 text-center font-semibold text-gray-800">PERSONS</th>
+                    <th className="px-6 py-4 text-center font-semibold text-gray-800">MON-THURS</th>
+                    <th className="px-6 py-4 text-center font-semibold text-gray-800">FRI-SUN</th>
                   </tr>
                 </thead>
                 <tbody>
                   {tariffData.map((row, index) => (
                     <tr key={index} className="border-b border-gold/10 hover:bg-gold/5 transition-colors">
-                      <td className="px-6 py-6 font-semibold text-charcoal">{row.category}</td>
-                      <td className="px-6 py-6 text-center text-charcoal/80">{row.mealPlan}</td>
-                      <td className="px-6 py-6 text-center text-charcoal/80">{row.persons}</td>
+                      <td className="px-6 py-6 font-semibold text-gray-800">{row.category}</td>
+                      <td className="px-6 py-6 text-center text-gray-800/80">{row.mealPlan}</td>
+                      <td className="px-6 py-6 text-center text-gray-800/80">{row.persons}</td>
                       <td className="px-6 py-6 text-center font-bold text-gold">{row.weekday}</td>
                       <td className="px-6 py-6 text-center font-bold text-gold">{row.weekend}</td>
                     </tr>
@@ -114,27 +114,27 @@ const Tariff = () => {
             <div className="md:hidden p-4 space-y-4">
               {tariffData.map((row, index) => (
                 <div key={index} className="bg-gold/5 rounded-2xl p-6 border border-gold/20">
-                  <h3 className="font-playfair text-xl font-bold text-charcoal mb-4">{row.category}</h3>
+                  <h3 className="font-playfair text-xl font-bold text-gray-800 mb-4">{row.category}</h3>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="flex items-center text-charcoal/80">
+                      <span className="flex items-center text-gray-800/80">
                         <Coffee className="h-4 w-4 mr-2" />
                         {row.mealPlan}
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="flex items-center text-charcoal/80">
+                      <span className="flex items-center text-gray-800/80">
                         <Users className="h-4 w-4 mr-2" />
                         {row.persons}
                       </span>
                     </div>
                     <div className="flex justify-between pt-3 border-t border-gold/20">
                       <div className="text-center">
-                        <p className="text-sm text-charcoal/60">MON-THURS</p>
+                        <p className="text-sm text-gray-800/60">MON-THURS</p>
                         <p className="font-bold text-gold text-lg">{row.weekday}</p>
                       </div>
                       <div className="text-center">
-                        <p className="text-sm text-charcoal/60">FRI-SUN</p>
+                        <p className="text-sm text-gray-800/60">FRI-SUN</p>
                         <p className="font-bold text-gold text-lg">{row.weekend}</p>
                       </div>
                     </div>
@@ -144,7 +144,7 @@ const Tariff = () => {
             </div>
 
             <div className="p-6 bg-gold/5 border-t border-gold/20">
-              <p className="text-center text-charcoal font-semibold">
+              <p className="text-center text-gray-800 font-semibold">
                 Children Between 6 to 12 Years 1200/- & Extra Person Charges (Above 12 Years) 1500/-
               </p>
             </div>
@@ -155,7 +155,7 @@ const Tariff = () => {
       {/* Policies Section */}
       <section className="section-padding bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-playfair text-4xl font-bold text-charcoal text-center mb-12">
+          <h2 className="font-playfair text-4xl font-bold text-gray-800 text-center mb-12">
             Terms & Policies
           </h2>
 
@@ -166,7 +166,7 @@ const Tariff = () => {
                   onClick={() => toggleSection(policy.title)}
                   className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gold/10 transition-colors"
                 >
-                  <h3 className="font-semibold text-charcoal text-lg">{policy.title}</h3>
+                  <h3 className="font-semibold text-gray-800 text-lg">{policy.title}</h3>
                   {expandedSection === policy.title ? (
                     <ChevronUp className="h-5 w-5 text-gold" />
                   ) : (
@@ -175,7 +175,7 @@ const Tariff = () => {
                 </button>
                 {expandedSection === policy.title && (
                   <div className="px-6 pb-4">
-                    <p className="text-charcoal/80 leading-relaxed">{policy.content}</p>
+                    <p className="text-gray-800/80 leading-relaxed">{policy.content}</p>
                   </div>
                 )}
               </div>
@@ -185,7 +185,7 @@ const Tariff = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-charcoal to-charcoal/90">
+      <section className="section-padding bg-gradient-to-r from-gray-800 to-gray-800/90">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-playfair text-4xl font-bold text-ivory mb-6">
             Ready to Experience Luxury?
@@ -194,10 +194,10 @@ const Tariff = () => {
             Book your perfect getaway and create unforgettable memories at Vintage Valley Resort
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gold text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
+            <button className="bg-gold text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
               Book Now
             </button>
-            <button className="border-2 border-ivory text-ivory px-8 py-4 rounded-full font-semibold text-lg hover:bg-ivory hover:text-charcoal transition-all duration-300">
+            <button className="border-2 border-ivory text-ivory px-8 py-4 rounded-full font-semibold text-lg hover:bg-ivory hover:text-gray-800 transition-all duration-300">
               Call +91 9371179888
             </button>
           </div>

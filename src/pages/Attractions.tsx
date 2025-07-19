@@ -266,11 +266,11 @@ const Attractions = () => {
       <FloatingContact />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 relative overflow-hidden bg-white">
+      <section className="pt-24 pb-16 relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1464822759844-d150ad6d1c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+            backgroundImage: `linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.5)), url('https://images.unsplash.com/photo-1464822759844-d150ad6d1c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -282,10 +282,10 @@ const Attractions = () => {
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-playfair text-4xl font-bold text-charcoal mb-4">
+            <h2 className="font-playfair text-4xl font-bold text-gray-800 mb-4">
               Tourist Places [Igatpuri]
             </h2>
-            <p className="text-xl text-charcoal/80">Discover nearby attractions around Igatpuri</p>
+            <p className="text-xl text-gray-800/80">Discover nearby attractions around Igatpuri</p>
           </div>
 
           <Carousel className="w-full">
@@ -315,24 +315,24 @@ const Attractions = () => {
                           No image available
                         </div>
                       )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-gray-800/60 via-transparent to-transparent" />
                       <div className="absolute top-4 right-4 flex space-x-2">
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                          <MapPin className="h-4 w-4 text-charcoal" />
-                          <span className="text-charcoal font-medium text-xs">{place.distance}</span>
+                          <MapPin className="h-4 w-4 text-gray-800" />
+                          <span className="text-gray-800 font-medium text-xs">{place.distance}</span>
                         </div>
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                          <Clock className="h-4 w-4 text-charcoal" />
-                          <span className="text-charcoal font-medium text-xs">{place.time}</span>
+                          <Clock className="h-4 w-4 text-gray-800" />
+                          <span className="text-gray-800 font-medium text-xs">{place.time}</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="p-6">
-                      <h3 className="font-playfair text-xl font-bold text-charcoal mb-3">
+                      <h3 className="font-playfair text-xl font-bold text-gray-800 mb-3">
                         {place.name}
                       </h3>
-                      <p className="text-charcoal/80 text-sm leading-relaxed mb-4">
+                      <p className="text-gray-800/80 text-sm leading-relaxed mb-4">
                         {place.description}
                       </p>
 
@@ -340,12 +340,12 @@ const Attractions = () => {
                         {place.highlights.map((highlight, highlightIndex) => (
                           <div key={highlightIndex} className="flex items-center space-x-2">
                             <div className="w-1.5 h-1.5 bg-gold rounded-full" />
-                            <span className="text-charcoal/70 text-xs">{highlight}</span>
+                            <span className="text-gray-800/70 text-xs">{highlight}</span>
                           </div>
                         ))}
                       </div>
 
-                      <button className="w-full bg-gold text-charcoal px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2">
+                      <button className="w-full bg-gold text-gray-800 px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2">
                         <ExternalLink className="h-3 w-3" />
                         <span>Get Directions</span>
                       </button>
@@ -364,10 +364,10 @@ const Attractions = () => {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-playfair text-4xl font-bold text-charcoal mb-4">
+            <h2 className="font-playfair text-4xl font-bold text-gray-800 mb-4">
               Tourist Places [Nashik]
             </h2>
-            <p className="text-xl text-charcoal/80">Explore famous destinations in Nashik</p>
+            <p className="text-xl text-gray-800/80">Explore famous destinations in Nashik</p>
           </div>
 
           <Carousel className="w-full">
@@ -397,24 +397,24 @@ const Attractions = () => {
                           No image available
                         </div>
                       )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-gray-800/60 via-transparent to-transparent" />
                       <div className="absolute top-4 right-4 flex space-x-2">
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                          <MapPin className="h-4 w-4 text-charcoal" />
-                          <span className="text-charcoal font-medium text-xs">{place.distance}</span>
+                          <MapPin className="h-4 w-4 text-gray-800" />
+                          <span className="text-gray-800 font-medium text-xs">{place.distance}</span>
                         </div>
                         <div className="bg-ivory/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center space-x-1">
-                          <Clock className="h-4 w-4 text-charcoal" />
-                          <span className="text-charcoal font-medium text-xs">{place.time}</span>
+                          <Clock className="h-4 w-4 text-gray-800" />
+                          <span className="text-gray-800 font-medium text-xs">{place.time}</span>
                         </div>
                       </div>
                     </div>
 
                     <div className="p-6">
-                      <h3 className="font-playfair text-xl font-bold text-charcoal mb-3">
+                      <h3 className="font-playfair text-xl font-bold text-gray-800 mb-3">
                         {place.name}
                       </h3>
-                      <p className="text-charcoal/80 text-sm leading-relaxed mb-4">
+                      <p className="text-gray-800/80 text-sm leading-relaxed mb-4">
                         {place.description}
                       </p>
 
@@ -422,12 +422,12 @@ const Attractions = () => {
                         {place.highlights.map((highlight, highlightIndex) => (
                           <div key={highlightIndex} className="flex items-center space-x-2">
                             <div className="w-1.5 h-1.5 bg-gold rounded-full" />
-                            <span className="text-charcoal/70 text-xs">{highlight}</span>
+                            <span className="text-gray-800/70 text-xs">{highlight}</span>
                           </div>
                         ))}
                       </div>
 
-                      <button className="w-full bg-charcoal text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-charcoal/80 transition-colors duration-200 flex items-center justify-center space-x-2">
+                      <button className="w-full bg-gray-800 text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-800/80 transition-colors duration-200 flex items-center justify-center space-x-2">
                         <ExternalLink className="h-3 w-3" />
                         <span>Get Directions</span>
                       </button>
@@ -443,7 +443,7 @@ const Attractions = () => {
       </section>
 
       {/* Travel Tips */}
-      <section className="section-padding bg-gradient-to-br from-charcoal to-charcoal/90">
+      <section className="section-padding bg-gradient-to-br from-gray-800 to-gray-800/90">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-playfair text-4xl font-bold text-ivory mb-8">
             Travel Tips & Recommendations
@@ -468,7 +468,7 @@ const Attractions = () => {
           </div>
 
           <div className="mt-12">
-            <button className="bg-gold text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
+            <button className="bg-gold text-gray-800 px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
               Plan Your Adventure
             </button>
           </div>

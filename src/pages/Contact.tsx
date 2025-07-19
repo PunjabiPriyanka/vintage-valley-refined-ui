@@ -36,12 +36,12 @@ const Contact = () => {
       <FloatingContact />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-white">
+      <section className="pt-24 pb-16 bg-gradient-to-br from-gray-800 to-gray-800/90">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-6">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
             Contact Us
           </h1>
-          <p className="text-xl text-black/80 max-w-2xl mx-auto">
+          <p className="text-xl text-ivory/80 max-w-2xl mx-auto">
             Let us help you plan your perfect escape to luxury and tranquility
           </p>
         </div>
@@ -52,10 +52,10 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div>
-            <h2 className="font-playfair text-4xl font-bold text-charcoal mb-8">
+            <h2 className="font-playfair text-4xl font-bold text-gray-800 mb-8">
               Get in Touch
             </h2>
-            <p className="text-charcoal/80 text-lg leading-relaxed mb-8">
+            <p className="text-gray-800/80 text-lg leading-relaxed mb-8">
               Our dedicated team is here to assist you with reservations, special requests, 
               and any questions about your upcoming stay at Vintage Valley Resort.
             </p>
@@ -67,10 +67,10 @@ const Contact = () => {
                   <Phone className="h-6 w-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal mb-2">Phone Numbers</h3>
-                  <p className="text-charcoal/80">+91 9371179888</p>
-                  <p className="text-charcoal/80">+91 9371169888</p>
-                  <p className="text-charcoal/60 text-sm mt-1">Available 24/7 for reservations</p>
+                  <h3 className="font-semibold text-gray-800 mb-2">Phone Numbers</h3>
+                  <p className="text-gray-800/80">+91 9371179888</p>
+                  <p className="text-gray-800/80">+91 9371169888</p>
+                  <p className="text-gray-800/60 text-sm mt-1">Available 24/7 for reservations</p>
                 </div>
               </div>
 
@@ -80,9 +80,9 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal mb-2">Email</h3>
-                  <p className="text-charcoal/80">vintagevalleyresort@gmail.com</p>
-                  <p className="text-charcoal/60 text-sm mt-1">We respond within 2 hours</p>
+                  <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
+                  <p className="text-gray-800/80">vintagevalleyresort@gmail.com</p>
+                  <p className="text-gray-800/60 text-sm mt-1">We respond within 2 hours</p>
                 </div>
               </div>
 
@@ -92,10 +92,10 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal mb-2">Location & Directions</h3>
-                  <p className="text-charcoal/80 font-medium">Vintage Valley Spa Resort</p>
-                  <p className="text-charcoal/80">Mumbai - Nashik Expy, opp. Parveen Industry, Talegaon, Igatpuri, Maharashtra 422402</p>
-                  <div className="mt-3 text-sm text-charcoal/70">
+                  <h3 className="font-semibold text-gray-800 mb-2">Location & Directions</h3>
+                  <p className="text-gray-800/80 font-medium">Vintage Valley Spa Resort</p>
+                  <p className="text-gray-800/80">Mumbai - Nashik Expy, opp. Parveen Industry, Talegaon, Igatpuri, Maharashtra 422402</p>
+                  <div className="mt-3 text-sm text-gray-800/70">
                     <p><strong>From Mumbai:</strong> Take NH-3 towards Nashik, exit at Igatpuri (120 km, 2.5 hours)</p>
                     <p><strong>From Pune:</strong> Via NH-50 to Nashik, then to Igatpuri (180 km, 3 hours)</p>
                     <p><strong>From Nashik:</strong> Take Igatpuri Road via Trimbakeshwar (65 km, 1.5 hours)</p>
@@ -110,10 +110,10 @@ const Contact = () => {
                   <Clock className="h-6 w-6 text-gold" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-charcoal mb-2">Check-in/out Times</h3>
-                  <p className="text-charcoal/80">Check-in: 1:00 PM</p>
-                  <p className="text-charcoal/80">Check-out: 11:00 AM</p>
-                  <p className="text-charcoal/60 text-sm mt-1">Early/late requests welcomed</p>
+                  <h3 className="font-semibold text-gray-800 mb-2">Check-in/out Times</h3>
+                  <p className="text-gray-800/80">Check-in: 1:00 PM</p>
+                  <p className="text-gray-800/80">Check-out: 11:00 AM</p>
+                  <p className="text-gray-800/60 text-sm mt-1">Early/late requests welcomed</p>
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a
                 href="tel:+919371179888"
-                className="bg-gold text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2"
+                className="bg-gold text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <Phone className="h-4 w-4" />
                 <span>Call Now</span>
@@ -131,7 +131,7 @@ const Contact = () => {
                 href="https://wa.me/919371179888"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-charcoal text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-charcoal hover:text-ivory transition-colors duration-200 flex items-center justify-center space-x-2"
+                className="border-2 border-gray-800 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-800 hover:text-ivory transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <MessageCircle className="h-4 w-4" />
                 <span>WhatsApp</span>
@@ -141,14 +141,14 @@ const Contact = () => {
 
           {/* Booking Form */}
           <div className="bg-white rounded-3xl p-8 luxury-shadow">
-            <h3 className="font-playfair text-3xl font-bold text-charcoal mb-6">
+            <h3 className="font-playfair text-3xl font-bold text-gray-800 mb-6">
               Reservation Inquiry
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-charcoal font-medium mb-2">
+                  <label htmlFor="name" className="block text-gray-800 font-medium mb-2">
                     Full Name *
                   </label>
                   <input
@@ -163,7 +163,7 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-charcoal font-medium mb-2">
+                  <label htmlFor="email" className="block text-gray-800 font-medium mb-2">
                     Email Address *
                   </label>
                   <input
@@ -180,7 +180,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-charcoal font-medium mb-2">
+                <label htmlFor="phone" className="block text-gray-800 font-medium mb-2">
                   Phone Number *
                 </label>
                 <input
@@ -197,8 +197,8 @@ const Contact = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="checkIn" className="block text-charcoal font-medium mb-2">
-                    Check-in Date
+                  <label htmlFor="checkIn" className="block text-gray-800 font-medium mb-2">
+                    Check-in Date *
                   </label>
                   <input
                     type="date"
@@ -210,8 +210,8 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="checkOut" className="block text-charcoal font-medium mb-2">
-                    Check-out Date
+                  <label htmlFor="checkOut" className="block text-gray-800 font-medium mb-2">
+                    Check-out Date *
                   </label>
                   <input
                     type="date"
@@ -226,8 +226,8 @@ const Contact = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="guests" className="block text-charcoal font-medium mb-2">
-                    Number of Guests
+                  <label htmlFor="guests" className="block text-gray-800 font-medium mb-2">
+                    Number of Guests *
                   </label>
                   <select
                     id="guests"
@@ -244,8 +244,8 @@ const Contact = () => {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="roomType" className="block text-charcoal font-medium mb-2">
-                    Preferred Room
+                  <label htmlFor="roomType" className="block text-gray-800 font-medium mb-2">
+                    Room Type *
                   </label>
                   <select
                     id="roomType"
@@ -262,7 +262,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-charcoal font-medium mb-2">
+                <label htmlFor="message" className="block text-gray-800 font-medium mb-2">
                   Special Requests or Questions
                 </label>
                 <textarea
@@ -278,14 +278,14 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-gold to-bronze text-charcoal py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-gradient-to-r from-gold to-bronze text-gray-800 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-[1.02] transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Send className="h-5 w-5" />
                 <span>Send Inquiry</span>
               </button>
             </form>
 
-            <p className="text-charcoal/60 text-sm mt-4 text-center">
+            <p className="text-gray-800/60 text-sm mt-4 text-center">
               We typically respond within 2 hours during business hours
             </p>
           </div>
@@ -296,10 +296,10 @@ const Contact = () => {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-playfair text-4xl font-bold text-charcoal mb-6">
+            <h2 className="font-playfair text-4xl font-bold text-gray-800 mb-6">
               Find Us in Paradise
             </h2>
-            <p className="text-xl text-charcoal/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-800/80 max-w-2xl mx-auto">
               Located in the serene hills of Igatpuri, just 2 hours from Mumbai
             </p>
           </div>
@@ -308,15 +308,15 @@ const Contact = () => {
             <div className="aspect-video bg-gold/10 rounded-2xl flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-gold mx-auto mb-4" />
-                <p className="font-playfair text-2xl font-semibold text-charcoal mb-2">
+                <p className="font-playfair text-2xl font-semibold text-gray-800 mb-2">
                   Interactive Map
                 </p>
-                <p className="text-charcoal/70 mb-4">
+                <p className="text-gray-800/70 mb-4">
                   Click to open in Google Maps for detailed directions
                 </p>
                 <button 
                   onClick={() => window.open('https://maps.google.com/?q=Vintage+Valley+Spa+Resort+Igatpuri', '_blank')}
-                  className="bg-gold text-charcoal px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200"
+                  className="bg-gold text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200"
                 >
                   Open in Maps
                 </button>
