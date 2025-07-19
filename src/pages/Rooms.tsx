@@ -3,8 +3,10 @@ import Footer from '@/components/Footer';
 import FloatingContact from '@/components/FloatingContact';
 import { Wifi, Car, Tv, Bath, Users, Bed, Mountain, Coffee } from 'lucide-react';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Rooms = () => {
+  const navigate = useNavigate();
   const [selectedPricing, setSelectedPricing] = useState<'weekday' | 'weekend'>('weekday');
 
   const rooms = [
@@ -95,7 +97,7 @@ const Rooms = () => {
       ],
       description: 'The Presidential Sky Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',
-      bedType: 'Master Suite + Guest Room',
+      bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed, Living area',
       size: '1200 sq ft',
       pricing: {
         weekday: '₹7,000',
@@ -104,7 +106,7 @@ const Rooms = () => {
       amenities: [
         { icon: Wifi, name: 'Premium WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
-        { icon: Bath, name: 'Premium Bathroom' },
+        { icon: Bath, name: 'Premium Bathrooms with Bathtub' },
         { icon: Mountain, name: 'Private Balcony' },
         { icon: Coffee, name: 'Tea/Coffee Maker' }
       ]
@@ -257,9 +259,12 @@ const Rooms = () => {
                 Weekend Getaway
               </h3>
               <p className="text-gray-800/80 mb-6">
-                Perfect 2-night weekend package including breakfast, spa credits, and nature activities
+                Perfect 2-night weekend package including breakfast and nature activities
               </p>
-              <button className="bg-gold text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200">
+              <button
+                className="bg-gold text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200"
+                onClick={() => navigate('/tariff')}
+              >
                 Learn More
               </button>
             </div>
@@ -270,7 +275,13 @@ const Rooms = () => {
               <p className="text-gray-800/80 mb-6">
                 Book 4+ nights and enjoy exclusive discounts, complimentary meals, and premium services
               </p>
-              <button className="bg-gray-800 text-ivory px-6 py-3 rounded-full font-semibold hover:bg-gray-800/80 transition-colors duration-200">
+              <button
+                className="bg-gray-800 text-ivory px-6 py-3 rounded-full font-semibold hover:bg-gray-800/80 transition-colors duration-200"
+                onClick={() => {
+                  const msg = encodeURIComponent(`Hello 👋, I'm interested in the Extended Stay offer.\nI’d like to know more about the discounts, complimentary meals, and premium services for bookings of 4 nights or more.\nPlease share the details. Thanks!`);
+                  window.open(`https://wa.me/919371179888?text=${msg}`, '_blank');
+                }}
+              >
                 Get Details
               </button>
             </div>
