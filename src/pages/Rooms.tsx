@@ -56,8 +56,7 @@ const Rooms = () => {
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
         { icon: Bath, name: 'Premium Bathroom' },
-        { icon: Mountain, name: 'Edge Views' },
-        { icon: Coffee, name: 'Mini Bar' }
+        { icon: Mountain, name: 'Edge Views' }
       ]
     },
     {
