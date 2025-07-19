@@ -148,14 +148,6 @@ const Attractions = () => {
       highlights: ['Jyotirling', 'Ancient temple', 'Religious pilgrimage', 'Shiva temple']
     },
     {
-      name: 'Ramkund',
-      distance: '48 km',
-      time: '1.1 hours',
-      description: 'Sacred bathing ghat on Godavari river where devotees perform religious ceremonies and rituals.',
-      images: ['/images/at/32.jpeg'],
-      highlights: ['Sacred bathing ghat', 'Godavari river', 'Religious ceremonies', 'Pilgrimage site']
-    },
-    {
       name: 'Harihar Fort',
       distance: '60 km',
       time: '1.5 hours',
@@ -186,14 +178,6 @@ const Attractions = () => {
       description: 'Sacred place mentioned in Ramayana, believed to be where Lord Rama spent his exile period.',
       images: ['/images/at/151.jpeg'],
       highlights: ['Ramayana site', 'Sacred place', 'Historical significance', 'Religious importance']
-    },
-    {
-      name: 'Deolali Camp',
-      distance: '52 km',
-      time: '1.2 hours',
-      description: 'Historic military cantonment town known for its pleasant climate and colonial architecture.',
-      images: ['/images/at/15.jpg'],
-      highlights: ['Military cantonment', 'Colonial architecture', 'Pleasant climate', 'Historical town']
     },
     {
       name: 'Anjeneri',
