@@ -197,7 +197,7 @@ const Index = () => {
       </section>
 
       {/* Enhanced Testimonials Section */}
-      <section className="section-padding bg-charcoal relative overflow-hidden">
+      <section className="section-padding bg-white relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-40 h-40 bg-gold/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-32 right-16 w-60 h-60 bg-ivory/5 rounded-full blur-3xl"></div>

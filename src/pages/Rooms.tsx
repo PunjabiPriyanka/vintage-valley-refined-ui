@@ -145,7 +145,7 @@ const Rooms = () => {
       <FloatingContact />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-charcoal to-charcoal/90">
+      <section className="pt-24 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
             Luxury Accommodations

@@ -100,7 +100,7 @@ const Facilities = () => {
       <FloatingContact />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-charcoal to-charcoal/90">
+      <section className="pt-24 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
             World-Class Facilities
@@ -112,7 +112,7 @@ const Facilities = () => {
       </section>
 
       {/* Facilities Grid */}
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {facilities.map((facility, index) => (
