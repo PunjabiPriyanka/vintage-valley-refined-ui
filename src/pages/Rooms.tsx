@@ -70,7 +70,7 @@ const Rooms = () => {
       ],
       description: 'The Lotus Family Suite provides generous space and premium comfort for larger groups. With separate living areas, premium furnishings, and spectacular views, it offers the perfect setting for memorable family gatherings.',
       capacity: '4 Adults',
-      bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed',
+      bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed, Living area',
       size: '750 sq ft',
       pricing: {
         weekday: '₹6,000',
@@ -80,9 +80,8 @@ const Rooms = () => {
         { icon: Wifi, name: 'High-Speed WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
-        { icon: Bath, name: 'Premium Bathrooms' },
-        { icon: Mountain, name: 'Panoramic Views' },
-        { icon: Bath, name: 'Bathtub' }
+        { icon: Bath, name: 'Premium Bathrooms with Bathtub' },
+        { icon: Mountain, name: 'Panoramic Views' }
       ]
     },
     {
