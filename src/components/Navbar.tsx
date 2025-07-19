@@ -38,10 +38,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className={`font-playfair text-2xl font-bold ${location.pathname === '/' ? 'text-white' : 'text-charcoal'}`}>
+            <div className={`font-playfair text-2xl font-bold ${isScrolled ? 'text-gray-800' : 'text-white'}`}>
               Vintage Valley
             </div>
-            <div className={`font-vibes text-lg ${location.pathname === '/' ? 'text-white' : 'text-gold'}`}>Resort</div>
+            <div className={`font-vibes text-lg ${isScrolled ? 'text-gold' : 'text-white'}`}>Resort</div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,13 +53,13 @@ const Navbar = () => {
                 className={`font-medium transition-colors duration-200 ${
                   location.pathname === link.path
                     ? 'text-gold border-b-2 border-gold'
-                    : location.pathname === '/' ? 'text-white hover:text-gold' : 'text-charcoal hover:text-gold'
+                    : isScrolled ? 'text-gray-800 hover:text-gold' : 'text-white hover:text-gold'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <button className={`px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${location.pathname === '/' ? 'bg-gold text-charcoal' : 'bg-gold text-charcoal'}`}>
+            <button className={`px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}>
               Book Now
             </button>
           </div>
@@ -70,9 +70,9 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="h-6 w-6 text-charcoal" />
+              <X className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
             ) : (
-              <Menu className="h-6 w-6 text-charcoal" />
+              <Menu className={`h-6 w-6 ${isScrolled ? 'text-gray-800' : 'text-white'}`} />
             )}
           </button>
         </div>
@@ -88,14 +88,14 @@ const Navbar = () => {
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     location.pathname === link.path
                       ? 'text-gold bg-gold/10'
-                      : location.pathname === '/' ? 'text-white hover:text-gold hover:bg-gold/5' : 'text-charcoal hover:text-gold hover:bg-gold/5'
+                      : isScrolled ? 'text-gray-800 hover:text-gold hover:bg-gold/5' : 'text-white hover:text-gold hover:bg-gold/5'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <button className={`w-full mt-4 px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${location.pathname === '/' ? 'bg-gold text-charcoal' : 'bg-gold text-charcoal'}`}>
+              <button className={`w-full mt-4 px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}>
                 Book Now
               </button>
             </div>
