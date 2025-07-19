@@ -35,32 +35,6 @@ const Rooms = () => {
       ]
     },
     {
-      id: 2,
-      title: 'Skyline Deluxe',
-      subtitle: 'Elevated Comfort with Panoramic Views',
-      images: [
-        '/images/skyline-deluxe-1.jpg',
-        '/images/skyline-deluxe-2.jpg',
-        '/images/skyline-deluxe-3.jpg'
-      ],
-      description: 'Located along the edge line of each floor, these rooms offer sweeping skyline views and elevated comfort. Designed for guests who appreciate a serene atmosphere with panoramic visibility. Ideal for couples and leisure travelers seeking a premium stay with a view.',
-      capacity: '2 Adults',
-      bedType: 'King Size Bed',
-      size: '500 sq ft',
-      pricing: {
-        weekday: '₹4,000',
-        weekend: '₹5,000'
-      },
-      amenities: [
-        { icon: Wifi, name: 'High-Speed WiFi' },
-        { icon: Car, name: 'Complimentary Parking' },
-        { icon: Tv, name: 'Smart TV' },
-        { icon: Bath, name: 'Luxury Bathroom' },
-        { icon: Mountain, name: 'Skyline Views' },
-        { icon: Coffee, name: 'Tea/Coffee Maker' }
-      ]
-    },
-    {
       id: 3,
       title: 'Deluxe Edge View',
       subtitle: 'Corner Privacy with Scenic Visibility',
