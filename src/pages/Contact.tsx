@@ -82,7 +82,6 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
                   <p className="text-gray-800/80">vintagevalleyresort@gmail.com</p>
-                  <p className="text-gray-800/60 text-sm mt-1">We respond within 2 hours</p>
                 </div>
               </div>
 
@@ -99,7 +98,7 @@ const Contact = () => {
                     <p><strong>From Mumbai:</strong> Take NH-3 towards Nashik, exit at Igatpuri (120 km, 2.5 hours)</p>
                     <p><strong>From Pune:</strong> Via NH-50 to Nashik, then to Igatpuri (180 km, 3 hours)</p>
                     <p><strong>From Nashik:</strong> Take Igatpuri Road via Trimbakeshwar (65 km, 1.5 hours)</p>
-                    <p><strong>Nearest Railway:</strong> Igatpuri Station (8 km, pickup available)</p>
+                    <p><strong>Nearest Railway:</strong> Igatpuri Station (8 km, 13 Minutes)</p>
                   </div>
                 </div>
               </div>
@@ -286,7 +285,7 @@ const Contact = () => {
             </form>
 
             <p className="text-gray-800/60 text-sm mt-4 text-center">
-              We typically respond within 2 hours during business hours
+              
             </p>
           </div>
         </div>
