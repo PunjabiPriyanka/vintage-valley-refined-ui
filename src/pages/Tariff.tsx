@@ -65,17 +65,17 @@ const Tariff = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-6">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-6">
             Room Tariffs
           </h1>
-          <p className="text-xl text-charcoal/80 max-w-2xl mx-auto">
+          <p className="text-xl text-black/80 max-w-2xl mx-auto">
             Transparent pricing for luxury accommodations in the heart of nature
           </p>
         </div>
       </section>
 
       {/* Tariff Table */}
-      <section className="section-padding bg-white">
+      <section className="section-padding">
         <div className="max-w-6xl mx-auto">
           <div className="bg-white rounded-3xl luxury-shadow overflow-hidden">
             <div className="bg-gradient-to-r from-charcoal to-charcoal/90 text-ivory p-6">
@@ -187,10 +187,10 @@ const Tariff = () => {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-charcoal to-charcoal/90">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-playfair text-4xl font-bold text-charcoal mb-6">
+          <h2 className="font-playfair text-4xl font-bold text-ivory mb-6">
             Ready to Experience Luxury?
           </h2>
-          <p className="text-xl text-charcoal/80 mb-8">
+          <p className="text-xl text-ivory/80 mb-8">
             Book your perfect getaway and create unforgettable memories at Vintage Valley Resort
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

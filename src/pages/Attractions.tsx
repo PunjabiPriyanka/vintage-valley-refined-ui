@@ -270,21 +270,16 @@ const Attractions = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1464822759844-d150ad6d1c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
+            backgroundImage: `linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1464822759844-d150ad6d1c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-6">
-            Explore Igatpuri & Beyond
-          </h1>
-          <p className="text-xl text-charcoal/80 max-w-2xl mx-auto">
-            Discover the best attractions, natural wonders, and cultural sites near Vintage Valley Resort
-          </p>
+          {/* Removed: Explore Around Igatpuri, Discover..., All distances... */}
         </div>
       </section>
 
       {/* Igatpuri Places Section */}
-      <section className="section-padding bg-white">
+      <section className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-4xl font-bold text-charcoal mb-4">
@@ -450,23 +445,23 @@ const Attractions = () => {
       {/* Travel Tips */}
       <section className="section-padding bg-gradient-to-br from-charcoal to-charcoal/90">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-playfair text-4xl font-bold text-charcoal mb-8">
+          <h2 className="font-playfair text-4xl font-bold text-ivory mb-8">
             Travel Tips & Recommendations
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-ivory/10 backdrop-blur-sm rounded-3xl p-8 border border-ivory/20">
-              <h3 className="font-playfair text-xl font-semibold text-charcoal mb-4">
+              <h3 className="font-playfair text-xl font-semibold text-ivory mb-4">
                 Best Time to Visit
               </h3>
-              <p className="text-charcoal/80 leading-relaxed">
+              <p className="text-ivory/80 leading-relaxed">
                 October to March offers pleasant weather for sightseeing. Monsoon season (June-September) brings lush greenery and spectacular waterfalls.
               </p>
             </div>
             <div className="bg-ivory/10 backdrop-blur-sm rounded-3xl p-8 border border-ivory/20">
-              <h3 className="font-playfair text-xl font-semibold text-charcoal mb-4">
+              <h3 className="font-playfair text-xl font-semibold text-ivory mb-4">
                 Transportation
               </h3>
-              <p className="text-charcoal/80 leading-relaxed">
+              <p className="text-ivory/80 leading-relaxed">
                 Our concierge can arrange guided tours, private transportation, or rental vehicles to explore these attractions comfortably and safely.
               </p>
             </div>

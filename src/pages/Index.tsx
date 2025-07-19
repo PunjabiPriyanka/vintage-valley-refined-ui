@@ -95,16 +95,16 @@ const Index = () => {
 
       {/* Enhanced Amenities Section */}
       <section className="section-padding bg-white relative">
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-ivory/30 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-black/5 to-white"></div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-block px-6 py-2 bg-gold/10 rounded-full mb-6">
               <span className="text-gold font-medium tracking-wide">WORLD-CLASS AMENITIES</span>
             </div>
-            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-8">
+            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-8">
               Luxury Redefined
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black/70 max-w-3xl mx-auto leading-relaxed">
               Immerse yourself in exceptional facilities designed to elevate every moment of your stay
             </p>
           </div>
@@ -197,7 +197,7 @@ const Index = () => {
       </section>
 
       {/* Enhanced Testimonials Section */}
-      <section className="section-padding bg-white relative overflow-hidden">
+      <section className="section-padding bg-charcoal relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-40 h-40 bg-gold/5 rounded-full blur-3xl"></div>
           <div className="absolute bottom-32 right-16 w-60 h-60 bg-ivory/5 rounded-full blur-3xl"></div>
@@ -208,10 +208,10 @@ const Index = () => {
             <div className="inline-block px-6 py-2 bg-gold/20 rounded-full mb-6">
               <span className="text-gold font-medium tracking-wide">GUEST EXPERIENCES</span>
             </div>
-            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-8">
+            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-8">
               Stories of Bliss
             </h2>
-            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-ivory/70 max-w-3xl mx-auto leading-relaxed">
               Discover why guests choose Vintage Valley as their sanctuary of luxury and tranquility
             </p>
           </div>

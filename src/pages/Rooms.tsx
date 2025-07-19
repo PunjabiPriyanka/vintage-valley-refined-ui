@@ -147,21 +147,21 @@ const Rooms = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-6">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-black mb-6">
             Luxury Accommodations
           </h1>
-          <p className="text-xl text-charcoal/80 max-w-2xl mx-auto mb-8">
+          <p className="text-xl text-black/80 max-w-2xl mx-auto mb-8">
             Discover our collection of thoughtfully designed suites, each offering a unique blend of comfort and elegance
           </p>
           
           {/* Pricing Toggle */}
-          <div className="inline-flex bg-ivory/10 rounded-full p-1 backdrop-blur-sm">
+          <div className="inline-flex bg-black/5 rounded-full p-1 backdrop-blur-sm">
             <button
               onClick={() => setSelectedPricing('weekday')}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 selectedPricing === 'weekday'
-                  ? 'bg-gold text-charcoal'
-                  : 'text-ivory hover:text-gold'
+                  ? 'bg-gold text-black'
+                  : 'text-black hover:text-gold'
               }`}
             >
               Weekday Rates
@@ -170,8 +170,8 @@ const Rooms = () => {
               onClick={() => setSelectedPricing('weekend')}
               className={`px-6 py-2 rounded-full font-medium transition-all ${
                 selectedPricing === 'weekend'
-                  ? 'bg-gold text-charcoal'
-                  : 'text-ivory hover:text-gold'
+                  ? 'bg-gold text-black'
+                  : 'text-black hover:text-gold'
               }`}
             >
               Weekend Rates
