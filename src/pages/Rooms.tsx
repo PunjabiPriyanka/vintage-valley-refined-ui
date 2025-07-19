@@ -22,7 +22,7 @@ const Rooms = () => {
       description: 'Our Deluxe Studio Suite offers the perfect blend of modern luxury and natural serenity. Featuring contemporary amenities, panoramic views, and thoughtful design elements that create an atmosphere of sophisticated relaxation.',
       capacity: '2 Adults',
       bedType: 'King Size Bed',
-      size: '45 sq ft',
+      size: '450 sq ft',
       pricing: {
         weekday: '₹3,500',
         weekend: '₹4,500'
