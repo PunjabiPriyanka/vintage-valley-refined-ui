@@ -24,7 +24,7 @@ const Facilities = () => {
       icon: Waves,
       description: 'Stunning infinity pool overlooking the valley with crystal-clear waters and panoramic mountain views. Perfect for relaxation and memorable moments.',
       image: '/images/infinity-pool-1.jpg',
-      features: ['Pool bar service', 'Heated during winter', 'Valley views', 'Sunrise sessions']
+      features: ['Valley views', 'Sunrise sessions']
     },
     {
       id: 2,
@@ -137,11 +137,6 @@ const Facilities = () => {
                 </div>
                 
                 <div className="p-8">
-                  {facility.title === 'Infinity Pool' && (
-                    <div className="flex justify-center mb-2">
-                      <img src="/images/wave-small.png" alt="Wave" className="h-8" />
-                    </div>
-                  )}
                   <h2 className="font-playfair text-3xl font-bold text-charcoal mb-4">
                     {facility.title}
                   </h2>
