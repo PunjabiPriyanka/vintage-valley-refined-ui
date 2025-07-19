@@ -102,10 +102,10 @@ const Facilities = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-6">
+          <h1 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-6">
             World-Class Facilities
           </h1>
-          <p className="text-xl text-ivory/80 max-w-3xl mx-auto">
+          <p className="text-xl text-charcoal/80 max-w-3xl mx-auto">
             Discover premium amenities and exceptional services designed to enhance every moment of your stay at Vintage Valley Resort
           </p>
         </div>

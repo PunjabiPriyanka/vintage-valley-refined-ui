@@ -208,10 +208,10 @@ const Index = () => {
             <div className="inline-block px-6 py-2 bg-gold/20 rounded-full mb-6">
               <span className="text-gold font-medium tracking-wide">GUEST EXPERIENCES</span>
             </div>
-            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-ivory mb-8">
+            <h2 className="font-playfair text-5xl md:text-6xl font-bold text-charcoal mb-8">
               Stories of Bliss
             </h2>
-            <p className="text-xl text-ivory/70 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-charcoal/70 max-w-3xl mx-auto leading-relaxed">
               Discover why guests choose Vintage Valley as their sanctuary of luxury and tranquility
             </p>
           </div>
