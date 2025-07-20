@@ -34,7 +34,7 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       operatingHours: '24/7 availability',
       capacity: '250 guests',
       area: '5000 sq ft',
-      specialFeatures: ['Professional sound system', 'Stage setup available', 'Catering kitchen nearby', 'Weather-proof canopy option'],
+      specialFeatures: ['Professional sound system', 'Stage setup available', 'Catering kitchen in house', 'Weather-proof canopy option'],
       gallery: [
         'https://drive.google.com/uc?export=view&id=14Mpjqee5uRPe66w-gCBR6Nz0dLFMeTGb',
         'https://drive.google.com/uc?export=view&id=1glBk_M8G_jgyxgJN94CzZLa_OtcKxZtl',

@@ -32,7 +32,7 @@ const Facilities = () => {
       icon: Users,
       description: 'Elegant outdoor venue perfect for weddings, corporate events, and celebrations. Set against the backdrop of lush greenery and mountain vistas.',
       image: '/images/banquet-lawn-1.jpg',
-      features: ['Capacity 200+ guests', 'Professional lighting', 'Catering services', 'Event planning']
+      features: ['Capacity 250 guests', 'Professional lighting', 'Catering services', 'Event planning']
     },
     {
       id: 3,
