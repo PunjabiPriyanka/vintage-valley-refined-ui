@@ -54,9 +54,9 @@ const Facilities = () => {
       id: 5,
       title: 'Fitness Studio',
       icon: Dumbbell,
-      description: 'State-of-the-art fitness center equipped with modern equipment and personal training services. Maintain your fitness routine while enjoying nature views.',
+      description: 'State-of-the-art fitness center equipped with modern equipment and premium amenities. Maintain your fitness routine while enjoying nature views.',
       image: 'https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D',
-      features: ['Modern equipment', 'Personal training', 'Outdoor workouts']
+      features: ['Modern equipment', 'Changing rooms', 'Showers', 'Steam rooms', 'Outdoor workouts']
     },
     {
       id: 6,

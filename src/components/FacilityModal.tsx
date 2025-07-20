@@ -63,6 +63,17 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
         'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
       ]
     },
+    5: { // Fitness Studio
+      operatingHours: '7:00 AM - 11:00 AM, 6:00 PM - 10:00 PM',
+      capacity: '20 guests',
+      area: 'Premium fitness facility',
+      specialFeatures: ['State-of-the-art equipment', 'Spacious changing rooms', 'Modern shower facilities', 'Relaxing steam rooms', 'Outdoor workout area'],
+      gallery: [
+        'https://images.unsplash.com/photo-1590487988256-9ed24133863e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGd5bXxlbnwwfHwwfHx8MA%3D%3D',
+        'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+      ]
+    },
     6: { // Game Zone
       operatingHours: '8:00 AM - 10:00 PM',
       capacity: '50+ guests',
