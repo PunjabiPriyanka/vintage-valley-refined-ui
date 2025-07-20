@@ -7,6 +7,13 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
+  const handleBookNow = () => {
+    const phoneNumber = '+919371179888'; // Replace with your actual WhatsApp number
+    const message = encodeURIComponent("Hey there! 👋 I'm interested in planning my stay and would love to know more about availability, rates, and any current offers. Could you please assist me?");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -59,7 +66,10 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <button className={`px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}>
+            <button 
+              onClick={handleBookNow}
+              className={`px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}
+            >
               Book Now
             </button>
           </div>
@@ -95,7 +105,10 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <button className={`w-full mt-4 px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}>
+              <button 
+                onClick={handleBookNow}
+                className={`w-full mt-4 px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}
+              >
                 Book Now
               </button>
             </div>

@@ -158,9 +158,12 @@ const Rooms = () => {
       <section className="section-padding">
         <div className="max-w-7xl mx-auto space-y-16">
           {rooms.map((room, index) => (
-            <div key={room.id} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-              index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
-            }`}>
+            <div 
+              key={room.id} 
+              id={room.title.replace(/\s+/g, '-').toLowerCase()}
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
+                index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
+              }`}>
               {/* Images */}
               <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                 <div className="relative">

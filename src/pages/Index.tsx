@@ -1,9 +1,24 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
+import { useNavigate } from 'react-router-dom';
 import { Sparkles, Waves, TreePine, Crown, Star, MapPin, Phone, Mail, Calendar, Users, Award, Gamepad2 } from 'lucide-react';
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  const handleRoomClick = (roomTitle: string) => {
+    // Navigate to rooms page and scroll to specific room
+    navigate('/rooms');
+    // Add a small delay to ensure the page loads before scrolling
+    setTimeout(() => {
+      const element = document.getElementById(roomTitle.replace(/\s+/g, '-').toLowerCase());
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
   const amenities = [
     { 
       icon: Waves, 
@@ -57,7 +72,7 @@ const Index = () => {
       badge: 'Family Choice'
     },
     {
-      title: 'Skyline Deluxe Suite',
+      title: 'Presidential Sky Suite',
       image: '/images/presidential-sky-villa-1.jpg',
       description: 'Ultimate luxury experience with panoramic valley views and premium services',
       price: 'From ₹7,000',
@@ -191,7 +206,10 @@ const Index = () => {
                       ))}
                     </div>
                     
-                    <button className="w-full bg-gradient-to-r from-gold to-bronze text-charcoal font-semibold py-3 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                    <button 
+                      onClick={() => handleRoomClick(room.title)}
+                      className="w-full bg-gradient-to-r from-gold to-bronze text-charcoal font-semibold py-3 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                    >
                       View Details & Book
                     </button>
                   </div>
