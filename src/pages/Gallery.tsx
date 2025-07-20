@@ -142,7 +142,29 @@ const Gallery = () => {
       {/* Gallery Grid */}
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {/* Mobile Horizontal Scroll Gallery */}
+          <div className="md:hidden flex overflow-x-auto space-x-4 pb-2">
+            {filteredImages.map((image, index) => (
+              <div
+                key={image.id}
+                className="flex-shrink-0 w-64 cursor-pointer rounded-2xl luxury-shadow hover:shadow-2xl transition-all duration-500 overflow-hidden"
+                onClick={() => openLightbox(image.id)}
+              >
+                <div className="relative overflow-hidden">
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-gray-800/60 via-transparent to-transparent p-2">
+                    <p className="text-ivory font-medium text-sm truncate">{image.alt}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Desktop Grid Gallery */}
+          <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {filteredImages.map((image, index) => (
               <div
                 key={image.id}
