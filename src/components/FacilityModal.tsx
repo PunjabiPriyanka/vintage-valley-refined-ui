@@ -81,9 +81,12 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
     },
     6: { // Game Zone
       operatingHours: '8:00 AM - 10:00 PM',
-      capacity: '50+ guests',
-      area: 'Multi-zone facility',
-      specialFeatures: ['Professional badminton court', 'Full-size football ground', 'Indoor gaming area', 'Equipment provided', 'Professional coaching available'],
+      specialFeatures: [
+        'badminton court',
+        'Indoor gaming area',
+        'Equipment provided (cricket kit, badminton, carrom, chess)',
+        'kids play area'
+      ],
       gallery: [
         'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
