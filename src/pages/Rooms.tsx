@@ -41,8 +41,8 @@ const Rooms = () => {
       subtitle: 'Corner Privacy with Scenic Visibility',
       images: [
         '/images/deluxe-edge-view-1.jpg',
-        '/images/deluxe-edge-view-2.jpg',
-        '/images/deluxe-edge-view-3.jpg'
+        '/images/room/4.jpeg',
+        '/images/room/5.jpeg'
       ],
       description: 'Rooms with stunning front-facing views, offering elevated comfort and a refined aesthetic. Positioned at the corner edge of each floor for enhanced privacy and scenic visibility.',
       capacity: '2 Adults',
