@@ -308,7 +308,7 @@ const Contact = () => {
               {/* Embedded Google Map */}
               <iframe
                 title="Vintage Valley Spa Resort Map"
-                src="https://www.google.com/maps?q=19.6789012,73.5623456&hl=en&z=15&output=embed"
+                src="https://www.google.com/maps?q=Vintage+Valley+Spa+Resort+Igatpuri&hl=en&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
