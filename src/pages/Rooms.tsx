@@ -91,9 +91,9 @@ const Rooms = () => {
       title: 'Presidential Sky Suite',
       subtitle: 'Ultimate Luxury Experience',
       images: [
-        '/images/presidential-sky-suite-1.jpg',
-        '/images/presidential-sky-suite-2.jpg',
-        '/images/presidential-sky-suite-3.jpg'
+        '/images/room/1.JPEG',
+        '/images/room/2.JPEG',
+        '/images/room/3.JPEG'
       ],
       description: 'The Presidential Sky Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',

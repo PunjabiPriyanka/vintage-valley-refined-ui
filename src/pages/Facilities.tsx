@@ -163,65 +163,6 @@ const Facilities = () => {
         </div>
       </section>
 
-      {/* Operating Hours */}
-      <section className="section-padding bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-playfair text-4xl font-bold text-charcoal text-center mb-12">
-            Operating Hours
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gold/5 rounded-3xl p-8 border border-gold/20">
-              <h3 className="font-playfair text-2xl font-semibold text-charcoal mb-6">
-                Daily Schedule
-              </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-gold/10">
-                  <span className="font-medium text-charcoal">Swimming Pool</span>
-                  <span className="text-charcoal/80">08:00 AM - 06:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gold/10">
-                  <span className="font-medium text-charcoal">Fitness Studio</span>
-                  <span className="text-charcoal/80">07:00 AM - 11:00 AM<br/>06:00 PM - 10:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gold/10">
-                  <span className="font-medium text-charcoal">Game Zone</span>
-                  <span className="text-charcoal/80">08:00 AM - 10:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="font-medium text-charcoal">Spa & Wellness</span>
-                  <span className="text-charcoal/80">09:00 AM - 09:00 PM</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-charcoal/5 rounded-3xl p-8 border border-charcoal/20">
-              <h3 className="font-playfair text-2xl font-semibold text-charcoal mb-6">
-                Dining Hours
-              </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-charcoal/10">
-                  <span className="font-medium text-charcoal">Breakfast</span>
-                  <span className="text-charcoal/80">08:00 AM - 10:00 AM</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-charcoal/10">
-                  <span className="font-medium text-charcoal">Lunch</span>
-                  <span className="text-charcoal/80">01:00 PM - 03:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-charcoal/10">
-                  <span className="font-medium text-charcoal">Hi-Tea</span>
-                  <span className="text-charcoal/80">04:00 PM - 06:00 PM</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="font-medium text-charcoal">Dinner</span>
-                  <span className="text-charcoal/80">07:00 PM - 10:00 PM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-charcoal to-charcoal/90">
         <div className="max-w-4xl mx-auto text-center">
