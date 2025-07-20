@@ -25,9 +25,9 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       temperature: '28°C maintained',
       specialFeatures: ['Underwater lighting', 'Infinity edge design', 'Pool bar service', 'Heated during winter'],
       gallery: [
-        'https://drive.google.com/uc?export=view&id=1yZq0n6UE9ee0tTUoEurBrEXTN7m-oaWl',
-        'https://drive.google.com/uc?export=view&id=1JiUIQ_F9yaaQVyPt-GlzEOXXb5lj3yMR',
-        'https://drive.google.com/uc?export=view&id=1m9f9p1uOdWoR1FlWm1FvmQwzwo02vlM9'
+        '/images/pool/AB005094.JPG',
+        '/images/pool/AB005097.JPG',
+        '/images/pool/AB005100.JPG'
       ]
     },
     2: { // Palatio Banquet
@@ -36,9 +36,9 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       area: '5000 sq ft',
       specialFeatures: ['Professional sound system', 'Stage setup available', 'Catering kitchen in house', 'Weather-proof canopy option'],
       gallery: [
-        'https://drive.google.com/uc?export=view&id=14Mpjqee5uRPe66w-gCBR6Nz0dLFMeTGb',
-        'https://drive.google.com/uc?export=view&id=1glBk_M8G_jgyxgJN94CzZLa_OtcKxZtl',
-        'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+        '/images/pool/AB004825.JPG',
+        '/images/pool/AB004834.JPG',
+        '/images/pool/AB004827.JPG'
       ]
     },
     3: { // Tarkari Restaurant
@@ -47,9 +47,9 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       cuisine: 'Multi-cuisine',
       specialFeatures: ['Live cooking counter', 'Private dining area', 'Specialized lighting', 'Outdoor terrace seating'],
       gallery: [
-        'https://drive.google.com/uc?export=view&id=1Zp7rFx2l8Av-e3B8fMrS1LsR3mw0mV9h',
-        'https://drive.google.com/uc?export=view&id=1Sq3quhmY0Ucmo8Z9YItAko_93XIuZDnX',
-        'https://drive.google.com/uc?export=view&id=1glBk_M8G_jgyxgJN94CzZLa_OtcKxZtl'
+        '/images/pool/AB004771.JPG',
+        '/images/pool/AB004776.JPG',
+        '/images/pool/AB004802.JPG'
       ]
     },
     4: { // Spa & Wellness
