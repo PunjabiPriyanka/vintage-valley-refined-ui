@@ -3,8 +3,15 @@ import Footer from '@/components/Footer';
 import FloatingContact from '@/components/FloatingContact';
 import { MapPin, Clock, ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
+import { useState } from 'react';
 
 const Attractions = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImg, setLightboxImg] = useState<string | null>(null);
+  const [lightboxImgs, setLightboxImgs] = useState<string[]>([]);
+  const [lightboxIndex, setLightboxIndex] = useState<number>(0);
+  const [expanded, setExpanded] = useState<{[key: string]: boolean}>({});
+
   const igatpuriPlaces = [
     {
       name: 'Dhamma Giri / Vipassana Meditation Center',
@@ -93,6 +100,22 @@ const Attractions = () => {
       description: 'Mountain pass with stunning ghat views, popular for its scenic railway route and natural beauty.',
       image: '/images/at/33.jpeg',
       highlights: ['Mountain pass', 'Railway route', 'Ghat views', 'Natural beauty']
+    },
+    {
+      name: 'Jatayu Mandir',
+      distance: '12 km',
+      time: '20 mins',
+      description: 'Temple dedicated to Jatayu from the Ramayana, offering spiritual ambiance and scenic views.',
+      image: '/images/at/152.jpeg',
+      highlights: ['Jatayu temple', 'Spiritual site', 'Scenic views', 'Ramayana connection']
+    },
+    {
+      name: 'Kalsubai Peak',
+      distance: '40 km',
+      time: '1 hour',
+      description: 'The highest peak in Maharashtra, popular for trekking and breathtaking panoramic views.',
+      image: '/images/at/153.jpeg',
+      highlights: ['Highest peak', 'Trekking', 'Panoramic views', 'Adventure']
     }
   ];
 
@@ -132,14 +155,6 @@ const Attractions = () => {
       highlights: ['Buddhist caves', 'Ancient architecture', 'Historical site', 'Rock-cut caves']
     },
     {
-      name: 'Sita Gufa',
-      distance: '50 km',
-      time: '1.2 hours',
-      description: 'Sacred cave associated with Ramayana, believed to be where Sita stayed during her exile period.',
-      images: ['/images/at/9.jpg'],
-      highlights: ['Religious site', 'Ramayana connection', 'Sacred cave', 'Spiritual significance']
-    },
-    {
       name: 'Trimbakeshwar Jyotirling Mandir',
       distance: '35 km',
       time: '50 mins',
@@ -175,9 +190,9 @@ const Attractions = () => {
       name: 'Panchvati',
       distance: '50 km',
       time: '1.2 hours',
-      description: 'Sacred place mentioned in Ramayana, believed to be where Lord Rama spent his exile period.',
-      images: ['/images/at/151.jpeg'],
-      highlights: ['Ramayana site', 'Sacred place', 'Historical significance', 'Religious importance']
+      description: 'Panchvati is a sacred area in Nashik, deeply associated with the Ramayana. It includes Sita Gufa (the cave where Sita stayed during exile), Ram Kund (a holy tank where Lord Rama is believed to have bathed), and other important sites. Sita Gufa is a small cave revered for its spiritual significance, while Ram Kund is a major pilgrimage spot for ritual baths and religious ceremonies.',
+      images: ['/images/at/14.jpeg', '/images/at/32.jpeg', '/images/at/9.jpeg'],
+      highlights: ['Ramayana site', 'Sita Gufa', 'Ram Kund', 'Sacred place', 'Historical significance', 'Religious importance']
     },
     {
       name: 'Anjeneri',
@@ -286,7 +301,13 @@ const Attractions = () => {
                                 <img
                                   src={img}
                                   alt={place.name + ' image ' + (imgIdx + 1)}
-                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer"
+                                  onClick={() => {
+                                    setLightboxImgs(place.images);
+                                    setLightboxIndex(imgIdx);
+                                    setLightboxImg(img);
+                                    setLightboxOpen(true);
+                                  }}
                                 />
                               </CarouselItem>
                             ))}
@@ -317,7 +338,14 @@ const Attractions = () => {
                         {place.name}
                       </h3>
                       <p className="text-gray-800/80 text-sm leading-relaxed mb-4">
-                        {place.description}
+                        {expanded[place.name]
+                          ? place.description
+                          : place.description.length > 100
+                            ? <>
+                                {place.description.slice(0, 100)}...{' '}
+                                <button className="text-gold underline text-xs" onClick={() => setExpanded(e => ({...e, [place.name]: true}))}>Read more</button>
+                              </>
+                            : place.description}
                       </p>
 
                       <div className="grid grid-cols-2 gap-1 mb-4">
@@ -329,15 +357,17 @@ const Attractions = () => {
                         ))}
                       </div>
 
-                      <a
-                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full bg-gold text-gray-800 px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2"
-                      >
-                        <ExternalLink className="h-3 w-3" />
-                        <span>Get Directions</span>
-                      </a>
+                      <div className="flex justify-start">
+                        <a
+                          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-gold text-gray-800 px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center space-x-2 min-w-[140px]"
+                        >
+                          <ExternalLink className="h-3 w-3" />
+                          <span>Get Directions</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </CarouselItem>
@@ -373,7 +403,13 @@ const Attractions = () => {
                                 <img
                                   src={img}
                                   alt={place.name + ' image ' + (imgIdx + 1)}
-                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700 cursor-pointer"
+                                  onClick={() => {
+                                    setLightboxImgs(place.images);
+                                    setLightboxIndex(imgIdx);
+                                    setLightboxImg(img);
+                                    setLightboxOpen(true);
+                                  }}
                                 />
                               </CarouselItem>
                             ))}
@@ -404,7 +440,14 @@ const Attractions = () => {
                         {place.name}
                       </h3>
                       <p className="text-gray-800/80 text-sm leading-relaxed mb-4">
-                        {place.description}
+                        {expanded[place.name]
+                          ? place.description
+                          : place.description.length > 100
+                            ? <>
+                                {place.description.slice(0, 100)}...{' '}
+                                <button className="text-gold underline text-xs" onClick={() => setExpanded(e => ({...e, [place.name]: true}))}>Read more</button>
+                              </>
+                            : place.description}
                       </p>
 
                       <div className="grid grid-cols-2 gap-1 mb-4">
@@ -416,15 +459,17 @@ const Attractions = () => {
                         ))}
                       </div>
 
-                      <a
-                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full bg-gray-800 text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-800/80 transition-colors duration-200 flex items-center justify-center space-x-2"
-                      >
-                        <ExternalLink className="h-3 w-3" />
-                        <span>Get Directions</span>
-                      </a>
+                      <div className="flex justify-start">
+                        <a
+                          href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="bg-gray-800 text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-800/80 transition-colors duration-200 flex items-center space-x-2 min-w-[140px]"
+                        >
+                          <ExternalLink className="h-3 w-3" />
+                          <span>Get Directions</span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </CarouselItem>
@@ -468,6 +513,18 @@ const Attractions = () => {
           </div>
         </div>
       </section>
+
+      {/* Lightbox Modal (simple: only image and close button) */}
+      {lightboxOpen && lightboxImg && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80" onClick={() => setLightboxOpen(false)}>
+          <div className="relative max-w-3xl w-full flex flex-col items-center" onClick={e => e.stopPropagation()}>
+            <button className="absolute top-2 right-2 bg-white/80 rounded-full p-2 text-gray-800 hover:bg-gold" onClick={() => setLightboxOpen(false)}>
+              <span style={{fontSize: '1.5rem', fontWeight: 'bold'}}>&times;</span>
+            </button>
+            <img src={lightboxImg} alt="Large view" className="max-h-[80vh] w-auto rounded-xl shadow-2xl" />
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>

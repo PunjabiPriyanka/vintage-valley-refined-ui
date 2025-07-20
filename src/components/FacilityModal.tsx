@@ -20,7 +20,7 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
 
   const additionalDetails = {
     1: { // Infinity Pool
-      operatingHours: '6:00 AM - 8:00 PM',
+      operatingHours: '8:00 AM - 6:00 PM',
       capacity: '25 guests',
       temperature: '28°C maintained',
       specialFeatures: ['Underwater lighting', 'Infinity edge design', 'Pool bar service'],
@@ -31,10 +31,10 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       ]
     },
     2: { // Palatio Banquet
-      operatingHours: '24/7 availability',
+      operatingHours: '8:00 AM - 10:00 PM',
       capacity: '250 guests',
       area: '5000 sq ft',
-      specialFeatures: ['Professional sound system', 'Stage setup available', 'Catering kitchen in house', 'Weather-proof canopy option'],
+      specialFeatures: ['Professional sound system', 'Stage space available', 'Catering kitchen in house', 'Weather-proof canopy option'],
       gallery: [
         '/images/pool/AB004825.JPG',
         '/images/pool/AB004834.JPG',
