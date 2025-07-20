@@ -329,10 +329,15 @@ const Attractions = () => {
                         ))}
                       </div>
 
-                      <button className="w-full bg-gold text-gray-800 px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2">
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-gold text-gray-800 px-4 py-2 rounded-full font-semibold text-sm hover:bg-bronze transition-colors duration-200 flex items-center justify-center space-x-2"
+                      >
                         <ExternalLink className="h-3 w-3" />
                         <span>Get Directions</span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </CarouselItem>
@@ -411,10 +416,15 @@ const Attractions = () => {
                         ))}
                       </div>
 
-                      <button className="w-full bg-gray-800 text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-800/80 transition-colors duration-200 flex items-center justify-center space-x-2">
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-gray-800 text-ivory px-4 py-2 rounded-full font-semibold text-sm hover:bg-gray-800/80 transition-colors duration-200 flex items-center justify-center space-x-2"
+                      >
                         <ExternalLink className="h-3 w-3" />
                         <span>Get Directions</span>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </CarouselItem>
