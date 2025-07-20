@@ -3,9 +3,13 @@ import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
 import { useNavigate } from 'react-router-dom';
 import { Sparkles, Waves, TreePine, Crown, Star, MapPin, Phone, Mail, Calendar, Users, Award, Gamepad2 } from 'lucide-react';
+import { rooms, Room } from '../roomsData';
+import React, { useState } from 'react';
 
 const Index = () => {
   const navigate = useNavigate();
+  const [expandedRoom, setExpandedRoom] = useState<string | null>(null);
+  const [expandedRoomIndex, setExpandedRoomIndex] = useState<number | null>(null);
 
   const handleRoomClick = (roomTitle: string) => {
     // Navigate to rooms page and scroll to specific room
@@ -22,21 +26,15 @@ const Index = () => {
   const amenities = [
     { 
       icon: Waves, 
-      title: 'Infinity Pool', 
-      description: 'Stunning infinity pool with breathtaking mountain views and luxury cabanas',
+      title: 'Valley Edge Pool', 
+      description: 'Stunning pool with breathtaking mountain views and luxury cabanas',
       color: 'from-blue-400 to-blue-600'
     },
     { 
       icon: Sparkles, 
-      title: 'Luxury Spa', 
-      description: 'World-class wellness center with rejuvenating treatments and therapies',
+      title: 'Luxury Spa (Coming Soon)', 
+      description: 'Our world-class wellness center is coming soon!',
       color: 'from-purple-400 to-pink-600'
-    },
-    { 
-      icon: TreePine, 
-      title: 'Nature Trails', 
-      description: 'Guided eco-walks through pristine landscapes and scenic viewpoints',
-      color: 'from-green-400 to-emerald-600'
     },
     { 
       icon: Crown, 
@@ -44,42 +42,24 @@ const Index = () => {
       description: 'Gourmet cuisine crafted with local ingredients and international flair',
       color: 'from-orange-400 to-red-600'
     },
+    {
+      icon: Crown,
+      title: 'Cafe (Upcoming)',
+      description: 'A cozy cafe experience is coming soon to Vintage Valley.',
+      color: 'from-yellow-400 to-orange-400'
+    },
     { 
       icon: Gamepad2, 
       title: 'Game Zone', 
       description: 'Comprehensive sports facilities including badminton, football, and indoor games for all ages',
       color: 'from-green-500 to-blue-600'
     },
-  ];
-
-  const rooms = [
-    {
-      title: 'Deluxe Studio Suite',
-      image: '/images/deluxe-studio-suite-1.jpg',
-      description: 'Elegant studio with modern amenities, private balcony, and stunning nature views',
-      price: 'From ₹3,500',
-      period: 'per night',
-      features: ['King Size Bed', 'Private Balcony', 'Mountain View'],
-      badge: 'Popular'
+    { 
+      icon: TreePine, 
+      title: 'Nature Trails', 
+      description: 'Guided eco-walks through pristine landscapes and scenic viewpoints',
+      color: 'from-green-400 to-emerald-600'
     },
-    {
-      title: 'Lotus Family Suite',
-      image: '/images/1.jpeg',
-      description: 'Spacious family accommodation with separate living area and premium comfort',
-      price: 'From ₹6,000',
-      period: 'per night',
-      features: ['Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed', 'Garden View'],
-      badge: 'Family Choice'
-    },
-    {
-      title: 'Presidential Sky Suite',
-      image: '/images/presidential-sky-villa-1.jpg',
-      description: 'Ultimate luxury experience with panoramic valley views and premium services',
-      price: 'From ₹7,000',
-      period: 'per night',
-      features: ['Private Terrace', 'No bathtub available', 'Valley View'],
-      badge: 'Luxury'
-    }
   ];
 
   const testimonials = [
@@ -130,24 +110,33 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {amenities.map((amenity, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-ivory/50">
-                  <div className="flex justify-center mb-6">
-                    <div className={`bg-gradient-to-r ${amenity.color} rounded-full w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                      <amenity.icon className="h-10 w-10 text-white" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {amenities.map((amenity, index) => {
+              const isComingSoon =
+                amenity.title.includes('(Coming Soon)') || amenity.title.includes('(Upcoming)');
+              return (
+                <div key={index} className="group cursor-pointer">
+                  <div className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-ivory/50 ${isComingSoon ? 'opacity-60 grayscale' : ''}`}>
+                    {isComingSoon && (
+                      <div className="absolute top-4 right-4 bg-gold/90 text-charcoal px-4 py-2 rounded-full font-bold text-xs shadow-lg z-10">
+                        Coming Soon
+                      </div>
+                    )}
+                    <div className="flex justify-center mb-6">
+                      <div className={`bg-gradient-to-r ${amenity.color} rounded-full w-20 h-20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                        <amenity.icon className="h-10 w-10 text-white" />
+                      </div>
                     </div>
+                    <h3 className="font-playfair text-2xl font-semibold text-charcoal mb-4 text-center">
+                      {amenity.title}
+                    </h3>
+                    <p className="text-charcoal/70 leading-relaxed text-center">
+                      {amenity.description}
+                    </p>
                   </div>
-                  <h3 className="font-playfair text-2xl font-semibold text-charcoal mb-4 text-center">
-                    {amenity.title}
-                  </h3>
-                  <p className="text-charcoal/70 leading-relaxed text-center">
-                    {amenity.description}
-                  </p>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -168,54 +157,84 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {rooms.map((room, index) => (
-              <div key={index} className="group cursor-pointer">
-                <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={room.image}
-                      alt={room.title}
-                      className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-gold text-charcoal px-3 py-1 rounded-full text-sm font-semibold">
-                        {room.badge}
-                      </span>
+            {rooms.filter(room => room.title !== 'Lotus Family Suite').map((room, index) => {
+              const isExpanded = expandedRoomIndex === index;
+              const previewLength = 120;
+              const shouldTruncate = room.description.length > previewLength;
+              const displayDescription = isExpanded || !shouldTruncate
+                ? room.description
+                : room.description.slice(0, previewLength) + '...';
+              return (
+                <div key={index} className="group cursor-pointer">
+                  <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={room.images[0]}
+                        alt={room.title}
+                        className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
+                      <div className="absolute top-4 left-4">
+                        <span className="bg-gold text-charcoal px-3 py-1 rounded-full text-sm font-semibold">
+                          {room.title === 'Deluxe Studio Suite' ? 'Popular' :
+                           room.title === 'Lotus Family Suite' ? 'Family Choice' :
+                           room.title === 'Presidential Suite' ? 'Luxury' :
+                           room.title === 'Deluxe Edge View' ? 'Edge View' : ''}
+                        </span>
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <div className="text-2xl font-bold">From {room.pricing.weekday}</div>
+                        <div className="text-sm opacity-90">per night</div>
+                      </div>
                     </div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <div className="text-2xl font-bold">{room.price}</div>
-                      <div className="text-sm opacity-90">{room.period}</div>
-                    </div>
-                  </div>
-                  
-                  <div className="p-8">
-                    <h3 className="font-playfair text-2xl font-bold text-charcoal mb-4">
-                      {room.title}
-                    </h3>
-                    <p className="text-charcoal/70 mb-6 leading-relaxed">
-                      {room.description}
-                    </p>
                     
-                    <div className="grid grid-cols-2 gap-3 mb-6">
-                      {room.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center text-sm text-charcoal/70">
+                    <div className="p-8">
+                      <h3 className="font-playfair text-2xl font-bold text-charcoal mb-4">
+                        {room.title}
+                      </h3>
+                      <p className="text-charcoal/70 mb-6 leading-relaxed">
+                        {displayDescription}
+                        {shouldTruncate && (
+                          <button
+                            className="ml-2 text-gold underline text-sm focus:outline-none"
+                            onClick={e => {
+                              e.stopPropagation();
+                              setExpandedRoomIndex(isExpanded ? null : index);
+                            }}
+                          >
+                            {isExpanded ? 'Show Less' : 'Read More'}
+                          </button>
+                        )}
+                      </p>
+                      
+                      <div className="grid grid-cols-2 gap-3 mb-6">
+                        <div className="flex items-center text-sm text-charcoal/70">
                           <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                          {feature}
+                          {room.bedType}
                         </div>
-                      ))}
+                        <div className="flex items-center text-sm text-charcoal/70">
+                          <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
+                          {room.size}
+                        </div>
+                        {room.amenities.slice(0,2).map((amenity, idx) => (
+                          <div key={idx} className="flex items-center text-sm text-charcoal/70">
+                            <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
+                            {amenity.name}
+                          </div>
+                        ))}
+                      </div>
+                      
+                      <button 
+                        onClick={() => handleRoomClick(room.title)}
+                        className="w-full bg-gradient-to-r from-gold to-bronze text-charcoal font-semibold py-3 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                      >
+                        View Details & Book
+                      </button>
                     </div>
-                    
-                    <button 
-                      onClick={() => handleRoomClick(room.title)}
-                      className="w-full bg-gradient-to-r from-gold to-bronze text-charcoal font-semibold py-3 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-                    >
-                      View Details & Book
-                    </button>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

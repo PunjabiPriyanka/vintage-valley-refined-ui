@@ -8,14 +8,17 @@ const Hero = () => {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Multiple Background Layers for Depth */}
       <div className="absolute inset-0">
-        {/* Primary Background */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-700 hover:scale-105"
-          style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('/images/infinity-pool-1.jpg')`
-          }}
+        {/* Video Background */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="/images/room/VN20250720_201334.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
         />
-        
+        {/* Dark Overlay for readability */}
+        <div className="absolute inset-0 bg-black/50" />
         {/* Floating Elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-blue-400/10 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-32 right-16 w-32 h-32 bg-teal-300/5 rounded-full blur-2xl animate-pulse delay-1000"></div>
