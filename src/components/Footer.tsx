@@ -35,13 +35,21 @@ const Footer = () => {
           <div>
             <h3 className="font-playfair text-xl font-semibold mb-6 text-gold">Quick Links</h3>
             <ul className="space-y-3">
-              {['Rooms & Suites', 'Facilities', 'Tariff', 'Gallery', 'Nearby Attractions'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-ivory/80 hover:text-gold transition-colors duration-200">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a href="/rooms" className="text-ivory/80 hover:text-gold transition-colors duration-200">Rooms & Suites</a>
+              </li>
+              <li>
+                <a href="/facilities" className="text-ivory/80 hover:text-gold transition-colors duration-200">Facilities</a>
+              </li>
+              <li>
+                <a href="/tariff" className="text-ivory/80 hover:text-gold transition-colors duration-200">Tariff</a>
+              </li>
+              <li>
+                <a href="/gallery" className="text-ivory/80 hover:text-gold transition-colors duration-200">Gallery</a>
+              </li>
+              <li>
+                <a href="/attractions" className="text-ivory/80 hover:text-gold transition-colors duration-200">Nearby Attractions</a>
+              </li>
             </ul>
           </div>
 
@@ -49,13 +57,24 @@ const Footer = () => {
           <div>
             <h3 className="font-playfair text-xl font-semibold mb-6 text-gold">Services</h3>
             <ul className="space-y-3">
-              {['Spa & Wellness', 'Infinity Pool', 'Banquet Hall', 'Conference Room', 'Adventure Sports'].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-ivory/80 hover:text-gold transition-colors duration-200">
-                    {item}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <span className="text-ivory/80 cursor-not-allowed opacity-60">Spa & Wellness <span className="text-xs text-gold">(Upcoming)</span></span>
+              </li>
+              <li>
+                <a href="/facilities#valley-edge-pool" className="text-ivory/80 hover:text-gold transition-colors duration-200">Valley Edge Pool</a>
+              </li>
+              <li>
+                <a href="/facilities#palatio-banquet" className="text-ivory/80 hover:text-gold transition-colors duration-200">Banquet Hall</a>
+              </li>
+              <li>
+                <a href="/facilities#conference-hall" className="text-ivory/80 hover:text-gold transition-colors duration-200">Conference Room</a>
+              </li>
+              <li>
+                <span className="text-ivory/80 cursor-not-allowed opacity-60">Cafe <span className="text-xs text-gold">(Upcoming)</span></span>
+              </li>
+              <li>
+                <a href="/facilities#fitness-studio" className="text-ivory/80 hover:text-gold transition-colors duration-200">Gym</a>
+              </li>
             </ul>
           </div>
 

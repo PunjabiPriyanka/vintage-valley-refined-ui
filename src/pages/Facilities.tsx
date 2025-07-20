@@ -118,6 +118,7 @@ const Facilities = () => {
             {facilities.map((facility, index) => (
               <div
                 key={facility.id}
+                id={facility.title.toLowerCase().replace(/\s|&/g, '-').replace(/-{2,}/g, '-')}
                 className={`group ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} 
                   bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 cursor-pointer`}
                 onClick={() => handleFacilityClick(facility)}
