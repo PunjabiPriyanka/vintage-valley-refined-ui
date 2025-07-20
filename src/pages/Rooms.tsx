@@ -31,7 +31,7 @@ const Rooms = () => {
         { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
-        { icon: Bath, name: 'Luxury Bathroom' },
+        { icon: Bath, name: 'Upscale Washroom' },
         { icon: Coffee, name: 'Tea/Coffee Maker' }
       ]
     },
@@ -46,7 +46,7 @@ const Rooms = () => {
       ],
       description: 'Rooms with stunning front-facing views, offering elevated comfort and a refined aesthetic. Positioned at the corner edge of each floor for enhanced privacy and scenic visibility.',
       capacity: '2 Adults',
-      bedType: 'King Size Bed',
+      bedType: 'Standard Size Bed',
       size: '480 sq ft',
       pricing: {
         weekday: '₹4,200',
@@ -56,7 +56,7 @@ const Rooms = () => {
         { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
-        { icon: Bath, name: 'Premium Bathroom' },
+        { icon: Bath, name: 'Upscale Washroom' },
         { icon: Mountain, name: 'Edge Views' }
       ]
     },
@@ -78,7 +78,7 @@ const Rooms = () => {
         weekend: '₹7,000'
       },
       amenities: [
-        { icon: Wifi, name: 'High-Speed WiFi' },
+        { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
         { icon: Bath, name: 'Premium Bathrooms with Bathtub' },
