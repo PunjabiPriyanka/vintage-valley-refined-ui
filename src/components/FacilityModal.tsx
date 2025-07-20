@@ -23,7 +23,7 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       operatingHours: '6:00 AM - 8:00 PM',
       capacity: '25 guests',
       temperature: '28°C maintained',
-      specialFeatures: ['Underwater lighting', 'Infinity edge design', 'Pool bar service', 'Heated during winter'],
+      specialFeatures: ['Underwater lighting', 'Infinity edge design', 'Pool bar service'],
       gallery: [
         '/images/pool/AB005094.JPG',
         '/images/pool/AB005097.JPG',

@@ -20,9 +20,9 @@ const Facilities = () => {
   const facilities = [
     {
       id: 1,
-      title: 'Infinity Pool',
+      title: 'Valley Edge Pool',
       icon: Waves,
-      description: 'Stunning infinity pool overlooking the valley with crystal-clear waters and panoramic mountain views. Perfect for relaxation and memorable moments.',
+      description: 'Valley edge pool overlooking the valley with crystal-clear waters and panoramic mountain views. Perfect for relaxation and memorable moments.',
       image: '/images/infinity-pool-1.jpg',
       features: ['Valley views', 'Sunrise sessions']
     },
