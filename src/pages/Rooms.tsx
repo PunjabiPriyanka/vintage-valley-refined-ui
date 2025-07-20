@@ -32,7 +32,8 @@ const Rooms = () => {
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
         { icon: Bath, name: 'Upscale Washroom' },
-        { icon: Coffee, name: 'Tea/Coffee Maker' }
+        { icon: Coffee, name: 'Tea/Coffee Maker' },
+        { icon: Mountain, name: 'Private Balcony' }
       ]
     },
     {
@@ -57,7 +58,8 @@ const Rooms = () => {
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
         { icon: Bath, name: 'Upscale Washroom' },
-        { icon: Mountain, name: 'Edge Views' }
+        { icon: Mountain, name: 'Edge Views' },
+        { icon: Mountain, name: 'Private Balcony' }
       ]
     },
     {
@@ -81,20 +83,21 @@ const Rooms = () => {
         { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
-        { icon: Bath, name: 'Premium Bathrooms with Bathtub' },
-        { icon: Mountain, name: 'Panoramic Views' }
+        { icon: Bath, name: 'Master Room with Bath Tub Comfort | Shared Second Washroom' },
+        { icon: Mountain, name: 'Panoramic Views' },
+        { icon: Mountain, name: 'Private Balcony' }
       ]
     },
     {
       id: 5,
-      title: 'Presidential Sky Suite',
+      title: 'Presidential Suite',
       subtitle: 'Ultimate Luxury Experience',
       images: [
         '/images/room/1.JPEG',
         '/images/room/2.JPEG',
         '/images/room/3.JPEG'
       ],
-      description: 'The Presidential Sky Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
+      description: 'The Presidential Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',
       bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed, Living area',
       size: '1200 sq ft',
@@ -105,7 +108,7 @@ const Rooms = () => {
       amenities: [
         { icon: Wifi, name: 'Premium WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
-        { icon: Bath, name: 'Premium Bathrooms with Bathtub' },
+        { icon: Bath, name: 'Both Bathrooms Attached | Master Bath with Bathtub' },
         { icon: Mountain, name: 'Private Balcony' },
         { icon: Coffee, name: 'Tea/Coffee Maker' }
       ]
