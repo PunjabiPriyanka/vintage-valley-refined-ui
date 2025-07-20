@@ -22,7 +22,7 @@ const Rooms = () => {
       description: 'Our Deluxe Studio Suite offers the perfect blend of modern luxury and natural serenity. Featuring contemporary amenities, panoramic views, and thoughtful design elements that create an atmosphere of sophisticated relaxation.',
       capacity: '2 Adults',
       bedType: 'Standard Size Bed',
-      size: '450 sq ft',
+      size: '450 sq.ft',
       pricing: {
         weekday: '₹3,500',
         weekend: '₹4,500'
@@ -48,7 +48,7 @@ const Rooms = () => {
       description: 'Rooms with stunning front-facing views, offering elevated comfort and a refined aesthetic. Positioned at the corner edge of each floor for enhanced privacy and scenic visibility.',
       capacity: '2 Adults',
       bedType: 'Standard Size Bed',
-      size: '480 sq ft',
+      size: '480 sq.ft',
       pricing: {
         weekday: '₹4,200',
         weekend: '₹5,200'
@@ -74,7 +74,7 @@ const Rooms = () => {
       description: 'The Lotus Family Suite provides generous space and premium comfort for larger groups. With separate living areas, premium furnishings, and spectacular views, it offers the perfect setting for memorable family gatherings.',
       capacity: '4 Adults',
       bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed',
-      size: '750 sq ft',
+      size: '750 sq.ft',
       pricing: {
         weekday: '₹6,000',
         weekend: '₹7,000'
@@ -100,7 +100,7 @@ const Rooms = () => {
       description: 'The Presidential Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',
       bedType: 'Master Bedroom → King Size Bed, Second Bedroom → Queen Size Bed, Living area',
-      size: '1200 sq ft',
+      size: '1000 sq.ft',
       pricing: {
         weekday: '₹7,000',
         weekend: '₹8,000'
