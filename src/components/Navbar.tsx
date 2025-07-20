@@ -98,7 +98,7 @@ const Navbar = () => {
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                     location.pathname === link.path
                       ? 'text-gold bg-gold/10'
-                      : isScrolled ? 'text-gray-800 hover:text-gold hover:bg-gold/5' : 'text-white hover:text-gold hover:bg-gold/5'
+                      : 'text-gray-800 hover:text-gold hover:bg-gold/5'
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -107,7 +107,7 @@ const Navbar = () => {
               ))}
               <button 
                 onClick={handleBookNow}
-                className={`w-full mt-4 px-6 py-2 rounded-full font-medium hover:bg-bronze transition-colors duration-200 ${isScrolled ? 'bg-gold text-gray-800' : 'bg-gold text-gray-800'}`}
+                className="w-full mt-4 px-6 py-2 rounded-full font-medium bg-gold text-gray-800 hover:bg-bronze transition-colors duration-200"
               >
                 Book Now
               </button>
