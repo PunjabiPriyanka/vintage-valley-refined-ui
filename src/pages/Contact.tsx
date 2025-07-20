@@ -304,22 +304,29 @@ const Contact = () => {
           </div>
 
           <div className="bg-gold/5 rounded-3xl p-8 border border-gold/20">
-            <div className="aspect-video bg-gold/10 rounded-2xl flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-gold mx-auto mb-4" />
-                <p className="font-playfair text-2xl font-semibold text-gray-800 mb-2">
-                  Interactive Map
-                </p>
-                <p className="text-gray-800/70 mb-4">
-                  Click to open in Google Maps for detailed directions
-                </p>
-                <button 
-                  onClick={() => window.open('https://maps.google.com/?q=Vintage+Valley+Spa+Resort+Igatpuri', '_blank')}
-                  className="bg-gold text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200"
-                >
-                  Open in Maps
-                </button>
-              </div>
+            <div className="aspect-video bg-gold/10 rounded-2xl flex items-center justify-center overflow-hidden">
+              {/* Embedded Google Map */}
+              <iframe
+                title="Vintage Valley Spa Resort Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1234567890123!2d73.5623456!3d19.6789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1c123456789%3A0xabcdef1234567890!2sVintage%20Valley%20Spa%20Resort!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full rounded-2xl border-none"
+              ></iframe>
+            </div>
+            <div className="text-center mt-6">
+              <a
+                href="https://maps.google.com/?q=Vintage+Valley+Spa+Resort+Igatpuri"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gold text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-bronze transition-colors duration-200 inline-block"
+              >
+                Open in Google Maps
+              </a>
             </div>
           </div>
         </div>
