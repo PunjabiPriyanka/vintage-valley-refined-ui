@@ -215,9 +215,6 @@ const Rooms = () => {
                   <div className="flex items-center space-x-2 col-span-2">
                     <Mountain className="h-5 w-5 text-gold" />
                     <span className="text-gray-800/80">{room.size}
-                    {room.title === 'Lotus Family Suite' && (
-                      <span className="ml-4 inline-flex items-center"><span className="font-semibold">Living Area</span></span>
-                    )}
                     </span>
                   </div>
                 </div>
