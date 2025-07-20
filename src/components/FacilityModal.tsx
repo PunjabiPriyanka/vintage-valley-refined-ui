@@ -42,10 +42,10 @@ const FacilityModal = ({ facility, isOpen, onClose }: FacilityModalProps) => {
       ]
     },
     3: { // Tarkari Restaurant
-      operatingHours: '7:00 AM - 11:00 PM',
+      operatingHours: '7:00 AM - 10:00 PM',
       capacity: '60 guests',
       cuisine: 'Multi-cuisine',
-      specialFeatures: ['Live cooking counter', 'Private dining area', 'Wine cellar', 'Outdoor terrace seating'],
+      specialFeatures: ['Live cooking counter', 'Private dining area', 'Specialized lighting', 'Outdoor terrace seating'],
       gallery: [
         'https://drive.google.com/uc?export=view&id=1Zp7rFx2l8Av-e3B8fMrS1LsR3mw0mV9h',
         'https://drive.google.com/uc?export=view&id=1Sq3quhmY0Ucmo8Z9YItAko_93XIuZDnX',
