@@ -308,7 +308,7 @@ const Contact = () => {
               {/* Embedded Google Map */}
               <iframe
                 title="Vintage Valley Spa Resort Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.1234567890123!2d73.5623456!3d19.6789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b1c123456789%3A0xabcdef1234567890!2sVintage%20Valley%20Spa%20Resort!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps?q=19.6789012,73.5623456&hl=en&z=15&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
