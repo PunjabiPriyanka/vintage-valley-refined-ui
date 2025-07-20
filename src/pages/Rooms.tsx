@@ -28,11 +28,10 @@ const Rooms = () => {
         weekend: '₹4,500'
       },
       amenities: [
-        { icon: Wifi, name: 'High-Speed WiFi' },
+        { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
         { icon: Bath, name: 'Luxury Bathroom' },
-        { icon: Mountain, name: 'Valley Views' },
         { icon: Coffee, name: 'Tea/Coffee Maker' }
       ]
     },
@@ -54,7 +53,7 @@ const Rooms = () => {
         weekend: '₹5,200'
       },
       amenities: [
-        { icon: Wifi, name: 'High-Speed WiFi' },
+        { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Tv, name: 'Smart TV' },
         { icon: Bath, name: 'Premium Bathroom' },
