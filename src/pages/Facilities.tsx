@@ -44,9 +44,9 @@ const Facilities = () => {
     },
     {
       id: 4,
-      title: 'Spa & Wellness',
+      title: 'Spa & Wellness (Coming Soon)',
       icon: Sparkles,
-      description: 'World-class spa offering rejuvenating treatments and wellness therapies. Experience ultimate relaxation with our signature treatments and skilled therapists.',
+      description: 'Our Spa & Wellness center is coming soon! Stay tuned for rejuvenating treatments and wellness therapies designed for your ultimate relaxation.',
       image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       features: ['Ayurvedic treatments', 'Couple therapy rooms', 'Aromatherapy', 'Wellness consultations']
     },
@@ -115,51 +115,64 @@ const Facilities = () => {
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {facilities.map((facility, index) => (
-              <div
-                key={facility.id}
-                id={facility.title.toLowerCase().replace(/\s|&/g, '-').replace(/-{2,}/g, '-')}
-                className={`group ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} 
-                  bg-white rounded-3xl overflow-hidden luxury-shadow hover:shadow-2xl transition-all duration-500 cursor-pointer`}
-                onClick={() => handleFacilityClick(facility)}
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={facility.image}
-                    alt={facility.title}
-                    className="w-full h-64 lg:h-80 object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
-                  <div className="absolute top-6 left-6">
-                    <div className="bg-gold/90 backdrop-blur-sm rounded-full p-3">
-                      <facility.icon className="h-6 w-6 text-charcoal" />
+            {facilities.map((facility, index) => {
+              const isComingSoon = facility.id === 4;
+              return (
+                <div
+                  key={facility.id}
+                  id={facility.title.toLowerCase().replace(/\s|&/g, '-').replace(/-{2,}/g, '-')}
+                  className={`group ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}
+                   ${isComingSoon ? 'bg-gray-100 text-gray-400 cursor-not-allowed opacity-70' : 'bg-white cursor-pointer hover:shadow-2xl'}
+                   rounded-3xl overflow-hidden luxury-shadow transition-all duration-500`}
+                  onClick={isComingSoon ? undefined : () => handleFacilityClick(facility)}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={facility.image}
+                      alt={facility.title}
+                      className={`w-full h-64 lg:h-80 object-cover transition-transform duration-700 ${isComingSoon ? 'grayscale brightness-110' : 'group-hover:scale-110'}`}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-transparent to-transparent" />
+                    {isComingSoon && (
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="bg-gold/90 text-charcoal px-8 py-4 rounded-2xl font-bold text-2xl shadow-2xl opacity-95">
+                          Coming Soon
+                        </div>
+                      </div>
+                    )}
+                    <div className="absolute top-6 left-6">
+                      <div className="bg-gold/90 backdrop-blur-sm rounded-full p-3">
+                        <facility.icon className="h-6 w-6 text-charcoal" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                
-                <div className="p-8">
-                  <h2 className="font-playfair text-3xl font-bold text-charcoal mb-4">
-                    {facility.title}
-                  </h2>
-                  <p className="text-charcoal/80 text-lg leading-relaxed mb-6">
-                    {facility.description}
-                  </p>
                   
-                  <div className="space-y-2 mb-6">
-                    {facility.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-gold rounded-full" />
-                        <span className="text-charcoal/70">{feature}</span>
-                      </div>
-                    ))}
+                  <div className="p-8">
+                    <h2 className="font-playfair text-3xl font-bold text-charcoal mb-4">
+                      {facility.title}
+                    </h2>
+                    <p className="text-charcoal/80 text-lg leading-relaxed mb-6">
+                      {facility.description}
+                    </p>
+                    
+                    <div className="space-y-2 mb-6">
+                      {facility.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-gold rounded-full" />
+                          <span className="text-charcoal/70">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {!isComingSoon && (
+                      <button className="bg-gradient-to-r from-gold to-bronze text-charcoal px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                        Learn More
+                      </button>
+                    )}
                   </div>
-                  
-                  <button className="bg-gradient-to-r from-gold to-bronze text-charcoal px-6 py-3 rounded-full font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                    Learn More
-                  </button>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
