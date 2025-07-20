@@ -62,9 +62,9 @@ const Facilities = () => {
       id: 6,
       title: 'Game Zone',
       icon: Gamepad2,
-      description: 'Indoor and outdoor recreational activities for all ages. From traditional games to modern entertainment options, ensuring fun for the entire family.',
+      description: 'Comprehensive indoor and outdoor recreational activities for all ages. From traditional games to modern sports facilities, ensuring fun and fitness for the entire family.',
       image: 'https://plus.unsplash.com/premium_photo-1742944886085-a096b536af0f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8OCUyMGJhbGwlMjBwb29sfGVufDB8fDB8fHww',
-      features: ['Pool table', 'Board games', 'Outdoor sports']
+      features: ['Badminton Court', 'Football Ground', 'Indoor Games', 'Pool Table', 'Board Games']
     },
     {
       id: 7,

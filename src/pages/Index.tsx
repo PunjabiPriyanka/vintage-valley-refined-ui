@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
-import { Sparkles, Waves, TreePine, Crown, Star, MapPin, Phone, Mail, Calendar, Users, Award } from 'lucide-react';
+import { Sparkles, Waves, TreePine, Crown, Star, MapPin, Phone, Mail, Calendar, Users, Award, Gamepad2 } from 'lucide-react';
 
 const Index = () => {
   const amenities = [
@@ -28,6 +28,12 @@ const Index = () => {
       title: 'Premium Dining', 
       description: 'Gourmet cuisine crafted with local ingredients and international flair',
       color: 'from-orange-400 to-red-600'
+    },
+    { 
+      icon: Gamepad2, 
+      title: 'Game Zone', 
+      description: 'Comprehensive sports facilities including badminton, football, and indoor games for all ages',
+      color: 'from-green-500 to-blue-600'
     },
   ];
 
@@ -109,7 +115,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
             {amenities.map((amenity, index) => (
               <div key={index} className="group cursor-pointer">
                 <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-ivory/50">
