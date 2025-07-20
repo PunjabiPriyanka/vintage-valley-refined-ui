@@ -93,9 +93,9 @@ const Rooms = () => {
       title: 'Presidential Suite',
       subtitle: 'Ultimate Luxury Experience',
       images: [
-        '/images/room/1.JPEG',
-        '/images/room/2.JPEG',
-        '/images/room/3.JPEG'
+        '/images/room/1.jpeg',
+        '/images/room/2.jpeg',
+        '/images/room/3.jpeg'
       ],
       description: 'The Presidential Suite represents the pinnacle of luxury accommodation. Featuring exclusive amenities, private spaces, and unparalleled views, this suite offers an extraordinary retreat for discerning guests.',
       capacity: '4 Adults',
@@ -106,7 +106,7 @@ const Rooms = () => {
         weekend: '₹8,000'
       },
       amenities: [
-        { icon: Wifi, name: 'Premium WiFi' },
+        { icon: Wifi, name: 'WiFi' },
         { icon: Car, name: 'Complimentary Parking' },
         { icon: Bath, name: 'Both Bathrooms Attached | Master Bath with Bathtub' },
         { icon: Mountain, name: 'Private Balcony' },

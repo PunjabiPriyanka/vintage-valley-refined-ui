@@ -81,7 +81,15 @@ const Facilities = () => {
       description: 'Professional meeting spaces equipped with modern technology for corporate events and business gatherings in a serene environment.',
       image: '/images/conference-hall-1.jpg',
       features: ['AV equipment', 'High-speed internet', 'Catering services', 'Professional setup']
-    }
+    },
+    {
+      id: 9,
+      title: 'Cafe (Coming Soon)',
+      icon: Utensils,
+      description: 'Our cafe is coming soon! Enjoy fresh brews, snacks, and a cozy ambiance in the near future.',
+      image: '/images/room/AB004878.JPG',
+      features: ['Artisan coffee', 'Fresh snacks', 'Cozy seating']
+    },
   ];
 
   const handleFacilityClick = (facility: Facility) => {
@@ -116,7 +124,7 @@ const Facilities = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {facilities.map((facility, index) => {
-              const isComingSoon = facility.id === 4;
+              const isComingSoon = facility.id === 4 || facility.id === 9;
               return (
                 <div
                   key={facility.id}
