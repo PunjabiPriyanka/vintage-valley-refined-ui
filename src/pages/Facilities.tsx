@@ -163,26 +163,6 @@ const Facilities = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-r from-charcoal to-charcoal/90">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-playfair text-4xl font-bold text-ivory mb-6">
-            Experience Premium Hospitality
-          </h2>
-          <p className="text-xl text-ivory/80 mb-8">
-            Book your stay and enjoy access to all our world-class facilities and services
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gold text-charcoal px-8 py-4 rounded-full font-semibold text-lg hover:bg-bronze transition-all duration-300 transform hover:scale-105">
-              Reserve Now
-            </button>
-            <button className="border-2 border-ivory text-ivory px-8 py-4 rounded-full font-semibold text-lg hover:bg-ivory hover:text-charcoal transition-all duration-300">
-              Virtual Tour
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Facility Modal */}
       {selectedFacility && (
         <FacilityModal
