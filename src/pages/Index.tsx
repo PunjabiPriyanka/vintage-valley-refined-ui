@@ -64,27 +64,35 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: 'Prashant Jadhav',
-      location: 'Mumbai',
+      name: 'Sanket Pawar',
+      location: 'India',
       image: '/images/placeholder.svg',
       rating: 5,
-      text: 'A wonderful experience! The property is beautiful, staff is very courteous, and the food was delicious. Highly recommended for families and couples.',
+      text: 'Amazing place to relax and enjoy with family. The rooms are clean and spacious, and the staff is very helpful. The view from the property is breathtaking!',
+      date: 'May 2024'
+    },
+    {
+      name: 'Ritika Sharma',
+      location: 'India',
+      image: '/images/placeholder.svg',
+      rating: 5,
+      text: 'Had a wonderful stay at Vintage Valley. The food was delicious and the pool was very clean. Highly recommended for a weekend getaway.',
       date: 'April 2024'
     },
     {
-      name: 'Neha Kulkarni',
-      location: 'Pune',
+      name: 'Rahul Desai',
+      location: 'India',
       image: '/images/placeholder.svg',
-      rating: 5,
-      text: 'Amazing stay at Vintage Valley. The rooms are spacious and clean, and the infinity pool is a highlight. Will definitely visit again!',
+      rating: 4,
+      text: 'Great hospitality and beautiful location. The only downside was the WiFi speed, but everything else was perfect.',
       date: 'March 2024'
     },
     {
-      name: 'Sandeep Patil',
-      location: 'Nashik',
+      name: 'Priya Nair',
+      location: 'India',
       image: '/images/placeholder.svg',
-      rating: 4,
-      text: 'Great hospitality and a peaceful environment. The location is perfect for a weekend getaway. The only improvement could be faster room service.',
+      rating: 5,
+      text: 'The best resort experience I have had in a long time. The nature trails and activities were a highlight for our kids.',
       date: 'February 2024'
     }
   ];
