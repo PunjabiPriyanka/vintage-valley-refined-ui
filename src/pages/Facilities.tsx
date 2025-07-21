@@ -84,7 +84,7 @@ const Facilities = () => {
     },
     {
       id: 9,
-      title: 'Cafe (Coming Soon)',
+      title: 'Cafe test(Coming Soon)',
       icon: Utensils,
       description: 'Our cafe is coming soon! Enjoy fresh brews, snacks, and a cozy ambiance in the near future.',
       image: '/images/room/AB004878.JPG',
